@@ -1,0 +1,17 @@
+### v2 eval Qwen3-8B
+== LCF v2 Qwen3-8B  best L12 attn probe_acc=0.818 ==
+ alpha |    Acc | DeltaProb
+   0.0 |  31.86 |     3.961
+   0.5 |  30.39 |     3.925
+   1.0 |  29.90 |     3.913
+   2.0 |  30.88 |     4.062
+   4.0 |  28.43 |     2.402
+### v2 eval Llama-2
+== LCF v2 Llama-2-7b-chat-hf  best L11 mlp probe_acc=0.818 ==
+ alpha |    Acc | DeltaProb
+   0.0 |  39.22 |     4.851
+   0.5 |  40.20 |     4.710
+   1.0 |  39.22 |     4.352
+   2.0 |  32.84 |     3.368
+   4.0 |  30.39 |     1.849
+### V2 EVAL DONE

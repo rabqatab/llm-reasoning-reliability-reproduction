@@ -65,4 +65,18 @@ The diagnosis points to a concrete, model-agnostic redesign:
 3. **Norm-relative intervention**: shift `h ← h + α·‖h‖·ŵ` so the step auto-scales to each model's hidden-state magnitude, instead of the fixed absolute η that transfers poorly across models.
 4. **Confidence-gated**: only intervene when the probe flags the rep as invalid.
 
-This is implemented and evaluated separately; if it yields consistent (even if modest, bounded by the ~0.71 signal) cross-model gains, it is a genuinely model-agnostic improvement over the paper's recipe.
+This is implemented (`lcf/lcf_impl/lcf_v2.py`, `lcf_v2_eval.py`) and evaluated.
+
+**Result — the redesign does NOT rescue LCF (a second, deeper negative).** Sweeping the norm-relative strength α on fallacy identification (`results/lcf_v2_eval.txt`):
+
+| α | Qwen3 Acc / ΔProb | Llama2 Acc / ΔProb |
+|---|---|---|
+| 0 (baseline) | 31.9 / 3.96 | 39.2 / 4.85 |
+| 0.5 | 30.4 / 3.93 | 40.2 / 4.71 |
+| 1 | 29.9 / 3.91 | 39.2 / 4.35 |
+| 2 | 30.9 / 4.06 | 32.8 / 3.37 |
+| 4 | 28.4 / 2.40 | 30.4 / 1.85 |
+
+Even using the **single best sub-layer (0.82-separable) supervised direction** with scale-free intervention, shifting the rep along the logic-validity direction gives **no consistent improvement** (roughly neutral at small α, degrading at large α) on either model. So **separability ≠ controllability**: the logic direction is (weakly) *decodable* but is **not a causal lever** for the model's logical behaviour via additive intervention.
+
+**Final verdict (refined).** LCF on logic-validity faces a *double* limitation: (1) the signal is weak (0.82 best vs. 0.95 for a semantic attribute like suicide risk, §3a-bis), and (2) even that signal is not causally controllable by representation shifting (this section). The paper's reported near-perfect control (96.56% Valid-Trained) is therefore implausible under faithful re-implementation and is best explained by its unauditable discriminator + unstated choices (§3d). The honest, generalizable finding of this project is that **representation-editing of logic-validity does not reproduce as a reliable, model-agnostic intervention** — a useful negative result, not a fixable bug.
