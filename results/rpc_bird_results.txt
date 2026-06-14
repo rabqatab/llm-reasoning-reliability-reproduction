@@ -1,0 +1,3 @@
+SC BIRD Qwen/Qwen3-8B 8 {'Accuracy': '28.54 ± 0.00', 'ECE': '39.79 ± 0.00'}
+PPL BIRD Qwen/Qwen3-8B 8 {'Accuracy': '25.00 ± 0.00', 'ECE': '73.55 ± 0.00'}
+RPC BIRD Qwen/Qwen3-8B 8 {'Accuracy': '25.00 ± 0.00', 'ECE': '39.18 ± 0.00'}

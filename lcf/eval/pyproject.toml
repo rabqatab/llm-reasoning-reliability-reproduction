@@ -1,0 +1,20 @@
+[project]
+name = "lcf-eval"
+version = "0.1.0"
+description = "LCF (AAAI 2025) evaluation harness + baselines"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "transformers",
+    "datasets",
+    "accelerate",
+    "peft",
+    "wandb",
+    "openai",
+    "scikit-learn",
+    "numpy",
+]
+
+# Baselines live one level up and are imported as `baselines.<mod>` from run_eval.
+[tool.uv]
+package = false

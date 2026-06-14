@@ -1,0 +1,46 @@
+# ── Secrets (NEVER commit) ───────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python envs / caches ─────────────────────────────────────────────
+.venv/
+**/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ── Large / regenerable model artifacts ──────────────────────────────
+# extracted hidden-state reps, trained LCF adapters, optimizer states
+*.pt
+*.safetensors
+*.bin
+*.gguf
+*.arrow
+*.h5
+*.msgpack
+lcf/checkpoints/
+lcf/eval/discriminator/
+lcf/baselines/sft_*/
+lcf/baselines/iti_dirs/
+lcf/baselines/rahf_*/
+
+# ── Cloned third-party repos (clone separately; URLs in README) ──────
+# RPC official (WNJXYK/RPC), LCF official (wulidongdong/LCF, empty),
+# LFUD dataset (YandaGo/LFUD), ITI (likenneth/honest_llama), RAHF (LiuAmber/RAHF)
+rpc/RPC/
+lcf/LCF_official/
+lcf/LFUD/
+lcf/baselines_honest_llama/
+lcf/baselines_RAHF/
+
+# ── Runtime logs / caches ────────────────────────────────────────────
+*.log
+wandb/
+lcf/eval/results/judge_cache_*.jsonl
+*.partial.json
+
+# ── OS / editor ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

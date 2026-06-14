@@ -1,0 +1,3075 @@
+{
+  "model": "meta-llama/Llama-2-7b-chat-hf",
+  "variant": "original",
+  "n_gen": 204,
+  "n_fallacy": 204,
+  "ValidGPT4": null,
+  "ValidTrained": 0.0,
+  "PPL": 3.83195475053275,
+  "Acc": 39.21568627450981,
+  "DeltaProb": 4.85104634816754,
+  "generations": [
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 1,
+      "premise": "All flowers don't stay open forever.",
+      "conclusion": "it is important to enjoy them while they are in bloom.\n\nThis is a metaphor for the fleeting nature of life.\nJust as flowers don't stay open forever, our time on this earth is limited.\nIt is important to make the most of the time we have and enjoy the"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 2,
+      "premise": "Everyone in my family has never been to Europe.",
+      "conclusion": "I have decided to take them on a trip to Paris, France.\nI have planned the entire trip myself, from booking flights to arranging accommodation.\nI am excited to show my family the beauty of Paris and experience it with them.\nI have also planned some fun activities for us to do"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 3,
+      "premise": "All people should obey the rules of the road.",
+      "conclusion": "all people should be required to take a driving test before they are allowed to drive.\nThis argument is flawed because it assumes that all people who are allowed to drive are responsible and will obey the rules of the road. However, this is not always the case, as some people may be reckless or irrespons"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 5,
+      "premise": "Most museums will be closed on Mondays.",
+      "conclusion": "it is not possible to visit the museum on a Monday.\n\nHowever, some museums may have extended hours or be open on Mondays during certain times of the year.\nIt is best to check the museum's website or contact them directly to confirm their hours of operation.\n\nAdditionally, there"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 6,
+      "premise": "Some students do not take their studies seriously.",
+      "conclusion": "they do not achieve good grades.\nSome students do not take their studies seriously.\nThey do not achieve good grades.\n\nSome students do not take their studies seriously.\nAs a result, they do not achieve good grades.\n\nSome students do not take their studies seriously.\nCon"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 8,
+      "premise": "A portion of the inhabitants of this city have a fever.",
+      "conclusion": "the city's medical services are overwhelmed.\nThe sick people are in need of medical attention.\nThe city's hospitals are filled to capacity.\nThe sick people are in need of medical attention.\nThe city's medical services are overwhelmed.\nThe fever"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 14,
+      "premise": "Michael had dinner at an Italian restaurant.",
+      "conclusion": "the sentence \"Michael had dinner at an Italian restaurant\" is a statement.\n\nA statement is a sentence or phrase that conveys information or expresses a thought. It can be a simple declaration or a more complex statement that includes multiple clauses or ideas. In this case, the sentence \"Michael had dinner"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 27,
+      "premise": "Jenny has a collection of postcards.",
+      "conclusion": "Jenny has a collection of postcards.\n\nJenny's collection of postcards is not large.\nTherefore, Jenny's collection of postcards is not large.\n\nJenny's collection of postcards is mostly from Europe.\nTherefore, Jenny's"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 31,
+      "premise": "Brenda practices the violin every day.",
+      "conclusion": "Brenda is a very dedicated musician.\n\nHowever, the sentence above is not a valid conclusion. The premise \"Brenda practices the violin every day\" does not necessarily imply that Brenda is a very dedicated musician. There are many reasons why someone might practice their instrument every day, including to"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 34,
+      "premise": "Roger is an excellent chess player.",
+      "conclusion": "he is a good chess player.\n\nHowever, the two sentences are not exactly the same.\n\n\"Roger is an excellent chess player\" is a statement of fact, and it can be proven or disproven with evidence. For example, if Roger has won several chess tournaments"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 35,
+      "premise": "Rebecca doesn't like spicy food.",
+      "conclusion": "she doesn't eat spicy food.\n\nRebecca doesn't eat spicy food.\nTherefore, she doesn't like spicy food.\n\nThe two statements are logically equivalent, but the second one is more concise and clear.\n\nIn general, when we"
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 37,
+      "premise": "Martin has a membership at a local gym.",
+      "conclusion": "he is a member of the gym.\n\nMartin has a car.\nTherefore, he owns a car.\n\nMartin has a job at a local restaurant.\nTherefore, he works at the restaurant.\n\nMartin has a pet cat.\nTherefore, he has a cat."
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 43,
+      "premise": "I read a funny joke.",
+      "conclusion": "I am now a comedian.\n\nI'm not sure if you're being serious or not, but I'll play along. Here are a few reasons why you might not be a comedian just because you read a funny joke:\n\n1. Comedy is more than"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 47,
+      "premise": "Students are listening to classical music.",
+      "conclusion": "they are learning about classical music.\nTherefore, they are developing an appreciation for classical music.\nTherefore, they are learning about the history of classical music.\nTherefore, they are learning about the different composers of classical music.\nTherefore, they are learning about the different styles of classical"
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 55,
+      "premise": "X does not enjoy movies.",
+      "conclusion": "X will not watch movies.\n\nThis is a valid argument, but it is not a sound argument. Why?\n\nA. The conclusion does not logically follow from the premises.\nB. The premises are not true.\nC. The argument is based on a false assumption."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 60,
+      "premise": "The concert was cancelled due to bad weather.",
+      "conclusion": "the concert was not held.\n\nExample:\nThe concert was cancelled due to bad weather, so we didn't go.\n\nIn this example, the concert was not held because of bad weather, and the speaker and the listener did not attend the concert."
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    },
+    {
+      "scenario_id": 66,
+      "premise": "It may rain tomorrow.",
+      "conclusion": "I will take my umbrella to school.\n\nThis is an example of a logical conclusion, as there is a clear cause-and-effect relationship between the two statements. If it rains tomorrow, it is likely that the speaker will need an umbrella, so they will take one to school"
+    }
+  ],
+  "fallacy_scores": [
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.694892406463623,
+        -3.039841413497925,
+        -2.9833414554595947,
+        -3.5709502696990967
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.5624606609344482,
+        -3.2142887115478516,
+        -3.8554375171661377,
+        -2.771961212158203
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.8823635578155518,
+        -3.918450117111206,
+        -3.2961466312408447,
+        -4.180424690246582
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -2.9470906257629395,
+        -3.39328932762146,
+        -3.6767995357513428,
+        -3.4011988639831543
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.910888671875,
+        -4.187525749206543,
+        -3.5986785888671875,
+        -4.736371994018555
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.305622100830078,
+        -5.052665710449219,
+        -3.7373123168945312,
+        -3.8484060764312744
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.7669334411621094,
+        -3.4968152046203613,
+        -3.4826741218566895,
+        -3.1848113536834717
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -4.066795825958252,
+        -2.9197003841400146,
+        -3.635213851928711,
+        -2.7664029598236084
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -2.6455180644989014,
+        -3.185706615447998,
+        -2.88334321975708,
+        -3.218372106552124
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -3.163848400115967,
+        -4.8735456466674805,
+        -2.8076844215393066,
+        -3.5550734996795654
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -4.8691911697387695,
+        -3.9891693592071533,
+        -3.7223527431488037,
+        -3.831796646118164
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 1,
+      "option_logprobs": [
+        -4.576351165771484,
+        -2.776395320892334,
+        -3.7091567516326904,
+        -3.497770071029663
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.6994810104370117,
+        -2.0691721439361572,
+        -3.6941347122192383,
+        -2.7916691303253174
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -3.0921459197998047,
+        -2.5386743545532227,
+        -2.9485647678375244,
+        -3.252648115158081
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -3.9080169200897217,
+        -2.5654494762420654,
+        -2.822328805923462,
+        -2.54976749420166
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -3.710954427719116,
+        -3.985186815261841,
+        -2.770735740661621,
+        -2.6582581996917725
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.533231496810913,
+        -2.8443400859832764,
+        -2.818100690841675,
+        -3.452033758163452
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -3.072636842727661,
+        -2.672924757003784,
+        -3.054894208908081,
+        -3.5421762466430664
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.6823806762695312,
+        -2.526770830154419,
+        -2.737590789794922,
+        -3.615424633026123
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.5339577198028564,
+        -2.6382596492767334,
+        -2.687619924545288,
+        -3.278020143508911
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.718184471130371,
+        -2.1973459720611572,
+        -3.290895700454712,
+        -2.8570845127105713
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.5603086948394775,
+        -2.70601487159729,
+        -3.1395153999328613,
+        -3.1949756145477295
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -3.5569257736206055,
+        -3.12278413772583,
+        -2.487065076828003,
+        -2.565505266189575
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 2,
+      "option_logprobs": [
+        -2.845226287841797,
+        -2.9186885356903076,
+        -3.302041530609131,
+        -2.364528179168701
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -3.3448235988616943,
+        -2.8832287788391113,
+        -3.5902464389801025,
+        -2.236482620239258
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -1.9721359014511108,
+        -2.5545129776000977,
+        -2.79408860206604,
+        -3.8356895446777344
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -2.703214645385742,
+        -2.9827370643615723,
+        -4.065891742706299,
+        -3.5715928077697754
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -2.461696147918701,
+        -3.6005947589874268,
+        -3.256702184677124,
+        -2.6661620140075684
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -4.176853179931641,
+        -1.841549038887024,
+        -3.244025230407715,
+        -3.1447067260742188
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -3.0898544788360596,
+        -2.946118116378784,
+        -2.9731197357177734,
+        -2.4027457237243652
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -4.2275390625,
+        -3.0686609745025635,
+        -2.2725071907043457,
+        -2.101141929626465
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -2.4013051986694336,
+        -2.4403603076934814,
+        -3.2937448024749756,
+        -2.2576756477355957
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -3.2304704189300537,
+        -2.4118258953094482,
+        -2.658064603805542,
+        -2.7809317111968994
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -1.7106647491455078,
+        -2.2003886699676514,
+        -3.9137167930603027,
+        -3.3224306106567383
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -1.9385989904403687,
+        -3.900249719619751,
+        -2.3879952430725098,
+        -2.7855536937713623
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 3,
+      "option_logprobs": [
+        -1.9812520742416382,
+        -1.545493483543396,
+        -3.140747308731079,
+        -2.2212517261505127
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -1.8968167304992676,
+        -3.377816915512085,
+        -2.7748987674713135,
+        -3.176107883453369
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -3.110236167907715,
+        -2.57462477684021,
+        -3.0503087043762207,
+        -3.0883283615112305
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.701767921447754,
+        -3.259024143218994,
+        -2.9572720527648926,
+        -3.4215586185455322
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.788461446762085,
+        -2.965031147003174,
+        -2.3635823726654053,
+        -2.7778303623199463
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -1.9123950004577637,
+        -3.4030961990356445,
+        -3.0935208797454834,
+        -3.7020907402038574
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -3.174535036087036,
+        -2.385179281234741,
+        -1.8850197792053223,
+        -2.7399959564208984
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.0573625564575195,
+        -2.5064520835876465,
+        -3.1304726600646973,
+        -3.106096029281616
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -3.262930393218994,
+        -2.7176177501678467,
+        -2.4685275554656982,
+        -3.6908645629882812
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.463336229324341,
+        -3.1994268894195557,
+        -3.332021713256836,
+        -2.437067985534668
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.84462308883667,
+        -2.484999418258667,
+        -3.3167998790740967,
+        -1.896482229232788
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -3.2238800525665283,
+        -3.12876033782959,
+        -3.07025146484375,
+        -2.8669190406799316
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 5,
+      "option_logprobs": [
+        -2.3976030349731445,
+        -3.3228201866149902,
+        -3.4760448932647705,
+        -3.0484001636505127
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -3.1610708236694336,
+        -3.2120249271392822,
+        -3.71923828125,
+        -2.0425217151641846
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.615428924560547,
+        -3.158024549484253,
+        -3.219604730606079,
+        -3.2928380966186523
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -3.63511323928833,
+        -3.1206417083740234,
+        -2.6088314056396484,
+        -3.060792922973633
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.76383113861084,
+        -2.1560943126678467,
+        -2.580518960952759,
+        -3.493438720703125
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -3.262281894683838,
+        -2.8492588996887207,
+        -2.94968843460083,
+        -3.0393481254577637
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.645658254623413,
+        -3.155780792236328,
+        -2.3827805519104004,
+        -2.7978808879852295
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.6234781742095947,
+        -2.5171685218811035,
+        -2.7548694610595703,
+        -3.465379476547241
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.5478546619415283,
+        -2.998328685760498,
+        -2.9434287548065186,
+        -2.4238173961639404
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.6510801315307617,
+        -3.1198534965515137,
+        -3.707031726837158,
+        -2.852708339691162
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.2310261726379395,
+        -3.313323497772217,
+        -2.5569305419921875,
+        -2.740720510482788
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -1.9987012147903442,
+        -2.7228686809539795,
+        -2.289794921875,
+        -2.9266517162323
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 6,
+      "option_logprobs": [
+        -2.722043037414551,
+        -3.831308603286743,
+        -2.642249345779419,
+        -3.298287868499756
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -2.0988194942474365,
+        -2.4808733463287354,
+        -3.152317523956299,
+        -3.0061354637145996
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -2.8625991344451904,
+        -3.0283524990081787,
+        -3.0449235439300537,
+        -3.601612091064453
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -2.7597248554229736,
+        -3.2675297260284424,
+        -2.431196928024292,
+        -3.3475558757781982
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.2918078899383545,
+        -3.363873243331909,
+        -3.6198697090148926,
+        -2.7694616317749023
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -2.457794427871704,
+        -2.8903143405914307,
+        -2.7082958221435547,
+        -2.6792726516723633
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.3997600078582764,
+        -3.529390811920166,
+        -2.486659526824951,
+        -2.0723962783813477
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.270608425140381,
+        -3.5078322887420654,
+        -2.4512226581573486,
+        -3.1468441486358643
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.081916332244873,
+        -2.625300407409668,
+        -2.9823355674743652,
+        -2.0657548904418945
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -2.6300888061523438,
+        -2.2922494411468506,
+        -2.5292999744415283,
+        -3.7515358924865723
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.401717185974121,
+        -2.549272298812866,
+        -3.33758282661438,
+        -3.635671615600586
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.4667091369628906,
+        -3.0586047172546387,
+        -2.9297542572021484,
+        -2.926018476486206
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 8,
+      "option_logprobs": [
+        -3.043710947036743,
+        -1.9640413522720337,
+        -3.6081199645996094,
+        -3.4617769718170166
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.9772329330444336,
+        -2.3703699111938477,
+        -2.6826674938201904,
+        -2.2023978233337402
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.8399171829223633,
+        -2.683417320251465,
+        -1.8485279083251953,
+        -3.234579086303711
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.343583345413208,
+        -2.6834678649902344,
+        -2.6038761138916016,
+        -2.8614301681518555
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.9397547245025635,
+        -2.622169256210327,
+        -2.41483211517334,
+        -3.8024978637695312
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.677199125289917,
+        -3.0455210208892822,
+        -3.7620887756347656,
+        -2.8631434440612793
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.806734561920166,
+        -3.2954752445220947,
+        -4.100372314453125,
+        -2.1500048637390137
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -3.03707218170166,
+        -2.99776291847229,
+        -2.697788715362549,
+        -2.905261278152466
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.6603591442108154,
+        -3.3165788650512695,
+        -2.2983133792877197,
+        -2.7791085243225098
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -3.016801595687866,
+        -3.114917755126953,
+        -2.839215040206909,
+        -2.4648759365081787
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -3.23524808883667,
+        -3.1506404876708984,
+        -2.9227919578552246,
+        -2.95674991607666
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.3313488960266113,
+        -2.9125843048095703,
+        -2.2320914268493652,
+        -2.9073753356933594
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 14,
+      "option_logprobs": [
+        -2.896019458770752,
+        -3.9192144870758057,
+        -3.1967689990997314,
+        -3.0640313625335693
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -2.038125514984131,
+        -2.133302688598633,
+        -2.837453603744507,
+        -4.162344455718994
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.340519428253174,
+        -3.11625337600708,
+        -3.6219825744628906,
+        -3.8856613636016846
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -2.828761339187622,
+        -3.188460350036621,
+        -1.8402953147888184,
+        -3.182051181793213
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.6217658519744873,
+        -3.198201894760132,
+        -4.057155132293701,
+        -3.47377872467041
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.327211856842041,
+        -4.188603401184082,
+        -3.531299352645874,
+        -2.997652530670166
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -2.2361347675323486,
+        -2.606992721557617,
+        -2.9175844192504883,
+        -3.4715232849121094
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.8988921642303467,
+        -3.3247387409210205,
+        -3.509031057357788,
+        -2.2872257232666016
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -4.1335554122924805,
+        -3.6948583126068115,
+        -3.239572286605835,
+        -2.8755288124084473
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -2.936812400817871,
+        -3.6787400245666504,
+        -2.0566565990448,
+        -3.315086603164673
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.1343512535095215,
+        -3.9845402240753174,
+        -3.506302833557129,
+        -2.1633951663970947
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -3.555105447769165,
+        -2.664904832839966,
+        -3.083122730255127,
+        -3.420666217803955
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 27,
+      "option_logprobs": [
+        -4.009889125823975,
+        -4.099390983581543,
+        -3.3471992015838623,
+        -2.919313907623291
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -2.2253851890563965,
+        -2.1432387828826904,
+        -2.9569075107574463,
+        -3.1908934116363525
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.5680408477783203,
+        -3.0872128009796143,
+        -3.8978309631347656,
+        -2.9505887031555176
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -4.1910576820373535,
+        -3.572221040725708,
+        -3.4808616638183594,
+        -3.260955572128296
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -2.9092063903808594,
+        -3.2961394786834717,
+        -4.15505313873291,
+        -2.9874799251556396
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.2014567852020264,
+        -3.076575994491577,
+        -4.15410041809082,
+        -3.804910898208618
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.5408687591552734,
+        -2.657742977142334,
+        -3.0810253620147705,
+        -2.225623369216919
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.04071044921875,
+        -3.057983160018921,
+        -2.7232959270477295,
+        -2.803452730178833
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -2.6911487579345703,
+        -2.8508362770080566,
+        -4.32843017578125,
+        -3.301255464553833
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -2.84735107421875,
+        -4.016012668609619,
+        -3.750833034515381,
+        -3.5242834091186523
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -2.7348804473876953,
+        -2.5946528911590576,
+        -2.354567527770996,
+        -3.5329415798187256
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.520735740661621,
+        -3.762343168258667,
+        -3.688971757888794,
+        -3.109477996826172
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 31,
+      "option_logprobs": [
+        -3.2324633598327637,
+        -3.143367052078247,
+        -3.6260128021240234,
+        -2.42799973487854
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.305398464202881,
+        -3.0948173999786377,
+        -2.9489996433258057,
+        -1.6537470817565918
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.418325185775757,
+        -4.226165294647217,
+        -1.8626919984817505,
+        -2.3048970699310303
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -4.073284149169922,
+        -2.9805641174316406,
+        -4.095409870147705,
+        -3.3404133319854736
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -1.9362146854400635,
+        -3.8905797004699707,
+        -2.877919912338257,
+        -2.757878065109253
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.2222607135772705,
+        -2.0758726596832275,
+        -2.732518434524536,
+        -2.7550365924835205
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.566200017929077,
+        -1.8247870206832886,
+        -3.3218815326690674,
+        -3.6877715587615967
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.0531859397888184,
+        -3.492018699645996,
+        -3.555912494659424,
+        -3.9193496704101562
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -2.901193141937256,
+        -3.653498649597168,
+        -3.9782068729400635,
+        -2.7153594493865967
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.83373761177063,
+        -3.09835147857666,
+        -2.9930288791656494,
+        -1.899609923362732
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -3.9807231426239014,
+        -4.03731632232666,
+        -3.0043978691101074,
+        -3.122462511062622
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -2.687108039855957,
+        -2.5096123218536377,
+        -2.9506139755249023,
+        -2.7343339920043945
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 34,
+      "option_logprobs": [
+        -2.6636784076690674,
+        -1.737388014793396,
+        -2.8671045303344727,
+        -4.329695701599121
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.9258501529693604,
+        -3.4892590045928955,
+        -1.7620750665664673,
+        -2.1533284187316895
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.158785581588745,
+        -2.7883574962615967,
+        -2.497340440750122,
+        -2.166569948196411
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.247030258178711,
+        -3.2749416828155518,
+        -2.435471296310425,
+        -3.6633472442626953
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.0930163860321045,
+        -2.5114517211914062,
+        -3.3032021522521973,
+        -2.40079402923584
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -3.344846248626709,
+        -2.878787040710449,
+        -3.396414279937744,
+        -3.025695323944092
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -3.514394521713257,
+        -2.9814937114715576,
+        -3.5417630672454834,
+        -3.012258291244507
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.4855096340179443,
+        -2.830214500427246,
+        -2.8735501766204834,
+        -2.1172657012939453
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.5629947185516357,
+        -2.142397403717041,
+        -2.4512383937835693,
+        -2.994201421737671
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.199632406234741,
+        -1.77066969871521,
+        -3.106299638748169,
+        -2.4702465534210205
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.2126173973083496,
+        -2.3403425216674805,
+        -1.9512336254119873,
+        -3.1213510036468506
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.282935619354248,
+        -2.338435411453247,
+        -2.41753888130188,
+        -2.26725172996521
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 35,
+      "option_logprobs": [
+        -2.516561985015869,
+        -2.156694173812866,
+        -2.4690792560577393,
+        -3.394050359725952
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.2918429374694824,
+        -2.542205572128296,
+        -3.289904832839966,
+        -3.976332664489746
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.651068925857544,
+        -2.5317189693450928,
+        -2.518519639968872,
+        -2.6757683753967285
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.9367802143096924,
+        -3.612297296524048,
+        -3.0168344974517822,
+        -3.5445215702056885
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.8585610389709473,
+        -3.6668107509613037,
+        -2.5914838314056396,
+        -2.9106109142303467
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -3.1549272537231445,
+        -3.0044302940368652,
+        -3.0998928546905518,
+        -3.0256223678588867
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -3.9223055839538574,
+        -3.3116555213928223,
+        -2.576491355895996,
+        -3.0918831825256348
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.9230358600616455,
+        -3.5667574405670166,
+        -2.7407209873199463,
+        -3.294095277786255
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -3.1264796257019043,
+        -2.6659188270568848,
+        -2.5317094326019287,
+        -2.557882070541382
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.776129722595215,
+        -3.4897232055664062,
+        -3.250418186187744,
+        -3.0116143226623535
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -3.413912057876587,
+        -2.7567007541656494,
+        -3.342700481414795,
+        -2.78594708442688
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.7608137130737305,
+        -3.5958139896392822,
+        -2.686518430709839,
+        -3.0804011821746826
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 37,
+      "option_logprobs": [
+        -2.6766538619995117,
+        -3.4511845111846924,
+        -3.5168046951293945,
+        -3.816568613052368
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -2.94431471824646,
+        -2.6776986122131348,
+        -2.765028715133667,
+        -4.208293914794922
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -2.5054612159729004,
+        -3.7351205348968506,
+        -4.1673173904418945,
+        -4.2729692459106445
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.259641408920288,
+        -3.0220603942871094,
+        -2.9390604496002197,
+        -2.6556172370910645
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -2.655339002609253,
+        -2.8112149238586426,
+        -3.4632890224456787,
+        -2.856717824935913
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.3192994594573975,
+        -4.103336811065674,
+        -2.4619269371032715,
+        -3.9868857860565186
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.424457550048828,
+        -2.957857608795166,
+        -3.973189353942871,
+        -2.677018642425537
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -4.215694904327393,
+        -4.447606086730957,
+        -3.3750436305999756,
+        -3.124074697494507
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.0769617557525635,
+        -3.807642936706543,
+        -2.1594197750091553,
+        -2.9837231636047363
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.3306357860565186,
+        -2.5539774894714355,
+        -3.7749977111816406,
+        -2.620354652404785
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.3262431621551514,
+        -3.720700740814209,
+        -2.975288152694702,
+        -2.856952428817749
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -2.288761615753174,
+        -3.0041661262512207,
+        -4.102288722991943,
+        -3.1270694732666016
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 43,
+      "option_logprobs": [
+        -3.1396896839141846,
+        -1.9539128541946411,
+        -3.8195571899414062,
+        -4.365340232849121
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.9016425609588623,
+        -2.8853394985198975,
+        -4.215140342712402,
+        -2.827888250350952
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.7445123195648193,
+        -3.0862038135528564,
+        -3.4297714233398438,
+        -2.541344404220581
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -3.184792995452881,
+        -2.8549554347991943,
+        -4.762268543243408,
+        -4.168220520019531
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.876326084136963,
+        -2.794267177581787,
+        -4.564785480499268,
+        -3.6546945571899414
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.8271663188934326,
+        -3.985393762588501,
+        -2.7071533203125,
+        -3.0403013229370117
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -3.019078016281128,
+        -2.8995249271392822,
+        -3.9134628772735596,
+        -2.5323965549468994
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.3229575157165527,
+        -3.132204532623291,
+        -2.916486978530884,
+        -3.463165521621704
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -3.7889561653137207,
+        -2.908238649368286,
+        -3.22115421295166,
+        -3.3061912059783936
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -3.5368547439575195,
+        -2.691993474960327,
+        -3.0859158039093018,
+        -2.801063299179077
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -4.028753280639648,
+        -3.3622984886169434,
+        -3.1321754455566406,
+        -4.187642574310303
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.790879487991333,
+        -3.5410797595977783,
+        -3.54634428024292,
+        -3.508047342300415
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 47,
+      "option_logprobs": [
+        -2.9815120697021484,
+        -3.0116608142852783,
+        -2.790341377258301,
+        -4.031047344207764
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -3.458245038986206,
+        -3.094357967376709,
+        -3.0120034217834473,
+        -2.1109604835510254
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -2.454529285430908,
+        -2.002988338470459,
+        -3.2131383419036865,
+        -3.59187388420105
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -3.4607179164886475,
+        -3.9095842838287354,
+        -3.5217373371124268,
+        -2.918581247329712
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -3.1690480709075928,
+        -2.5471532344818115,
+        -3.9691123962402344,
+        -2.1585066318511963
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -2.6985557079315186,
+        -2.9816901683807373,
+        -3.265376329421997,
+        -3.2092678546905518
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -1.8437917232513428,
+        -3.2757561206817627,
+        -3.6237292289733887,
+        -2.8443241119384766
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -3.763484239578247,
+        -4.062794208526611,
+        -2.6860413551330566,
+        -3.421273708343506
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -1.9090245962142944,
+        -3.5302059650421143,
+        -3.5226919651031494,
+        -3.106390953063965
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -4.071387767791748,
+        -2.0833756923675537,
+        -3.4799392223358154,
+        -2.86639142036438
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -2.7273364067077637,
+        -3.8337388038635254,
+        -2.4738118648529053,
+        -3.623049259185791
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -4.141656398773193,
+        -3.65285325050354,
+        -2.8527097702026367,
+        -2.3687140941619873
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 55,
+      "option_logprobs": [
+        -3.3943490982055664,
+        -2.8921661376953125,
+        -3.2627155780792236,
+        -1.9697736501693726
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -2.733431339263916,
+        -1.9568004608154297,
+        -3.9006943702697754,
+        -2.9578795433044434
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.1273586750030518,
+        -3.5621094703674316,
+        -2.0164663791656494,
+        -3.39005708694458
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.4345481395721436,
+        -2.495169162750244,
+        -4.134610176086426,
+        -3.6763951778411865
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -2.6612603664398193,
+        -3.1875803470611572,
+        -3.0363526344299316,
+        -3.4238030910491943
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -2.536741256713867,
+        -3.0445165634155273,
+        -3.1299829483032227,
+        -2.495032787322998
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.707639694213867,
+        -3.14981746673584,
+        -2.2089295387268066,
+        -1.7752150297164917
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -4.237917900085449,
+        -3.394676685333252,
+        -3.121060609817505,
+        -3.065680503845215
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -2.767559289932251,
+        -3.3920648097991943,
+        -3.0668816566467285,
+        -3.8702750205993652
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.3274497985839844,
+        -2.9491703510284424,
+        -2.0799026489257812,
+        -3.021167039871216
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.255624532699585,
+        -2.9531521797180176,
+        -2.9456005096435547,
+        -3.260111093521118
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -3.5605220794677734,
+        -3.991668224334717,
+        -3.053504228591919,
+        -2.2446138858795166
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 60,
+      "option_logprobs": [
+        -2.5654637813568115,
+        -4.051821231842041,
+        -3.2249505519866943,
+        -3.2004239559173584
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -3.2373878955841064,
+        -4.213017463684082,
+        -2.3931407928466797,
+        -2.1777572631835938
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -3.2387237548828125,
+        -2.489821672439575,
+        -2.723776340484619,
+        -2.014082670211792
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -1.8051773309707642,
+        -2.022322177886963,
+        -3.2569870948791504,
+        -2.7738988399505615
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -4.3022918701171875,
+        -2.6011409759521484,
+        -2.2296416759490967,
+        -2.8804211616516113
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -2.661381483078003,
+        -2.07727313041687,
+        -4.159472465515137,
+        -2.192276954650879
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -1.8882290124893188,
+        -1.8855935335159302,
+        -2.295614719390869,
+        -3.1588733196258545
+      ],
+      "answer_idx": 3
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -2.524202346801758,
+        -2.962653636932373,
+        -3.092991590499878,
+        -2.809722423553467
+      ],
+      "answer_idx": 0
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -2.5139408111572266,
+        -1.9562972784042358,
+        -2.0720202922821045,
+        -2.526557207107544
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -3.7186591625213623,
+        -2.490658760070801,
+        -2.2746388912200928,
+        -4.319125175476074
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -2.7130181789398193,
+        -2.2218942642211914,
+        -3.9305331707000732,
+        -2.0747950077056885
+      ],
+      "answer_idx": 2
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -4.045208930969238,
+        -2.589085102081299,
+        -1.8758710622787476,
+        -4.296846866607666
+      ],
+      "answer_idx": 1
+    },
+    {
+      "scenario_id": 66,
+      "option_logprobs": [
+        -2.219957113265991,
+        -1.9980031251907349,
+        -2.543292760848999,
+        -3.0175111293792725
+      ],
+      "answer_idx": 0
+    }
+  ]
+}
