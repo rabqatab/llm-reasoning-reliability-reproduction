@@ -5,7 +5,7 @@ Reproduce two papers from scratch, compare against their baselines on the papers
 ## The two papers (`paper/`)
 | | Paper A — **RPC** | Paper B — **LCF** |
 |---|---|---|
-| File | `NeurIPS2026.pdf` (NeurIPS 2025) | `AAAI2025.pdf` |
+| File | `NeurIPS2025.pdf` | `AAAI2025.pdf` |
 | Title | Bridging Internal Probability and Self-Consistency for LLM Reasoning | Content-free Logical Modification by Disentangling & Modifying Logic Representation |
 | Idea | Test-time scaling: fuse perplexity + self-consistency (PC) and prune low-prob paths via Weibull mixture (RP) | Split hidden states into content/logic; push logic toward "valid" region via contrastive learning |
 | Training? | **No** (inference-time aggregation) | **Yes** (projectors+decoder; base LLM frozen) |
