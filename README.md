@@ -7,7 +7,7 @@ Reproduce two papers from scratch, compare against their baselines on the papers
 ## The two papers (`paper/`)
 | | Paper A — **RPC** | Paper B — **LCF** |
 |---|---|---|
-| File | `NeurIPS2025.pdf` | `AAAI2025.pdf` |
+| File | `RPC_NeurIPS2025.pdf` | `LCF_AAAI2025.pdf` |
 | Title | Bridging Internal Probability and Self-Consistency for LLM Reasoning | Content-free Logical Modification by Disentangling & Modifying Logic Representation |
 | Idea | Test-time scaling: fuse perplexity + self-consistency (PC) and prune low-prob paths via Weibull mixture (RP) | Split hidden states into content/logic; push logic toward "valid" region via contrastive learning |
 | Training? | **No** (inference-time aggregation) | **Yes** (projectors+decoder; base LLM frozen) |
@@ -95,7 +95,7 @@ LLM 신뢰성(reliability) 분야의 **두 논문을 처음부터 구현·재현
 ## 두 논문
 | | Paper A — **RPC** | Paper B — **LCF** |
 |---|---|---|
-| 파일 | `paper/NeurIPS2025.pdf` | `paper/AAAI2025.pdf` |
+| 파일 | `paper/RPC_NeurIPS2025.pdf` | `paper/LCF_AAAI2025.pdf` |
 | 학회 | NeurIPS 2025 | AAAI 2025 |
 | 아이디어 | Test-time scaling: perplexity와 self-consistency를 결합(PC)하고, 저확률 추론경로를 Weibull 혼합분포로 가지치기(RP) | LLM hidden state를 **내용(content)/논리(logic)** 로 분리해, 논리 표현만 "타당한 영역"으로 이동(대조학습) |
 | 학습 필요? | **아니오** (추론 시 집계만) | **예** (projector·decoder 학습, 기반 LLM은 동결) |

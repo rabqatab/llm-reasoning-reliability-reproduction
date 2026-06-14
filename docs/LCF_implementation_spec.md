@@ -1,6 +1,6 @@
 # LCF (Logic Control Framework) — Implementation-Ready Specification
 
-Reproduction spec for *"Content-free Logical Modification of LLM by Disentangling and Modifying Logic Representation"* (Wu, Bu, Chen, Cai — AAAI 2025). Distilled from the main paper (`paper/AAAI2025.pdf`) + supplementary (`lcf/LCF_official/LCF_supplementary_materials.pdf`). The official repo has NO code, so this is a from-scratch build. Ambiguities flagged **[AMBIGUOUS]** with chosen defaults.
+Reproduction spec for *"Content-free Logical Modification of LLM by Disentangling and Modifying Logic Representation"* (Wu, Bu, Chen, Cai — AAAI 2025). Distilled from the main paper (`paper/LCF_AAAI2025.pdf`) + supplementary (`lcf/LCF_official/LCF_supplementary_materials.pdf`). The official repo has NO code, so this is a from-scratch build. Ambiguities flagged **[AMBIGUOUS]** with chosen defaults.
 
 ## 0. Concept
 LCF = small trainable adapter inserted AFTER attention & MLP sub-modules of selected layers in a FROZEN base LLM. For hidden rep `R_input`: (1) project to content `R_content` + logic `R_logic`; (2) shift logic toward valid region `R_logic+ = R_logic + V`; (3) fuse via decoder → `R_+`; (4) nudge `R_input` toward `R_+` → `R_input+` replaces `R_input`. Only projectors+decoder train (~136 MB); base LLM frozen.
