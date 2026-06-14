@@ -42,6 +42,14 @@ LCF trained on Llama2 reps (7520 train / 884 val token pairs, layers 10-30, dist
 
 **+LCF degraded Llama2** (ValidGPT4 35→29, Acc 39→27, ΔProb 4.85→2.44) — opposite to the paper and to our Qwen3 result. Diagnosis (compared training logs): the contrastive logic objective **barely trains on BOTH models** — InfoNCE pos/neg plateau at ~5.0-5.9 ≈ chance (ln(batch=256)≈5.55) over all 10 epochs with lr 1e-3. So the learned validity direction V=C_pos−C_neg is weak/noisy; the strong η=4.5 identification nudge along a weak direction happens to help Qwen3 but pushes Llama2 reps off-distribution. Our baselines also differ from the paper (our Llama2 original ΔProb is already +4.85 vs paper's −1.89), indicating our fallacy-identification option-scoring setup differs from theirs. **Honest conclusion: LCF's core mechanism reproduces on Qwen3 but the full paper result (esp. Llama2) does not under the paper's stated hyperparameters.** Likely fixes to try: stronger/longer contrastive training (higher lr, larger batch, lower τ), per-model η, and matching the paper's exact MCQ scoring.
 
+## Diagnostic: why LCF's effect is weak (root cause)
+
+We probed the extracted reps directly (`results/lcf_contrastive_sweep.txt`):
+- **Linear probe** valid-vs-invalid on held-out reps: **CV acc ≈ 0.52** (chance 0.50) for both Qwen3 and Llama2 — the validity signal is barely linearly present.
+- **Contrastive sweep** (lr 1e-3→1e-2, epochs 10→40, τ 0.1→0.05, batch 256→1024): the logic projector's held-out nearest-centroid separability **caps at ~0.66-0.68 (Qwen3) / ~0.65 (Llama2)** and does **not** improve with stronger training; InfoNCE stays at chance (~ln(batch)≈5.5).
+
+So LCF's small/inconsistent downstream effect is **not** an under-fit fixable by hyperparameters — the "logic validity" direction in these hidden states is genuinely weak (~0.66 ceiling). Applying a strong η nudge along a weak/noisy V helps one model (Qwen3 ΔProb↑) and hurts another (Llama2 ↓). The paper's clean Llama2 gains likely depend on extraction details we didn't match (token positions / which reps), a stronger discriminator, and/or per-model tuning. **This is the substantive honest result of the LCF reproduction.**
+
 ## Pending / next
 - **Baselines** (`lcf/baselines/`): SFT collator bug fixed (`DataCollatorForSeq2Seq`); **ITI** ran on Qwen3-8B → Acc 31.86 / ΔProb 3.96 ≈ original (ITI gave ~no lift here, vs paper Llama2 ITI 69.60/62.25 ≈ original too). SFT/RAHF re-run pending.
 - Multi-model table (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
