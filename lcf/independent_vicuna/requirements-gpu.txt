@@ -1,0 +1,15 @@
+# Install on the H100 box. Tested with CUDA 12.x.
+# Recommended: `uv venv && source .venv/bin/activate && uv pip install -r requirements-gpu.txt`
+torch>=2.2
+transformers>=4.44
+accelerate>=0.33
+bitsandbytes>=0.43        # 4-bit quantization to fit the ~16GB VRAM slice
+sentencepiece>=0.2
+datasets>=2.20
+scikit-learn>=1.4         # t-SNE
+matplotlib>=3.8
+numpy>=1.26
+tqdm>=4.66
+# Optional: only if generating valid conclusions / judging via an API
+openai>=1.40
+anthropic>=0.34

@@ -30,8 +30,11 @@ Top selected sub-layers by valid/invalid separability: attn L12(.86) L17(.86) L1
 ## In progress / pending
 - **Llama-2-7b-chat-hf (paper's headline model)** — LCF trained (7520 train / 884 val token pairs); `original` and `+LCF` eval running (`lcf/llama2_run.log`). Will compare directly to paper Table 1: Llama2 Original 70.58/58.84 → +LCF **83.82/96.56** (ValidGPT4 / ValidTrained), ΔProb −1.89 → 6.29. NOTE: paper used a Llama-2 discriminator for ValidTrained; we use distilbert.
 - **Baselines** (`lcf/baselines/`): SFT collator bug fixed (`DataCollatorForSeq2Seq`); **ITI** ran on Qwen3-8B → Acc 31.86 / ΔProb 3.96 ≈ original (ITI gave ~no lift here, vs paper Llama2 ITI 69.60/62.25 ≈ original too). SFT/RAHF re-run pending.
-- Multi-model table (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
-- Larger-η or sampling generation to probe the muted-generation effect.
+- Multi-model table (Mistral/ChatGLM3/Baichuan2 downloaded). **Vicuna-7b done** as an independent cross-check (separate codebase) — see below.
+- Larger-η / sampling generation to probe the muted-generation effect — **done** for Vicuna (η swept 0.25–8.0; see independent cross-check).
+
+## Independent cross-check — Vicuna-7b (separate codebase)
+A second from-scratch LCF implementation (`lcf/independent_vicuna/`) run on **Vicuna-7b-v1.5** (a paper model), 4-bit, Claude-judged. **Result: LCF does not help on any metric** — Acc 69.6→63.7, ΔProb (×100) 34.4→30.0, Valid% 36.2→31–35, and an η sweep (0.25–8.0) is neutral-to-harmful. Root cause: the logic/content **disentanglement never forms** — t-SNE shows valid/invalid intermixed in both spaces and separability peaks at 0.66 (chance 0.50); controlled experiments rule out quantization (fp16≈4-bit) and label quality (Claude labels even lower). This **generalizes** the Qwen3 finding: LCF's one reproducible effect (ΔProb) is model-dependent and the paper's headline gains reproduce on no model we tested. Full details: `docs/LCF_vicuna_independent.md`.
 
 ## Why Qwen3 first, then Llama-2 (model choice note)
 Qwen3-8B was used first because it was already cached locally → fastest end-to-end validation of the from-scratch LCF. The paper's models are: **Llama-2-7b-chat-hf** (headline), Llama-3.1-8B-Instruct, vicuna-7b-v1.5, Mistral-7B-Instruct-v0.2, chatglm3-6b, Baichuan2-7B-Chat. Llama-2-7b-chat IS accessible with our HF token (Llama-3.1 is still gated), so it is now being run for a faithful, paper-comparable result; the Qwen3 result additionally shows LCF generalizes beyond the paper's models.

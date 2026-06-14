@@ -22,7 +22,7 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **Qwen3-8B reproduced**: ΔProb 3.96→7.83 (matches paper); generation muted under greedy. → `docs/LCF_reproduction_results.md`.
 - [~] **Llama-2-7b-chat (paper headline model)**: pipeline + LCF trained ✓, eval original/+LCF running (login-shell direct, `lcf/llama2_run.log`).
 - [~] **Baselines**: SFT collator bug fixed (DataCollatorForSeq2Seq); ITI ran (Acc/ΔProb ≈ original); SFT/RAHF re-run pending. Driver `lcf/run_baselines.sh`.
-- [ ] Multi-model table (Vicuna/Mistral/ChatGLM3/Baichuan2).
+- [~] Multi-model table: **Vicuna-7b done as an independent cross-check** [lcf/independent_vicuna/] — separate codebase, 4-bit, Claude judge; **LCF helps on no metric**, disentanglement doesn't form (separability 0.66≈chance), η swept 0.25–8.0, fp16/label-quality controls → `docs/LCF_vicuna_independent.md`. Generalizes Qwen3: ΔProb effect is model-dependent. (Mistral/ChatGLM3/Baichuan2 still pending.)
 
 ## Next
 1. Finish Llama-2 eval → compare to paper Table 1 (70.58/58.84 → 83.82/96.56) → postprocess GPT-4.

@@ -1,0 +1,148 @@
+{
+  "n": 80,
+  "judge": "claude-sonnet-4-6",
+  "baseline": {
+    "valid_pct": 36.25,
+    "ppl": 1.4859740147252571
+  },
+  "lcf": {
+    "0.5": {
+      "valid_pct": 35.0,
+      "ppl": 1.499492241618697,
+      "samples": [
+        {
+          "premise": "All electronic products need electricity and electronics are part of my family.",
+          "base": "Therefore, I need to ensure that my family has access to a reliable source of electricity in order to power our electronic devices.",
+          "lcf": "Therefore, I need to ensure that I have a reliable source of electricity to power my electronic products."
+        },
+        {
+          "premise": "All electronic products need electricity and there is an increase in electricity.",
+          "base": "Electricity demand is increasing.",
+          "lcf": "Therefore, there will be an increase in electronic products."
+        },
+        {
+          "premise": "All electronic products function by utilizing electricity.",
+          "base": "Electricity is necessary for the functioning of electronic products.",
+          "lcf": "Therefore, electronic products are dependent on electricity."
+        },
+        {
+          "premise": "Most people think that all electronic products need electricity.",
+          "base": "Therefore, most people believe that electronic products are powered by electricity.",
+          "lcf": "Therefore, most people believe that electronic products are powered by electricity."
+        },
+        {
+          "premise": "Every electronic item is currently operating.",
+          "base": "Therefore, the power is currently on.",
+          "lcf": "Therefore, the power is currently on."
+        },
+        {
+          "premise": "All electronic products need electricity.",
+          "base": "Electricity is necessary for electronic products.",
+          "lcf": "Electricity is necessary for electronic products."
+        },
+        {
+          "premise": "John claims that all electronic products need electricity.",
+          "base": "Therefore, John believes that electricity is necessary for electronic products.",
+          "lcf": "Therefore, John believes that electricity is necessary for electronic products."
+        },
+        {
+          "premise": "It will really impress your friends and make them think you're on the leading edge of technology.",
+          "base": "You should consider purchasing a new smartphone with advanced features.",
+          "lcf": "You should consider purchasing a new smartphone with advanced features."
+        }
+      ]
+    },
+    "2.0": {
+      "valid_pct": 31.25,
+      "ppl": 1.5707632468648005,
+      "samples": [
+        {
+          "premise": "All electronic products need electricity and electronics are part of my family.",
+          "base": "Therefore, I need to ensure that my family has access to a reliable source of electricity in order to power our electronic devices.",
+          "lcf": "Therefore, I need to buy a generator to power my electronic devices."
+        },
+        {
+          "premise": "All electronic products need electricity and there is an increase in electricity.",
+          "base": "Electricity demand is increasing.",
+          "lcf": "Therefore, there will be an increase in electronic products."
+        },
+        {
+          "premise": "All electronic products function by utilizing electricity.",
+          "base": "Electricity is necessary for the functioning of electronic products.",
+          "lcf": "Therefore, electronic products are dependent on electricity."
+        },
+        {
+          "premise": "Most people think that all electronic products need electricity.",
+          "base": "Therefore, most people believe that electronic products are powered by electricity.",
+          "lcf": "Therefore, most people believe that electricity is necessary for electronic products to function."
+        },
+        {
+          "premise": "Every electronic item is currently operating.",
+          "base": "Therefore, the power is currently on.",
+          "lcf": "Therefore, the power is currently on."
+        },
+        {
+          "premise": "All electronic products need electricity.",
+          "base": "Electricity is necessary for electronic products.",
+          "lcf": "Therefore, electricity is necessary for all electronic products."
+        },
+        {
+          "premise": "John claims that all electronic products need electricity.",
+          "base": "Therefore, John believes that electricity is necessary for electronic products.",
+          "lcf": "Therefore, John believes that all electronic products need electricity."
+        },
+        {
+          "premise": "It will really impress your friends and make them think you're on the leading edge of technology.",
+          "base": "You should consider purchasing a new smartphone with advanced features.",
+          "lcf": "You should buy the latest and greatest gadget."
+        }
+      ]
+    },
+    "4.5": {
+      "valid_pct": 35.0,
+      "ppl": 2.980741679524313,
+      "samples": [
+        {
+          "premise": "All electronic products need electricity and electronics are part of my family.",
+          "base": "Therefore, I need to ensure that my family has access to a reliable source of electricity in order to power our electronic devices.",
+          "lcf": "Therefore, I need to buy a power strip."
+        },
+        {
+          "premise": "All electronic products need electricity and there is an increase in electricity.",
+          "base": "Electricity demand is increasing.",
+          "lcf": "Therefore, all electronic products need more electricity."
+        },
+        {
+          "premise": "All electronic products function by utilizing electricity.",
+          "base": "Electricity is necessary for the functioning of electronic products.",
+          "lcf": "Therefore, all electronic products are powered by electricity."
+        },
+        {
+          "premise": "Most people think that all electronic products need electricity.",
+          "base": "Therefore, most people believe that electronic products are powered by electricity.",
+          "lcf": "All electronic products need electricity."
+        },
+        {
+          "premise": "Every electronic item is currently operating.",
+          "base": "Therefore, the power is currently on.",
+          "lcf": "The premise is false."
+        },
+        {
+          "premise": "All electronic products need electricity.",
+          "base": "Electricity is necessary for electronic products.",
+          "lcf": "Electricity is necessary for all electronic products."
+        },
+        {
+          "premise": "John claims that all electronic products need electricity.",
+          "base": "Therefore, John believes that electricity is necessary for electronic products.",
+          "lcf": "John is a genius."
+        },
+        {
+          "premise": "It will really impress your friends and make them think you're on the leading edge of technology.",
+          "base": "You should consider purchasing a new smartphone with advanced features.",
+          "lcf": "You can use this to your advantage."
+        }
+      ]
+    }
+  }
+}

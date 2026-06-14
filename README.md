@@ -73,10 +73,14 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 | | **+LCF** | 47.1 | 76.5 | **2.02** | 31.4 | **7.83** |
 | **Llama-2-7b-chat** (ours) | Original | — | — | 3.83 | 39.2 | 4.85 |
 | | **+LCF** | _running_ | _running_ | _running_ | _running_ | _running_ |
+| **Vicuna-7b** (ours, indep.)‡ | Original | 36.2 | — | 1.49 | 69.6 | 34.4 |
+| | **+LCF** | 31–35 | — | 2.98 | 63.7 | 30.0 |
 | _Llama2 (paper)_ | _Original_ | _70.58_ | _58.84_ | _21.08_ | _51.47_ | _−1.89_ |
 | | _+LCF_ | _83.82_ | _96.56_ | _12.12_ | _75.00_ | _6.29_ |
 
 Reproduced claim: **LCF roughly doubles ΔProb** (Qwen3-8B 3.96 → 7.83), matching the paper's direction (Llama2 −1.89 → 6.29) — LCF moves the logic representation so the model favors the *valid* conclusion. Conclusion-generation gains are muted under greedy decoding on Qwen3 (η=0.5 is a gentle nudge). Reproduction on **Llama-2-7b-chat** — the paper's headline model — is running.
+
+‡ **Independent cross-check** (separate codebase `lcf/independent_vicuna/`, Claude-Sonnet-4.6 judge, ΔProb ×100; PPL is greedy-text PPL, not comparable to other rows). On **Vicuna-7b, LCF helps on no metric** (η swept 0.25–8.0, neutral-to-harmful): the logic/content **disentanglement never forms** (t-SNE intermixed, separability 0.66 ≈ chance; quantization and label-quality controls rule those out). This **generalizes** the Qwen3 finding — LCF's one reproducible effect (ΔProb) is model-dependent, and the paper's headline gains reproduce on no model we tested. Details: `docs/LCF_vicuna_independent.md`.
 
 ## Models & data
 Paper RPC data = authors' published reasoning paths (auto-downloaded). LFUD = `github.com/YandaGo/LFUD`. Models: Qwen3-8B (local), Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded); Llama-3.1 still HF-gated. BIRD at `/mnt/nfs/ssd2/bird_data`.
@@ -124,10 +128,14 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 | | **+LCF** | 47.1 | 76.5 | **2.02** | 31.4 | **7.83** |
 | **Llama-2-7b-chat** (구현) | Original | — | — | 3.83 | 39.2 | 4.85 |
 | | **+LCF** | _실행중_ | _실행중_ | _실행중_ | _실행중_ | _실행중_ |
+| **Vicuna-7b** (독립)‡ | Original | 36.2 | — | 1.49 | 69.6 | 34.4 |
+| | **+LCF** | 31–35 | — | 2.98 | 63.7 | 30.0 |
 | _Llama2 (논문)_ | _Original_ | _70.58_ | _58.84_ | _21.08_ | _51.47_ | _−1.89_ |
 | | _+LCF_ | _83.82_ | _96.56_ | _12.12_ | _75.00_ | _6.29_ |
 
 → 핵심 주장 재현: **LCF가 ΔProb를 약 2배로** (Qwen3-8B 3.96 → 7.83) 끌어올려, 논문 방향(Llama2 −1.89 → 6.29)과 일치합니다 — LCF가 논리 표현을 이동시켜 모델이 *타당한* 결론에 더 높은 확률을 부여합니다. 생성(Generation) 태스크는 greedy 디코딩에서 효과가 약했습니다(η=0.5는 약한 nudge). 논문 주력 모델 **Llama-2-7b-chat** 재현은 진행 중입니다.
+
+‡ **독립 교차검증**(별도 코드베이스 `lcf/independent_vicuna/`, Claude-Sonnet-4.6 판별기, ΔProb는 ×100; PPL은 greedy-text PPL이라 다른 행과 비교 불가). **Vicuna-7b에서는 LCF가 어떤 지표도 개선하지 못함**(η 0.25–8.0 스윕에서 중립~악화): 논리/내용 **disentanglement가 형성되지 않음**(t-SNE 혼재, separability 0.66 ≈ 우연; 양자화·라벨품질 통제실험으로 두 원인 기각). 이는 Qwen3 결과를 **일반화**합니다 — LCF의 유일한 재현 효과(ΔProb)는 모델 의존적이고, 논문 헤드라인은 우리가 시험한 어떤 모델에서도 재현되지 않습니다. 상세: `docs/LCF_vicuna_independent.md`.
 
 ## 재현 방법
 ```bash
