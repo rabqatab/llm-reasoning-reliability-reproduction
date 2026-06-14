@@ -1,0 +1,12 @@
+== Qwen3-8B  train=6330 val=676 ==
+layer kind  n_tr n_val | val-acc |     |h|
+
+BEST sub-layer: L12 attn  held-out acc=0.818  |h|=15.4
+mean held-out acc over sub-layers: 0.727  (n_sublayers=9)
+------
+== Llama-2-7b-chat-hf  train=7520 val=884 ==
+layer kind  n_tr n_val | val-acc |     |h|
+
+BEST sub-layer: L11 mlp  held-out acc=0.818  |h|=7.3
+mean held-out acc over sub-layers: 0.692  (n_sublayers=24)
+------

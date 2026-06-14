@@ -23,6 +23,15 @@ A faithful from-scratch LCF (the official repo `wulidongdong/LCF` ships **no cod
 
 Chance = 0.50. Two things stand out. **(i)** A logic-validity direction *does* exist — the best single sub-layer separates valid/invalid at **0.82, identically across both models**, which actually *supports* the paper's premise. **(ii)** But it is **destroyed by pooling**: averaging/mixing over the layers 10–30 that the paper modifies collapses the signal to chance (0.52, even nonlinearly). The paper's training samples random layers per token and uses a centroid-difference V, which lands near this diluted regime — explaining why the contrastive plateaus (§3b) and the effect is weak/inconsistent (§3c). So the failure is not "no signal" — it is that **the standard LCF recipe under-exploits a real but layer-localized signal.** (Full per-layer profile: `results/lcf_layer_probe.txt`.) This directly motivates the model-agnostic fix (§6): use the single best sub-layer + a supervised direction.
 
+**3a-bis. The weakness is specific to *logic-validity*, not to representation probing.** As a control we ran the identical probe on a completely different attribute — **suicide risk** — using MoodRisk's pre-extracted Mistral-7B layer reps (8736 user post-sequences, label `trans_730_y`):
+
+| attribute (best single layer) | balanced held-out acc |
+|---|---|
+| **suicide risk** (MoodRisk, Mistral) | **0.947** (L28; every layer 0.93–0.95) |
+| logic-validity (LCF) | 0.82 (L12) — chance (0.52) when pooled |
+
+A semantic/topical attribute is **strongly and robustly linearly encoded across all layers (~0.95)**; logic-validity is only **weakly and layer-fragilely encoded (~0.82 best)**. So representation editing is not broken in general — **logic-validity is simply a much weaker, harder-to-localize direction than typical probing targets.** This is the deeper reason LCF underdelivers. (`results/moodrisk_probe.txt`.)
+
 **3b. The contrastive objective cannot manufacture the signal.** Sweeping the logic contrastive training (lr 1e-3→1e-2, epochs 10→40, τ 0.1→0.05, batch 256→1024) leaves InfoNCE at chance (~ln(batch)≈5.5) and held-out projection separability capped at **~0.66**, with no improvement from stronger training (`results/lcf_contrastive_sweep.txt`). The method is signal-limited, not under-fit.
 
 **3c. The downstream effect is inconsistent and, on the paper's headline model, negative.**
