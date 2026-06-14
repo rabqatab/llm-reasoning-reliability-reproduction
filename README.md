@@ -1,5 +1,7 @@
 # reliableAI_final — Two-Paper Reproduction & Extension
 
+**Authors:** Jimin Kwon, Minhan Cho
+
 Reproduce two papers from scratch, compare against their baselines on the papers' datasets **and** a locally-available dataset (BIRD). Decisions made with the user: use paper models **+ local Qwen3**; reproduce paper datasets **+ extend RPC to local BIRD**; run **both papers in parallel**.
 
 ## The two papers (`paper/`)
@@ -37,7 +39,7 @@ docs/                   spec, results, sparkq issues, this plan
 ```bash
 cd rpc/RPC && bash run_full_repro.sh        # -> results_full.txt
 ```
-**LCF (GPU; read docs/sparkq_issues.md first — GB10 unified-memory rules):**
+**LCF (GPU; note GB10 unified-memory limits — ≤2× 7B jobs/node, HF offline):**
 ```bash
 # data (login shell, OpenAI key in ../.env for GPT-3.5 valid conclusions)
 cd lcf/lcf_impl && uv run python lfud_data.py --model gpt-3.5-turbo
@@ -56,4 +58,4 @@ cd lcf/eval && uv run python postprocess_judge.py --judge-model gpt-4o
 Paper RPC data = authors' published reasoning paths (auto-downloaded). LFUD = `github.com/YandaGo/LFUD`. Models: Qwen3-8B (local), Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded); Llama-3.1 still HF-gated. BIRD at `/mnt/nfs/ssd2/bird_data`.
 
 ## ⚠️ GPU on DGX Spark GB10
-Unified 128G memory shared CPU+GPU. **Read `docs/sparkq_issues.md` before any GPU job** — covers OOM patterns, the login-shell-vs-sparkq memory quirk, HF-offline requirement, transformers-5.x breaks.
+Unified 128G memory shared CPU+GPU. Key rules: pre-download models from the login shell (NFS cache is read-only in jobs) and run with `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 NVIDIA_DISABLE_REQUIRE=1`; keep to ≤2× 7B jobs per node; if a load OOMs in the job scheduler while the node looks free, run it directly in the login shell.

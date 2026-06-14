@@ -3,7 +3,7 @@
 Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ local Qwen3**; reproduce paper datasets **+ extend to local BIRD**; **both papers in parallel**.
 
 ## Resources
-- GPU: DGX Spark GB10, single-node (all models 7–14B). Submit via `sparkq` — **read `docs/sparkq_issues.md`** (unified-memory OOM rules; if a 7B load OOMs in sparkq but node is free, run directly in login shell with `nohup`). Env: `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 NVIDIA_DISABLE_REQUIRE=1 WANDB_MODE=offline`.
+- GPU: DGX Spark GB10, single-node (all models 7–14B). Submit via `sparkq`. Unified-memory rules: pre-download from login shell (NFS cache RO in jobs); ≤2× 7B/node; if a load OOMs in sparkq but the node is free, run directly in the login shell with `nohup`. Env: `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 NVIDIA_DISABLE_REQUIRE=1 WANDB_MODE=offline`.
 - API keys: `./.env` (copied from ~/Research/LexLink-ko-mcp/.env) → OPENAI (GPT-4 judge + GPT-3.5 valid-conclusion gen), ANTHROPIC, GOOGLE.
 - HF_HOME=`/mnt/nfs/ssd1/huggingface_cache`. Pre-download models from LOGIN shell (NFS RO in jobs).
 - Models: Qwen3-8B/14B/32B + Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded). Llama-3.1 gated (skip).
