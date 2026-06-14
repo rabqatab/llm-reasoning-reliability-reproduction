@@ -16,7 +16,7 @@ Reproduce two papers from scratch, compare against their baselines on the papers
 ## Status
 - **RPC: reproduced exactly.** Full 33-cell grid matches paper Table 2. → `docs/RPC_reproduction_results.md`
 - **RPC BIRD extension: done** (honest negative at K=8). → same doc
-- **LCF: implemented from scratch + reproduced on Qwen3-8B** (ΔProb 2× — matches paper). Llama-2-7b-chat (the paper's headline model) run in progress. → `docs/LCF_reproduction_results.md`
+- **LCF: implemented from scratch.** Mixed reproduction: +LCF ~doubles ΔProb on Qwen3-8B (matches paper) but **degrades** Llama-2-7b-chat (opposite to paper) — contrastive objective under-fits with the paper's hyperparameters. → `docs/LCF_reproduction_results.md`
 - **LCF baselines** (SFT/ITI/RAHF): code built; ITI ran; SFT/RAHF re-run pending.
 
 ## Layout
@@ -71,12 +71,14 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 |:--|:--|:--:|:--:|:--:|:--:|:--:|
 | **Qwen3-8B** (ours) | Original | 47.1 | 82.4 | 3.80 | 31.9 | 3.96 |
 | | **+LCF** | 47.1 | 76.5 | **2.02** | 31.4 | **7.83** |
-| **Llama-2-7b-chat** (ours) | Original | — | — | 3.83 | 39.2 | 4.85 |
-| | **+LCF** | _running_ | _running_ | _running_ | _running_ | _running_ |
+| **Llama-2-7b-chat** (ours) | Original | 35.3 | 100.0\* | 3.83 | 39.2 | 4.85 |
+| | **+LCF** | 29.4 | 100.0\* | 2.26 | 27.0 | 2.44 |
 | _Llama2 (paper)_ | _Original_ | _70.58_ | _58.84_ | _21.08_ | _51.47_ | _−1.89_ |
 | | _+LCF_ | _83.82_ | _96.56_ | _12.12_ | _75.00_ | _6.29_ |
 
-Reproduced claim: **LCF roughly doubles ΔProb** (Qwen3-8B 3.96 → 7.83), matching the paper's direction (Llama2 −1.89 → 6.29) — LCF moves the logic representation so the model favors the *valid* conclusion. Conclusion-generation gains are muted under greedy decoding on Qwen3 (η=0.5 is a gentle nudge). Reproduction on **Llama-2-7b-chat** — the paper's headline model — is running.
+\*Llama2 ValidTrained is degenerate (the distilbert judge marks all of Llama2's generations valid) — read ValidGPT4 instead.
+
+**Mixed, honest result.** On **Qwen3-8B**, +LCF reproduces the paper's central claim — it **~doubles ΔProb** (3.96 → 7.83), moving the logic representation so the model favors the *valid* conclusion. On **Llama-2-7b-chat** (the paper's headline model) the same code/hyperparameters **degrade** identification (ΔProb 4.85 → 2.44, Acc 39 → 27) — opposite to the paper. Diagnosis: the contrastive logic objective barely trains (InfoNCE plateaus at ~chance, ln(batch)≈5.5, for **both** models) with the paper's settings (lr 1e-3, 10 epochs), so the learned validity direction is weak; applying the strong η=4.5 nudge along it helps one model and hurts another. The paper likely needed stronger/tuned contrastive training and/or per-model η. Conclusion-generation gains are also muted under greedy decoding. So: core mechanism reproduced on Qwen3, **not** cleanly reproduced on Llama2 — under investigation.
 
 ## Models & data
 Paper RPC data = authors' published reasoning paths (auto-downloaded). LFUD = `github.com/YandaGo/LFUD`. Models: Qwen3-8B (local), Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded); Llama-3.1 still HF-gated. BIRD at `/mnt/nfs/ssd2/bird_data`.
@@ -122,12 +124,14 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 |:--|:--|:--:|:--:|:--:|:--:|:--:|
 | **Qwen3-8B** (구현) | Original | 47.1 | 82.4 | 3.80 | 31.9 | 3.96 |
 | | **+LCF** | 47.1 | 76.5 | **2.02** | 31.4 | **7.83** |
-| **Llama-2-7b-chat** (구현) | Original | — | — | 3.83 | 39.2 | 4.85 |
-| | **+LCF** | _실행중_ | _실행중_ | _실행중_ | _실행중_ | _실행중_ |
+| **Llama-2-7b-chat** (구현) | Original | 35.3 | 100.0\* | 3.83 | 39.2 | 4.85 |
+| | **+LCF** | 29.4 | 100.0\* | 2.26 | 27.0 | 2.44 |
 | _Llama2 (논문)_ | _Original_ | _70.58_ | _58.84_ | _21.08_ | _51.47_ | _−1.89_ |
 | | _+LCF_ | _83.82_ | _96.56_ | _12.12_ | _75.00_ | _6.29_ |
 
-→ 핵심 주장 재현: **LCF가 ΔProb를 약 2배로** (Qwen3-8B 3.96 → 7.83) 끌어올려, 논문 방향(Llama2 −1.89 → 6.29)과 일치합니다 — LCF가 논리 표현을 이동시켜 모델이 *타당한* 결론에 더 높은 확률을 부여합니다. 생성(Generation) 태스크는 greedy 디코딩에서 효과가 약했습니다(η=0.5는 약한 nudge). 논문 주력 모델 **Llama-2-7b-chat** 재현은 진행 중입니다.
+\*Llama2의 ValidTrained는 무의미합니다(distilbert 판정기가 Llama2 생성물을 전부 valid로 분류). **ValidGPT4**를 보세요.
+
+→ **혼재된, 정직한 결과.** **Qwen3-8B**에서는 +LCF가 논문 핵심 주장을 재현 — **ΔProb를 약 2배**(3.96 → 7.83)로 올려 모델이 *타당한* 결론을 선호하게 만듭니다. 반면 **Llama-2-7b-chat**(논문 주력 모델)에서는 동일 코드·하이퍼파라미터인데도 식별 성능이 **악화**(ΔProb 4.85 → 2.44, Acc 39 → 27)되어 논문과 반대입니다. 진단: 논문 설정(lr 1e-3, 10 epoch)에서 **대조학습(InfoNCE)이 두 모델 모두 무작위 수준(ln(batch)≈5.5)에서 정체**해 학습된 "타당성 방향(V)"이 약하고, 강한 η=4.5 nudge의 효과가 모델마다 다르게 나타납니다. 논문은 더 강한/튜닝된 대조학습이나 모델별 η가 필요했을 가능성이 큽니다. 생성 태스크는 greedy 디코딩에서 효과가 약했습니다. 즉 **핵심 메커니즘은 Qwen3에서 재현, Llama2에서는 깔끔히 재현 안 됨 — 조사 중**입니다.
 
 ## 재현 방법
 ```bash
@@ -142,8 +146,7 @@ cd lcf/eval && uv run python postprocess_judge.py --judge-model gpt-4o   # GPT-4
 
 ## 진행 현황
 - ✅ **RPC 재현 완료** (전체 33셀이 논문 Table 2와 일치) + BIRD 확장 완료
-- ✅ **LCF 직접 구현 + Qwen3-8B 재현 완료** (ΔProb 2배, 논문 일치)
-- 🟢 **Llama-2-7b-chat 재현 진행 중** (LCF 학습 완료, +LCF 평가 실행 중)
+- ✅ **LCF 직접 구현 완료** — 혼재된 재현: Qwen3-8B는 ΔProb 2배(논문 일치), **Llama-2-7b-chat은 악화**(논문과 반대) → 대조학습 under-fit이 원인으로 추정, 조사 중
 - 🟡 LCF 베이스라인(SFT/ITI/RAHF): 코드 완비, ITI 실행됨, SFT/RAHF 재실행 예정
 
 > 세부 결과는 `docs/RPC_reproduction_results.md`, `docs/LCF_reproduction_results.md` 참고. 외부 레포(RPC/LFUD/ITI/RAHF)는 라이선스상 vendoring하지 않으며 URL만 명시합니다.

@@ -3,8 +3,8 @@
   "variant": "+ITI",
   "n_gen": 204,
   "n_fallacy": 204,
-  "ValidGPT4": null,
-  "ValidTrained": 0.0,
+  "ValidGPT4": 35.294117647058826,
+  "ValidTrained": 58.8235294117647,
   "PPL": 4.3175241496053856,
   "Acc": 31.862745098039216,
   "DeltaProb": 3.9610138598359583,
@@ -12,1022 +12,1226 @@
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 1,
       "premise": "All flowers don't stay open forever.",
-      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can"
+      "conclusion": "all flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can be closed at night.\nAll flowers can be closed at night.\nAll flowers can be closed at night because they can",
+      "conclusion_clean": "Therefore, all flowers can be closed at night."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 2,
       "premise": "Everyone in my family has never been to Europe.",
-      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if"
+      "conclusion": "I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nTherefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe.\nBased on the information provided, what is the best way to determine if",
+      "conclusion_clean": "Therefore, I have never been to Europe because everyone in my family has been to Europe, and I have never been to Europe."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 3,
       "premise": "All people should obey the rules of the road.",
-      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because"
+      "conclusion": "all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety.\nAll people should obey the rules of the road because",
+      "conclusion_clean": "Therefore, all people should obey the rules of the road because they are aware of the importance of these rules and are responsible for their own safety."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 5,
       "premise": "Most museums will be closed on Mondays.",
-      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD."
+      "conclusion": "if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself.\nA. Correct\nB. . Before visiting, it's best to check the opening hours and any additional information about the museum itself.\nC. The museum itself\nD.",
+      "conclusion_clean": "Therefore, if you're planning to visit a museum on a Monday, it's best to check the opening hours and any additional information about the museum itself."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 6,
       "premise": "Some students do not take their studies seriously.",
-      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is"
+      "conclusion": "some students do not take their studies seriously because they are not interested in the subjects they are studying.\nTherefore, some students do not take their studies seriously because they are not interested in the subjects they are studying, and they may have a positive attitude towards the subjects they are studying.\nBased on the information provided, what is",
+      "conclusion_clean": "Therefore, some students do not take their studies seriously because they are not interested in the subjects they are studying."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 8,
       "premise": "A portion of the inhabitants of this city have a fever.",
-      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its"
+      "conclusion": "the city's population is at risk of developing a fever.\nA. In the city, some people have a fever, and the city's population is at risk of developing a fever, but the city's population is not necessarily at risk of developing a fever because it is not necessarily at risk of developing a fever on its",
+      "conclusion_clean": "Therefore, the city's population is at risk of developing a fever."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 14,
       "premise": "Michael had dinner at an Italian restaurant.",
-      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was"
+      "conclusion": "he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience.\nBased on the information provided, what was the main factor that contributed to the overall experience, and what was the restaurant's role in it, and what was the main reason for the meal, and what was",
+      "conclusion_clean": "Therefore, he had a good meal, and the restaurant had a good variety of dishes, and he had a good experience."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 27,
       "premise": "Jenny has a collection of postcards.",
-      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards"
+      "conclusion": "Jenny has 100 postcards.\nShe has 100 postcards, and she has 100 cards, so the number of postcards is 100.\nJenny has 100 postcards, and she has 100 cards, so the number of postcards",
+      "conclusion_clean": "Therefore, Jenny has 100 postcards."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 31,
       "premise": "Brenda practices the violin every day.",
-      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every"
+      "conclusion": "she practices the violin every day, and she also has a routine.\nBased on this, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every day, and the fact that she has a routine, the fact that she practices the violin every",
+      "conclusion_clean": "Therefore, she practices the violin every day, and she also has a routine."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 34,
       "premise": "Roger is an excellent chess player.",
-      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the"
+      "conclusion": "Roger is likely to be an avid chess player.\nTherefore, the answer is:\nA. Roger is likely to be an avid chess player.\nB. Roger is likely to be an avid chess player because he enjoys playing it.\nC. Roger is likely to be an avid chess player because he enjoys playing it, and the",
+      "conclusion_clean": "Therefore, Roger is likely to be an avid chess player."
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 35,
       "premise": "Rebecca doesn't like spicy food.",
-      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
+      "conclusion": "she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it",
+      "conclusion_clean": "Therefore, she doesn't like spicy food because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it, and she doesn't like it because she doesn't like it"
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 37,
       "premise": "Martin has a membership at a local gym.",
-      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership"
+      "conclusion": "Martin has a gym membership.\nTherefore, Martin has a membership.\nTherefore, Martin has a gym membership.\nBased on the information provided, what is the best way to determine if Martin has a gym membership.\nA. Martin has a gym membership.\nB. Martin has a gym membership.\nC. Martin has a gym membership",
+      "conclusion_clean": "Therefore, Martin has a gym membership."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 43,
       "premise": "I read a funny joke.",
-      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a"
+      "conclusion": "I will share it with others.\nThe joke was about a dog, and I will mention it here.\nBased on the information provided, I can say that the joke was about a dog, and I will share it here.\nThe joke was about a dog, and I will share it here.\nThe joke was about a",
+      "conclusion_clean": "Therefore, I will share it with others."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 47,
       "premise": "Students are listening to classical music.",
-      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music"
+      "conclusion": "students are listening to music.\nBased on the information provided, the answer is:\nA. Students are listening to music.\nB. Students are listening to classical music.\nC. Students are listening to music, but the information provided does not specify the type of music they are listening to.\nD. Students are listening to music",
+      "conclusion_clean": "Therefore, students are listening to music."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 55,
       "premise": "X does not enjoy movies.",
-      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,"
+      "conclusion": "X may not enjoy movies, but it's not necessarily true that X does not enjoy movies.\nIf X does not enjoy movies, it could be due to personal interest in them, but it's not necessarily true that X does not enjoy movies.\nIf X enjoys movies, it could be due to personal interest in them,",
+      "conclusion_clean": "Therefore, X may not enjoy movies, but it's not necessarily true that X does not enjoy movies."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 60,
       "premise": "The concert was cancelled due to bad weather.",
-      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather"
+      "conclusion": "the concert was cancelled.\nThe concert was cancelled because the weather was good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather being good.\nThe concert was cancelled because the weather was good, but the reason for the cancellation was not necessarily related to the weather",
+      "conclusion_clean": "Therefore, the concert was cancelled."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     },
     {
       "scenario_id": 66,
       "premise": "It may rain tomorrow.",
-      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here."
+      "conclusion": "it is possible that it will rain tomorrow.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nTherefore, it is possible that it will rain tomorrow, but the reason is not given here.\nIt is possible that it will rain tomorrow, but the reason is not given here.",
+      "conclusion_clean": "Therefore, it is possible that it will rain tomorrow."
     }
   ],
   "fallacy_scores": [

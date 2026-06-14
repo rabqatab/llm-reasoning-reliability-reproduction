@@ -27,8 +27,22 @@ From-scratch implementation of "Content-free Logical Modification of LLM by Dise
 ## Layer-distinctiveness (matches paper)
 Top selected sub-layers by valid/invalid separability: attn L12(.86) L17(.86) L15(.83) L19(.82) L13(.81) L10(.80) L27(.77) L16(.77) L11(.77), mlp L14(.77). Concentration in attention layers 10–19 reproduces the paper's modification-layer analysis.
 
-## In progress / pending
-- **Llama-2-7b-chat-hf (paper's headline model)** — LCF trained (7520 train / 884 val token pairs); `original` and `+LCF` eval running (`lcf/llama2_run.log`). Will compare directly to paper Table 1: Llama2 Original 70.58/58.84 → +LCF **83.82/96.56** (ValidGPT4 / ValidTrained), ΔProb −1.89 → 6.29. NOTE: paper used a Llama-2 discriminator for ValidTrained; we use distilbert.
+## Llama-2-7b-chat-hf (paper's headline model) — did NOT reproduce
+
+LCF trained on Llama2 reps (7520 train / 884 val token pairs, layers 10-30, distinctiveness 0.94-0.72). Results vs paper Table 1:
+
+| Variant | ValidGPT4↑ | ValidTrained↑ | PPL↓ | Acc↑ | ΔProb↑ |
+|---|---|---|---|---|---|
+| original (ours) | 35.3 | 100.0\* | 3.83 | 39.2 | 4.85 |
+| **+LCF** (ours) | 29.4 | 100.0\* | 2.26 | 27.0 | 2.44 |
+| _original (paper)_ | _70.58_ | _58.84_ | _21.08_ | _51.47_ | _−1.89_ |
+| _+LCF (paper)_ | _83.82_ | _96.56_ | _12.12_ | _75.00_ | _6.29_ |
+
+\*distilbert judge degenerate on Llama2 generations → use ValidGPT4.
+
+**+LCF degraded Llama2** (ValidGPT4 35→29, Acc 39→27, ΔProb 4.85→2.44) — opposite to the paper and to our Qwen3 result. Diagnosis (compared training logs): the contrastive logic objective **barely trains on BOTH models** — InfoNCE pos/neg plateau at ~5.0-5.9 ≈ chance (ln(batch=256)≈5.55) over all 10 epochs with lr 1e-3. So the learned validity direction V=C_pos−C_neg is weak/noisy; the strong η=4.5 identification nudge along a weak direction happens to help Qwen3 but pushes Llama2 reps off-distribution. Our baselines also differ from the paper (our Llama2 original ΔProb is already +4.85 vs paper's −1.89), indicating our fallacy-identification option-scoring setup differs from theirs. **Honest conclusion: LCF's core mechanism reproduces on Qwen3 but the full paper result (esp. Llama2) does not under the paper's stated hyperparameters.** Likely fixes to try: stronger/longer contrastive training (higher lr, larger batch, lower τ), per-model η, and matching the paper's exact MCQ scoring.
+
+## Pending / next
 - **Baselines** (`lcf/baselines/`): SFT collator bug fixed (`DataCollatorForSeq2Seq`); **ITI** ran on Qwen3-8B → Acc 31.86 / ΔProb 3.96 ≈ original (ITI gave ~no lift here, vs paper Llama2 ITI 69.60/62.25 ≈ original too). SFT/RAHF re-run pending.
 - Multi-model table (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
 - Larger-η or sampling generation to probe the muted-generation effect.
