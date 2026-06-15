@@ -148,8 +148,10 @@ def main() -> None:
     args = ap.parse_args()
 
     # Heavy imports kept inside main so --help works on a CPU box without torch.
-    import torch
+    import torch, sys
     from transformers import AutoModelForCausalLM, AutoTokenizer
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from _batched_gen import sample_k
 
     os.makedirs(args.out_dir, exist_ok=True)
     model_tag = args.model.replace("/", "_")
@@ -166,7 +168,7 @@ def main() -> None:
     if tok.pad_token_id is None:
         tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(
-        args.model, torch_dtype=torch.bfloat16, device_map="auto"
+        args.model, torch_dtype=torch.bfloat16, device_map="cuda"
     )
     model.eval()
 
@@ -211,35 +213,9 @@ def main() -> None:
             input_ids = tok(prompt, return_tensors="pt").input_ids.to(model.device)
         prompt_len = input_ids.shape[1]
 
-        p_preds, p_comps, p_lps = [], [], []
-        for _ in range(args.K):
-            with torch.no_grad():
-                out = model.generate(
-                    input_ids,
-                    do_sample=True,
-                    temperature=args.temperature,
-                    top_p=args.top_p,
-                    max_new_tokens=args.max_new_tokens,
-                    return_dict_in_generate=True,
-                    output_scores=True,
-                    pad_token_id=tok.pad_token_id,
-                )
-            seq = out.sequences[0]
-            gen_ids = seq[prompt_len:]
-            # scores: tuple(len gen) of [1, vocab] logits for each step.
-            logps = []
-            for step, logits in enumerate(out.scores):
-                if step >= gen_ids.shape[0]:
-                    break
-                logp = torch.log_softmax(logits[0].float(), dim=-1)
-                tok_id = gen_ids[step]
-                logps.append(logp[tok_id].item())
-            mlp = float(sum(logps) / len(logps)) if logps else float("-inf")
-            text = tok.decode(gen_ids, skip_special_tokens=True)
-            p_preds.append(extract_sql(text))
-            p_comps.append(text)
-            p_lps.append(mlp)
-
+        p_comps, p_lps = sample_k(model, tok, input_ids, args.K, args.max_new_tokens,
+                                  args.temperature, args.top_p)
+        p_preds = [extract_sql(t) for t in p_comps]
         predict.append(p_preds)
         completion.append(p_comps)
         mean_logprob.append(p_lps)

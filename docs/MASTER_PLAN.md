@@ -27,10 +27,12 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **Baselines**: SFT (collator fixed), ITI (ran ≈ original), RAHF — built; `lcf/run_baselines.sh`.
 - [x] **Generalization data**: legal-LCF from JurisNet (`lcf/legal/`) + KCC (`lcf/kcc_legal/`) — valid/invalid legal conclusion pairs (GPT-built).
 
-## Next (optional breadth)
-1. (done) 5-domain RPC table complete: RPC wins when model uncertain+diverse (math, legal extraction), ties when confident/binary (MCQ, KCC).
-2. Larger-K BIRD re-test; run LCF pipeline on legal/kcc_legal (expected weak per critical analysis).
-3. Multi-model LCF (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
+## Breadth experiments (IN PROGRESS — 3 streams)
+1. (done) 5-domain RPC table: RPC wins under uncertainty+diversity (math, legal extraction), ties when confident/binary (MCQ, KCC).
+2. **[~] Larger-K BIRD re-test** — hypothesis: RPC lost on BIRD only because K=8 < paper's 64–128 (Weibull mixture under-fits). Method: regenerate BIRD with **K=32** (batched, answer-first SQL) on Node 2, re-run SC/PPL/RPC. Expect RPC to recover toward/over SC if the K-hypothesis holds. `rpc/bird_extension/`.
+3. **[~] Multi-model LCF** — does the mixed Qwen3(+)/Llama2(−) ΔProb pattern hold across more models? Method: for **Mistral-7B-Instruct-v0.2, vicuna-7b-v1.5** (downloaded; ChatGLM3/Baichuan2 if time): extract reps → train LCF → **fast fallacy-id eval** (option-scoring ΔProb/Acc, original vs +LCF; skip slow conclusion-gen). `lcf/run_multimodel.sh`, `lcf/lcf_impl/fallacy_eval.py`. Expect weak/inconsistent per critical analysis.
+4. **[~] LCF on legal domain** — generalization test on `lcf/legal/` (JurisNet) + `lcf/kcc_legal/` (valid/invalid legal conclusion pairs). Method: copy legal conclusion_gen into `lcf/data/`, extract→train→eval (Qwen3). Expect weak signal (logic-validity direction weak even on fallacies; legal likely similar).
+GPU split: Node 2 (container, free) = BIRD K=32; Node 1 (uv) = LCF multimodel + legal. Eval (CPU) on Node 1.
 
 ## Drivers
 - `rpc/RPC/run_full_repro.sh` — RPC grid (CPU). `rpc/{bird,jurisnet,kcc,lfud_mcq}_ext` — generate_* (GPU) + run_* (CPU eval).
