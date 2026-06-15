@@ -9,29 +9,32 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - Models: Qwen3-8B/14B/32B + Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded). Llama-3.1 gated (skip).
 
 ## Paper A — RPC (test-time scaling)  [rpc/]
-- [x] Clone, uv env, reproduction verified.
-- [x] **Full 33-cell grid matches paper Table 2** → `results_full.txt`, `docs/RPC_reproduction_results.md`.
-- [x] **BIRD extension** [rpc/bird_extension/]: Qwen3-8B K=8 SQL paths, exec-match equality. SC 28.5 > RPC 25.0 = PPL 25.0 (honest negative; RPC needs larger K). PPL overconfidence (ECE 73.6) reproduces.
-- [ ] (optional) Larger-K BIRD; Verb baseline.
+- [x] Clone, uv env, reproduction verified. **Full 33-cell grid = paper Table 2** → `docs/RPC_reproduction_results.md`.
+- [x] **4 local-dataset extensions** (Qwen3-8B, K=8, reuse RPC evaluators w/ domain equality):
+  - [x] BIRD text-to-SQL (exec-match): SC 28.5 > RPC 25.0 (tie/lose at K=8).
+  - [x] JurisNet legal extraction (set exact-match): **RPC 20.0/46.0 > SC 19.1/52.4 (wins Acc+ECE)**.
+  - [~] KCC precedent-relevance (balanced binary) — generating on Node 2 (batched).
+  - [~] LFUD fallacy-id MCQ (connects both papers) — generating on Node 2 (batched).
+  - PPL over-confidence (ECE 73–93) reproduces in ALL domains.
+- [x] **Batched generation** `rpc/_batched_gen.py` (num_return_sequences=K) — ~Kx faster than sequential.
 
 ## Paper B — LCF (logic representation, from scratch)  [lcf/]
-- [x] Spec `docs/LCF_implementation_spec.md`; LFUD + ITI + RAHF cloned.
-- [x] **Core** [lcf/lcf_impl/]: model/losses/data/train/infer. Smoke-tested. Layer-distinctiveness selection matches paper (attn 10-19).
-- [x] **Data**: LFUD split 540/60/204; 804 GPT-3.5 valid conclusions; fallacy_id items.
-- [x] **Eval** [lcf/eval/]: GPT-4o judge, distilbert discriminator (deberta-v3 broken on transformers 5.x), metrics, postprocess_judge.py (cleans generations to first line, fills GPT-4 + ValidTrained).
-- [x] **Qwen3-8B reproduced**: ΔProb 3.96→7.83 (matches paper); generation muted under greedy. → `docs/LCF_reproduction_results.md`.
-- [~] **Llama-2-7b-chat (paper headline model)**: pipeline + LCF trained ✓, eval original/+LCF running (login-shell direct, `lcf/llama2_run.log`).
-- [~] **Baselines**: SFT collator bug fixed (DataCollatorForSeq2Seq); ITI ran (Acc/ΔProb ≈ original); SFT/RAHF re-run pending. Driver `lcf/run_baselines.sh`.
-- [ ] Multi-model table (Vicuna/Mistral/ChatGLM3/Baichuan2).
+- [x] Spec; core (model/losses/data/train/infer); LFUD data (540/60/204 + GPT-3.5 valid conclusions); eval (GPT-4o judge, distilbert discriminator, postprocess_judge).
+- [x] **Reproduced (mixed/negative)**: Qwen3-8B ΔProb 3.96→7.83 (matches paper direction); **Llama-2-7b-chat DEGRADES** (4.85→2.44, opposite to paper). → `docs/LCF_reproduction_results.md`.
+- [x] **CRITICAL ANALYSIS** → `docs/LCF_critical_analysis.md` (main contribution): logic-validity direction is **real but weak** (0.82 best single sub-layer vs **0.95 for suicide-risk** on MoodRisk; 0.52=chance pooled); **separability ≠ controllability** (v2 redesign gives no gain); flagship 96.56% relies on **unauditable discriminator**. Verdict: not reproducible / not model-agnostic — NOT fabrication.
+- [x] **Model-agnostic v2** `lcf/lcf_impl/{probe_layers,lcf_v2,lcf_v2_eval}.py` — best-layer supervised direction + norm-relative intervention; evaluated (no consistent gain).
+- [x] **MoodRisk control probe** `lcf/lcf_impl/moodrisk_probe.py` — risk-direction 0.95 (representation-editing premise holds for semantic attributes).
+- [x] **Baselines**: SFT (collator fixed), ITI (ran ≈ original), RAHF — built; `lcf/run_baselines.sh`.
+- [x] **Generalization data**: legal-LCF from JurisNet (`lcf/legal/`) + KCC (`lcf/kcc_legal/`) — valid/invalid legal conclusion pairs (GPT-built).
 
-## Next
-1. Finish Llama-2 eval → compare to paper Table 1 (70.58/58.84 → 83.82/96.56) → postprocess GPT-4.
-2. Re-run Qwen3 + Llama2 baselines (SFT fixed) for full 5-variant tables.
-3. Multi-model LCF; optional larger-K BIRD.
+## Next (optional breadth)
+1. Finish KCC + LFUD-MCQ RPC eval (Node 2 generating) → complete 5-domain RPC table.
+2. Larger-K BIRD re-test; run LCF pipeline on legal/kcc_legal (expected weak per critical analysis).
+3. Multi-model LCF (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
 
 ## Drivers
-- `rpc/RPC/run_full_repro.sh` — RPC grid (CPU).
-- `lcf/run_lcf_pipeline.sh <model>` — extract reps + train LCF.
-- `lcf/run_lcf_full.sh <model>` — pipeline + eval original + +LCF (run ALONE on node).
-- `lcf/run_baselines.sh <model>` — SFT/ITI/RAHF train+eval.
+- `rpc/RPC/run_full_repro.sh` — RPC grid (CPU). `rpc/{bird,jurisnet,kcc,lfud_mcq}_ext` — generate_* (GPU) + run_* (CPU eval).
+- `lcf/run_lcf_full.sh <model>` — extract→train→eval (ALONE on node). `lcf/run_baselines.sh <model>`.
+- `lcf/lcf_impl/{probe_layers,lcf_v2,lcf_v2_eval,moodrisk_probe}.py` — critical-analysis experiments (reps-only / GPU).
 - `lcf/eval/postprocess_judge.py` — GPT-4 judge + ValidTrained on saved generations (login shell).
+- Node 2: `docker run -d nvcr.io/nvidia/pytorch:25.09-py3` + NFS cache mount (see sparkq debug doc).

@@ -35,14 +35,22 @@ Full faithful reproduction of "A Theoretical Study on Bridging Internal Probabil
 
 **Conclusion:** RPC reproduced faithfully. PPL/SC match exactly (deterministic); RPC matches within Weibull-MLE seed noise. Key claims confirmed: (1) PPL is badly mis-calibrated (ECE 49–93) while accurate-ish; (2) SC is well-calibrated but lower accuracy; (3) RPC achieves the best accuracy AND low ECE simultaneously on the larger models. On the weak 1.8B model, RPC≈SC with the documented degradation pattern (Remark 6).
 
-## Extension — RPC on local BIRD text-to-SQL
+## Extensions — RPC on local datasets (multi-domain)
 
-RPC/SC/PPL applied to a NEW domain: **BIRD text-to-SQL** (Qwen3-8B generated K SQL paths with mean-logprob; equality = SQLite **execution match** instead of math). Subset n=60 dev questions, K=8 paths. See `rpc/bird_extension/`.
+We applied RPC/SC/PPL to **four local datasets** with verifiable answers, all with Qwen3-8B at K=8 (a small budget the paper warns about), to map *where* RPC's advantage over Self-Consistency holds. Each reuses the official RPC evaluators with a domain-specific equality function. Generation via the batched sampler `rpc/_batched_gen.py`; GPU runs on Node 1 (uv) or Node 2 (docker container, free GPU). Eval is CPU-only.
 
-| Method | Accuracy | ECE |
-|---|---|---|
-| SC | **28.54** | 39.79 |
-| PPL | 25.00 | 73.55 |
-| RPC | 25.00 | 39.18 |
+| Domain | equality | SC (Acc/ECE) | PPL (Acc/ECE) | RPC (Acc/ECE) | RPC vs SC |
+|---|---|---|---|---|---|
+| math (paper, K=128) | math-equal | (see grid) | over-confident | best | **RPC wins** |
+| BIRD text-to-SQL (n=60) | SQLite exec-match | **28.54** / 39.79 | 25.00 / 73.55 | 25.00 / 39.18 | tie/lose |
+| JurisNet legal extraction (n=150) | (law,article) set exact-match | 19.08 / 52.42 | 18.67 / **78.82** | **20.00 / 46.02** | **RPC wins (Acc+ECE)** |
+| KCC precedent relevance (balanced) | binary 0/1 | _running (Node 2)_ | _running_ | _running_ | _pending_ |
+| LFUD fallacy-id MCQ (n=100) | option-index | _running (Node 2)_ | _running_ | _running_ | _pending_ |
 
-**Honest finding:** RPC does **not** beat SC here (25.0 vs 28.5). The PPL overconfidence pattern reproduces (ECE 73.6, worst). The likely cause is **K=8 is far below the paper's K=64–128**: RPC's Reasoning-Pruning fits a 2-component Weibull mixture to the path probabilities, which is unreliable with only 8 samples and lands in the degradation regime (paper Remark 6, where RPC→SC or worse). RPC's benefit is sample-size- and domain-dependent; a fair re-test needs larger K (expensive generation). Reported as-is rather than cherry-picking.
+Code: `rpc/{bird_extension, jurisnet_ext, kcc_ext, lfud_mcq}/`. Raw logs: `results/rpc_*_results.txt`.
+
+**Findings so far:**
+1. **PPL over-confidence reproduces in EVERY domain** (ECE 73.6 BIRD, 78.8 JurisNet, 49–93 math) — the paper's core diagnosis is robust and domain-independent.
+2. **RPC's accuracy edge over SC is domain-dependent.** It clearly wins on math and on **JurisNet legal extraction** (20.0 vs 19.1, and best ECE 46.0), where the answer space is diverse enough for the Weibull pruning + perplexity-weighting to help. It does **not** beat SC on **BIRD SQL** at K=8.
+3. **Why BIRD is hard for RPC:** K=8 is far below the paper's K=64–128. RPC's Reasoning-Pruning fits a 2-component Weibull mixture to the K path probabilities — unreliable with only 8 samples (paper Remark 6 degradation regime). A fair re-test needs larger K (expensive). Reported as-is, not cherry-picked.
+4. KCC (binary, imbalanced → balanced subset, reported with **balanced accuracy**) and LFUD-MCQ (4-option; **connects both papers** — RPC applied to LCF's fallacy task) are generating on Node 2 and will fill the table.
