@@ -1,0 +1,3 @@
+Mistral-7B-Instruct-v0.2,original,Acc=35.29,DeltaProb=14.198
+Mistral-7B-Instruct-v0.2,+LCF,Acc=27.45,DeltaProb=3.232
+RESULT Mistral-7B-Instruct-v0.2: Acc 35.3->27.5  DeltaProb 14.20->3.23
