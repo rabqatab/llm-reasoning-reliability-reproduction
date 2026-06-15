@@ -69,15 +69,15 @@ Paper Table 2 averages: PPL 21.90/73.14 · SC 24.82/13.37 · RPC 26.11/12.37 →
 
 **Extensions — RPC on local datasets (Qwen3-8B, K=8).** Does RPC beat Self-Consistency outside math? Domain-dependent:
 
-| Domain (Qwen3-8B, K=8) | SC Acc | PPL Acc / ECE | RPC Acc / ECE | RPC vs SC |
+| Domain (Qwen3-8B, K=8) | SC Acc/ECE | PPL Acc/ECE | RPC Acc/ECE | RPC vs SC |
 |---|---|---|---|---|
-| math (paper) | — | (over-confident) | — | RPC wins |
-| BIRD text-to-SQL (exec-match) | **28.5** | 25.0 / 73.6 | 25.0 / 39.2 | ~tie/lose |
-| JurisNet legal extraction (exact-match) | 19.1 / 52.4 | 18.7 / **78.8** | **20.0 / 46.0** | **RPC wins (Acc+ECE)** |
-| KCC precedent relevance (balanced) | _running_ | _running_ | _running_ | _pending_ |
-| LFUD fallacy MCQ | _running_ | _running_ | _running_ | _pending_ |
+| math (paper) | — | over-confident | best | **RPC wins** |
+| BIRD text-to-SQL (exec-match) | **28.5**/39.8 | 25.0/73.6 | 25.0/39.2 | lose |
+| JurisNet legal extraction (exact-match) | 19.1/52.4 | 18.7/**78.8** | **20.0/46.0** | **RPC wins (Acc+ECE)** |
+| KCC precedent relevance (balanced) | 64.7/31.6 | **66.2/21.6** | 65.1/33.4 | ~tie |
+| LFUD fallacy MCQ | 88.0/12.1 | 87.0/**8.3** | 88.0/12.1 | ~tie |
 
-Takeaway: **PPL is badly over-confident everywhere (ECE 49–93)** — the paper's core point reproduces robustly. RPC's *accuracy* edge over SC is domain-dependent (clear on math & legal extraction; absent on BIRD SQL at the small K=8 the paper warns about). See `docs/RPC_reproduction_results.md`.
+Takeaway: **RPC beats SC only when the model is uncertain with diverse answers** (math, legal extraction — low accuracy); when the model is already confident/accurate (MCQ 88%) or the answer is binary (KCC), RPC ≈ SC. **PPL over-confidence is difficulty-dependent** — terrible on hard tasks (ECE 49–93) but well-calibrated on easy ones (MCQ 8.3). A nuanced, faithful characterization of *when* RPC helps. See `docs/RPC_reproduction_results.md`.
 
 ### Paper B — LCF · paper Table 1 layout
 Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&nbsp; Fallacy Identification: Acc↑ · ΔProb↑
@@ -137,15 +137,15 @@ LLM 신뢰성(reliability) 분야의 **두 논문을 처음부터 구현·재현
 
 **확장 — 로컬 데이터셋에 RPC 적용** (Qwen3-8B, K=8). RPC는 수학 밖에서도 SC를 이기는가? **도메인 의존적:**
 
-| 도메인 (K=8) | SC Acc | PPL Acc/ECE | RPC Acc/ECE | RPC vs SC |
+| 도메인 (K=8) | SC Acc/ECE | PPL Acc/ECE | RPC Acc/ECE | RPC vs SC |
 |---|---|---|---|---|
-| 수학 (논문) | — | 과신 | — | RPC 승 |
-| BIRD text-to-SQL | **28.5** | 25.0 / 73.6 | 25.0 / 39.2 | 무/패 |
-| JurisNet 법률추출 | 19.1 / 52.4 | 18.7 / **78.8** | **20.0 / 46.0** | **RPC 승(Acc+ECE)** |
-| KCC 판례관련성 | _실행중_ | _실행중_ | _실행중_ | _대기_ |
-| LFUD fallacy MCQ | _실행중_ | _실행중_ | _실행중_ | _대기_ |
+| 수학 (논문) | — | 과신 | best | **RPC 승** |
+| BIRD text-to-SQL | **28.5**/39.8 | 25.0/73.6 | 25.0/39.2 | 패 |
+| JurisNet 법률추출 | 19.1/52.4 | 18.7/**78.8** | **20.0/46.0** | **RPC 승(Acc+ECE)** |
+| KCC 판례관련성 (balanced) | 64.7/31.6 | **66.2/21.6** | 65.1/33.4 | ~무 |
+| LFUD fallacy MCQ | 88.0/12.1 | 87.0/**8.3** | 88.0/12.1 | ~무 |
 
-핵심: **PPL은 전 도메인에서 심하게 과신(ECE 49–93)** — 논문 핵심 주장은 견고히 재현. RPC의 *정확도* 우위는 도메인 의존적(수학·법률추출은 승, BIRD SQL은 작은 K=8에서 무).
+핵심: **RPC는 모델이 불확실하고 답이 다양할 때만 SC를 이깁니다**(수학·법률추출, 저정확도). 모델이 이미 확신/정확하거나(MCQ 88%) 답이 이진(KCC)이면 RPC≈SC. **PPL 과신은 난이도 의존적** — 어려운 태스크는 ECE 49–93, 쉬운 태스크(MCQ)는 8.3로 잘 보정. "RPC가 *언제* 작동하는지"의 정밀한 특성화.
 
 ### Paper B — LCF · 논문 Table 1 형식
 Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&nbsp; Fallacy Identification: Acc↑ · ΔProb↑

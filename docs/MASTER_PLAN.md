@@ -13,8 +13,8 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **4 local-dataset extensions** (Qwen3-8B, K=8, reuse RPC evaluators w/ domain equality):
   - [x] BIRD text-to-SQL (exec-match): SC 28.5 > RPC 25.0 (tie/lose at K=8).
   - [x] JurisNet legal extraction (set exact-match): **RPC 20.0/46.0 > SC 19.1/52.4 (wins Acc+ECE)**.
-  - [~] KCC precedent-relevance (balanced binary) — generating on Node 2 (batched).
-  - [~] LFUD fallacy-id MCQ (connects both papers) — generating on Node 2 (batched).
+  - [x] KCC precedent-relevance (balanced): SC≈RPC≈PPL ~65 bal-acc (binary → no RPC edge; PPL best ECE 21.6).
+  - [x] LFUD fallacy-id MCQ: all ~88% (model already strong → RPC≈SC; PPL best ECE 8.3). Connects both papers.
   - PPL over-confidence (ECE 73–93) reproduces in ALL domains.
 - [x] **Batched generation** `rpc/_batched_gen.py` (num_return_sequences=K) — ~Kx faster than sequential.
 
@@ -28,7 +28,7 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **Generalization data**: legal-LCF from JurisNet (`lcf/legal/`) + KCC (`lcf/kcc_legal/`) — valid/invalid legal conclusion pairs (GPT-built).
 
 ## Next (optional breadth)
-1. Finish KCC + LFUD-MCQ RPC eval (Node 2 generating) → complete 5-domain RPC table.
+1. (done) 5-domain RPC table complete: RPC wins when model uncertain+diverse (math, legal extraction), ties when confident/binary (MCQ, KCC).
 2. Larger-K BIRD re-test; run LCF pipeline on legal/kcc_legal (expected weak per critical analysis).
 3. Multi-model LCF (Vicuna/Mistral/ChatGLM3/Baichuan2 downloaded).
 

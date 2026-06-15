@@ -27,10 +27,9 @@ PROMPT = (
     "다음은 한국 민사 대법원 판례 두 건의 판시사항과 판결요지입니다.\n\n"
     "[질의 판례]\n{query}\n\n"
     "[후보 판례]\n{candidate}\n\n"
-    "질문: 이 두 판례는 법적으로 관련된 선례 관계입니까? "
-    "즉, 후보 판례가 질의 판례의 쟁점에 대한 법적으로 관련된 선례입니까?\n"
-    "간단히 근거를 제시한 뒤, 마지막 줄에 'Answer: <N>' 형식으로 답하세요. "
-    "<N>은 0(무관) 또는 1(관련)입니다.\n"
+    "질문: 이 두 판례는 법적으로 관련된 선례 관계입니까?\n"
+    "반드시 첫 줄에 'Answer: 0'(무관) 또는 'Answer: 1'(관련) 중 하나만 쓰고, "
+    "그 다음 줄에 한 문장으로 근거를 쓰세요.\n"
 )
 
 
@@ -42,7 +41,7 @@ def extract_label(text):
     """Last explicit 'Answer: 0/1', else last standalone 0/1 in the text, else -1."""
     m = re.findall(r"[Aa]nswer\s*[:\-]?\s*\(?([01])\b", text)
     if m:
-        return int(m[-1])
+        return int(m[0])   # answer-first: take the leading 'Answer: N'
     m2 = re.findall(r"\b([01])\b", text)  # fallback: last standalone 0/1
     if m2:
         return int(m2[-1])

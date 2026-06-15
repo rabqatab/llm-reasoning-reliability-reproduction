@@ -13,8 +13,8 @@ import argparse, json, os, re
 
 PROMPT = (
     "{premise}\n\nOptions:\n{opts}\n\n"
-    "Reason briefly, then on the last line write 'Answer: <N>' where <N> is the "
-    "option number (0-{maxi}) that the question asks for."
+    "On the FIRST line write exactly 'Answer: <N>' where <N> is the single option "
+    "number (0-{maxi}) the question asks for, then briefly justify on the next line."
 )
 
 
@@ -26,7 +26,7 @@ def build_prompt(item):
 def extract_idx(text, n_opts):
     m = re.findall(r"[Aa]nswer\s*[:\-]?\s*\(?([0-9])", text)
     if m:
-        v = int(m[-1])
+        v = int(m[0])   # answer-first: take the leading 'Answer: N'
         if 0 <= v < n_opts:
             return v
     m2 = re.findall(r"\b([0-9])\b", text)  # fallback: last standalone digit

@@ -1,0 +1,6 @@
+SC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '3.88 ± 0.00', 'BalancedAccuracy': '3.68 ± 0.66', 'ECE': '12.88 ± 0.00'}
+PPL KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '2.00 ± 0.00', 'BalancedAccuracy': '1.89 ± 0.00', 'ECE': '89.25 ± 0.00'}
+RPC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '3.00 ± 0.00', 'BalancedAccuracy': '2.83 ± 0.00', 'ECE': '14.45 ± 0.00'}
+SC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '66.50 ± 0.00', 'BalancedAccuracy': '64.66 ± 0.47', 'ECE': '31.63 ± 0.00'}
+PPL KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '68.00 ± 0.00', 'BalancedAccuracy': '66.20 ± 0.00', 'ECE': '21.64 ± 0.00'}
+RPC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '67.00 ± 0.00', 'BalancedAccuracy': '65.13 ± 0.00', 'ECE': '33.37 ± 0.54'}

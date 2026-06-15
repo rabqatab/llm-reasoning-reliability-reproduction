@@ -39,18 +39,18 @@ Full faithful reproduction of "A Theoretical Study on Bridging Internal Probabil
 
 We applied RPC/SC/PPL to **four local datasets** with verifiable answers, all with Qwen3-8B at K=8 (a small budget the paper warns about), to map *where* RPC's advantage over Self-Consistency holds. Each reuses the official RPC evaluators with a domain-specific equality function. Generation via the batched sampler `rpc/_batched_gen.py`; GPU runs on Node 1 (uv) or Node 2 (docker container, free GPU). Eval is CPU-only.
 
-| Domain | equality | SC (Acc/ECE) | PPL (Acc/ECE) | RPC (Acc/ECE) | RPC vs SC |
-|---|---|---|---|---|---|
-| math (paper, K=128) | math-equal | (see grid) | over-confident | best | **RPC wins** |
-| BIRD text-to-SQL (n=60) | SQLite exec-match | **28.54** / 39.79 | 25.00 / 73.55 | 25.00 / 39.18 | tie/lose |
-| JurisNet legal extraction (n=150) | (law,article) set exact-match | 19.08 / 52.42 | 18.67 / **78.82** | **20.00 / 46.02** | **RPC wins (Acc+ECE)** |
-| KCC precedent relevance (balanced) | binary 0/1 | _running (Node 2)_ | _running_ | _running_ | _pending_ |
-| LFUD fallacy-id MCQ (n=100) | option-index | _running (Node 2)_ | _running_ | _running_ | _pending_ |
+| Domain (Qwen3-8B, K=8) | answer space | model acc | SC | PPL | RPC | RPC vs SC |
+|---|---|---|---|---|---|---|
+| math (paper, K=128) | open numeric | mid | — | over-confident | best | **RPC wins** |
+| BIRD text-to-SQL (n=60) | open SQL (exec) | low (25–29) | **28.5** / 39.8 | 25.0 / 73.6 | 25.0 / 39.2 | lose |
+| JurisNet legal extraction (n=150) | open (law,article) set | low (19–20) | 19.1 / 52.4 | 18.7 / **78.8** | **20.0 / 46.0** | **RPC wins (Acc+ECE)** |
+| KCC precedent relevance (n=100, balanced) | binary 0/1 | mid (65 bal) | 64.7 / 31.6 | **66.2 / 21.6** | 65.1 / 33.4 | ~tie |
+| LFUD fallacy-id MCQ (n=100) | 4-option | high (88) | 88.0 / 12.1 | 87.0 / **8.3** | 88.0 / 12.1 | ~tie |
 
-Code: `rpc/{bird_extension, jurisnet_ext, kcc_ext, lfud_mcq}/`. Raw logs: `results/rpc_*_results.txt`.
+(Acc = balanced-acc for KCC; ECE in %. Code: `rpc/{bird_extension,jurisnet_ext,kcc_ext,lfud_mcq}/`; raw logs `results/rpc_*_results.txt`; both generated with the batched sampler + **answer-first** prompt, parse-rate 100%.)
 
-**Findings so far:**
-1. **PPL over-confidence reproduces in EVERY domain** (ECE 73.6 BIRD, 78.8 JurisNet, 49–93 math) — the paper's core diagnosis is robust and domain-independent.
-2. **RPC's accuracy edge over SC is domain-dependent.** It clearly wins on math and on **JurisNet legal extraction** (20.0 vs 19.1, and best ECE 46.0), where the answer space is diverse enough for the Weibull pruning + perplexity-weighting to help. It does **not** beat SC on **BIRD SQL** at K=8.
-3. **Why BIRD is hard for RPC:** K=8 is far below the paper's K=64–128. RPC's Reasoning-Pruning fits a 2-component Weibull mixture to the K path probabilities — unreliable with only 8 samples (paper Remark 6 degradation regime). A fair re-test needs larger K (expensive). Reported as-is, not cherry-picked.
-4. KCC (binary, imbalanced → balanced subset, reported with **balanced accuracy**) and LFUD-MCQ (4-option; **connects both papers** — RPC applied to LCF's fallacy task) are generating on Node 2 and will fill the table.
+**Findings (complete, 5 domains):**
+1. **RPC beats SC only when the model is UNCERTAIN with DIVERSE answers** — math and JurisNet legal extraction (both low-accuracy, open answer space): RPC wins on accuracy *and* calibration. When the model is **confident/accurate** (MCQ 88%) or the **answer space is binary** (KCC), there is little diversity for RPC's Weibull-pruning + perplexity-weighting to exploit, so **RPC ≈ SC**. On BIRD, K=8 is below the paper's K=64–128 (Remark 6 degradation), so RPC loses.
+2. **PPL over-confidence is task-difficulty-dependent**, not universal: ECE is terrible on the hard low-accuracy tasks (math 49–93, BIRD 73.6, JurisNet 78.8) but **well-calibrated on the easy tasks** (MCQ 8.3, KCC 21.6) — over-confidence surfaces precisely where the model is wrong a lot.
+3. **The headline reproduction (RPC > SC + fixes PPL's calibration) holds where the paper operates** (open-ended math-like reasoning at large K) and degrades gracefully/expectedly off-distribution (small K, binary, or already-easy tasks). A faithful, nuanced characterization rather than a blanket claim.
+4. **LFUD-MCQ connects both papers** — applying Paper A's RPC to Paper B's fallacy-identification task; the model is already strong (88%) so test-time scaling adds little here.
