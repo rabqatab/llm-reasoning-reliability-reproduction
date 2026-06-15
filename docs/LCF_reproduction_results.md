@@ -1,5 +1,7 @@
 # Paper B (LCF) — Reproduction Results
 
+> For the **root-cause analysis and verdict** (is the LCF claim real?), see **`docs/LCF_critical_analysis.md`** — this file holds the per-model reproduction numbers that analysis is built on.
+
 From-scratch implementation of "Content-free Logical Modification of LLM by Disentangling and Modifying Logic Representation" (AAAI 2025). Official repo had no code. Base model **Qwen/Qwen3-8B** (paper used Llama2/3/Vicuna/Mistral/ChatGLM3/Baichuan; we add Qwen3 per the project's model decision; paper models in progress).
 
 ## Setup actually run
