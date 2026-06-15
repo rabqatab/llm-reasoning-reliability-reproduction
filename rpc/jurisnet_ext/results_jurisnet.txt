@@ -1,0 +1,3 @@
+SC JurisNet-ko_ver Qwen_Qwen3-8B 8 {'Accuracy': '19.08 ± 0.00', 'ECE': '52.42 ± 0.00'}
+PPL JurisNet-ko_ver Qwen_Qwen3-8B 8 {'Accuracy': '18.67 ± 0.00', 'ECE': '78.82 ± 0.00'}
+RPC JurisNet-ko_ver Qwen_Qwen3-8B 8 {'Accuracy': '20.00 ± 0.00', 'ECE': '46.02 ± 0.20'}

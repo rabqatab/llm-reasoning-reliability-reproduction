@@ -62,7 +62,10 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=torch.bfloat16,
-                                                 device_map="auto").eval()
+                                                 device_map="cuda").eval()
+    import sys as _sys
+    _sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from _batched_gen import sample_k
 
     res = {"predict": [], "completion": [], "mean_logprob": [], "answer": []}
     if os.path.exists(partial):
@@ -81,24 +84,9 @@ def main():
                                           add_generation_prompt=True, return_tensors="pt",
                                           return_dict=True)
         input_ids = enc["input_ids"].to(model.device)
-        plen = input_ids.shape[1]
-        preds, comps, lps = [], [], []
-        for _ in range(args.K):
-            with torch.no_grad():
-                out = model.generate(input_ids, do_sample=True, temperature=args.temperature,
-                                     top_p=args.top_p, max_new_tokens=args.max_new_tokens,
-                                     return_dict_in_generate=True, output_scores=True,
-                                     pad_token_id=tok.pad_token_id)
-            gen = out.sequences[0][plen:]
-            logps = []
-            for step, logit in enumerate(out.scores):
-                if step >= gen.shape[0]:
-                    break
-                logps.append(torch.log_softmax(logit[0].float(), -1)[gen[step]].item())
-            text = tok.decode(gen, skip_special_tokens=True)
-            preds.append(extract_idx(text, len(it["options"])))
-            comps.append(text)
-            lps.append(sum(logps) / len(logps) if logps else float("-inf"))
+        comps, lps = sample_k(model, tok, input_ids, args.K, args.max_new_tokens,
+                              args.temperature, args.top_p)
+        preds = [extract_idx(t, len(it["options"])) for t in comps]
         res["predict"].append(preds)
         res["completion"].append(comps)
         res["mean_logprob"].append(lps)

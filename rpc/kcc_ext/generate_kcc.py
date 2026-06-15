@@ -62,8 +62,10 @@ def main():
     ap.add_argument("--out_dir", default=os.path.dirname(os.path.abspath(__file__)))
     args = ap.parse_args()
 
-    import torch
+    import torch, sys
     from transformers import AutoModelForCausalLM, AutoTokenizer
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from _batched_gen import sample_k
 
     items = [json.loads(l) for l in open(args.data, encoding="utf-8") if l.strip()]
     if args.n:
@@ -77,7 +79,7 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(
-        args.model, torch_dtype=torch.bfloat16, device_map="auto"
+        args.model, torch_dtype=torch.bfloat16, device_map="cuda"
     ).eval()
 
     res = {"predict": [], "completion": [], "mean_logprob": [], "answer": []}
@@ -101,26 +103,9 @@ def main():
                 return_dict=True,
             )
         input_ids = enc["input_ids"].to(model.device)
-        plen = input_ids.shape[1]
-        preds, comps, lps = [], [], []
-        for _ in range(args.K):
-            with torch.no_grad():
-                out = model.generate(
-                    input_ids, do_sample=True, temperature=args.temperature,
-                    top_p=args.top_p, max_new_tokens=args.max_new_tokens,
-                    return_dict_in_generate=True, output_scores=True,
-                    pad_token_id=tok.pad_token_id,
-                )
-            gen = out.sequences[0][plen:]
-            logps = []
-            for step, logit in enumerate(out.scores):
-                if step >= gen.shape[0]:
-                    break
-                logps.append(torch.log_softmax(logit[0].float(), -1)[gen[step]].item())
-            text = tok.decode(gen, skip_special_tokens=True)
-            preds.append(extract_label(text))
-            comps.append(text)
-            lps.append(sum(logps) / len(logps) if logps else float("-inf"))
+        comps, lps = sample_k(model, tok, input_ids, args.K, args.max_new_tokens,
+                              args.temperature, args.top_p)
+        preds = [extract_label(t) for t in comps]
         res["predict"].append(preds)
         res["completion"].append(comps)
         res["mean_logprob"].append(lps)
