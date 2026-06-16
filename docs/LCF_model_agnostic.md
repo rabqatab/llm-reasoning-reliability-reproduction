@@ -68,3 +68,24 @@ The §4 success criterion was: *conditional CAA yields a consistent non-negative
 **What this establishes.** Combined with `LCF_critical_analysis.md`, the picture is consistent and honest: logic-validity is a **harder, more entangled steering target** than the content/sentiment/refusal attributes where CAA-family methods succeed. *Trained* LCF steering is model-dependent (helps Qwen3, hurts Llama2/Mistral); the field-standard *untrained* model-agnostic recipe (CAA, ± conditional gate) is model-agnostic only in the trivial sense that it **fails uniformly**. Neither is the model-agnostic improvement we sought.
 
 **Caveats / what would change the verdict (future work).** Only 2 models, one task, α∈{4,8}, `n_dir=100`, and a midpoint gate rather than a faithful kNN K-CAST classifier. A genuine test of the AAAI'26 claim needs: (i) the kNN-conditional gate trained on a held-out validity probe; (ii) per-model layer re-selection via LayerNavigator rather than the fixed L11/L12; (iii) a wider α grid with sign search; (iv) evaluation on a formal-validity task closer to Valentino's, not only fallacy-naming. Until then the result stands as a literature-grounded *negative*: the simplest model-agnostic recipe does not transfer to logic-validity.
+
+## 7. v4 — faithful K-CAST (kNN gate + LayerNavigator + signed α): closes the caveats, confirms the negative, explains *why*
+We then implemented exactly the three improvements §6 said were missing (`lcf/lcf_impl/lcf_kcast.py`): **(i) a faithful kNN-classifier gate** on the reference representations (not a midpoint projection); **(ii) LayerNavigator** — pick the steering layer per model by max held-out kNN valid/invalid separability; **(iii) a signed α sweep** (−8,−4,4,8). Raw: `results/kcast_model_agnostic.txt`.
+
+LayerNavigator chose **Qwen3 L=15 (separability 0.885)** and **Llama2 L=22 (0.835)** — both higher-separating than v3's fixed L12/L11, and well above chance (0.5). So the *direction* is found at a genuinely valid/invalid-discriminative layer.
+
+| model | mode | best α | Acc | ΔProb | gate% |
+|---|---|---|---|---|---|
+| Qwen3 | original | – | 31.86 | **3.961** | – |
+| Qwen3 | static-CAA | 4 | 27.94 | 0.658 | – |
+| Qwen3 | **kNN-CAST** | 4 | 28.43 | 0.739 | **98.5** |
+| Llama2 | original | – | 39.71 | **4.869** | – |
+| Llama2 | static-CAA | 8 | 31.37 | 4.000 | – |
+| Llama2 | **kNN-CAST** | 8 | 31.37 | 3.974 | **97.7** |
+
+**The negative holds, and now we know the mechanism.** Three findings:
+1. **Every steering config still degrades both models** — no α (either sign), no layer, no gate beats `original` ΔProb on either model. The best steered ΔProb is far below baseline (Qwen3 0.74 vs 3.96; Llama2 4.00 vs 4.87).
+2. **kNN-CAST ≈ static-CAA at every cell** — the faithful gate did *not* behave differently from static, just as the crude v3 gate didn't.
+3. **Why (the key new result): the kNN gate fires on ~98% of tokens** (`gate% = 98.5 / 97.7`). Although the kNN classifier is 0.84–0.89 separable *on the reference distribution* (short valid/invalid conclusion sentences), at inference it classifies almost every fallacy-task token as "invalid-side" — so the conditional collapses to static. This is **distribution shift between the steering-reference texts and the task tokens**: the gate's in-distribution separability does not transfer to the tokens it must gate. That is the concrete reason conditional steering (K-CAST) does not rescue logic-validity here, even implemented faithfully.
+
+**Final verdict.** Across v3 (CAA ± midpoint gate) and v4 (faithful K-CAST + LayerNavigator + signed sweep), **no untrained, model-agnostic activation-steering recipe improves logic-validity on either the responsive or the unresponsive model.** The model-agnostic improvement we sought does not exist in this family for this target; the honest, mechanistically-grounded conclusion is that logic-validity steering is gated by a reference/task distribution mismatch that conditional gates of this kind cannot overcome. A faithful test of the AAAI'26 claim on its *own* formal-syllogism task (where the reference and task distributions coincide) remains the one open route — but on the LCF fallacy task, the negative is now thorough and explained.

@@ -1,0 +1,21 @@
+== K-CAST Qwen3-8B (n_layers=36) candidate layers [9, 11, 13, 15, 17, 19, 21, 23, 25] ==
+   layer  9: kNN separability 0.845
+   layer 11: kNN separability 0.855
+   layer 13: kNN separability 0.870
+   layer 15: kNN separability 0.885
+   layer 17: kNN separability 0.880
+   layer 19: kNN separability 0.880
+   layer 21: kNN separability 0.880
+   layer 23: kNN separability 0.875
+   layer 25: kNN separability 0.855
+== steering layer L=15 (separability 0.885) ==
+      mode  alpha |    Acc   dProb  gate%
+  original    0.0 |  31.86   3.961      -
+static-CAA   -8.0 |  26.47  -0.044    nan
+  kNN-CAST   -8.0 |  26.47  -0.038   98.5
+static-CAA   -4.0 |  28.92  -0.020    nan
+  kNN-CAST   -4.0 |  28.92  -0.014   98.5
+static-CAA    4.0 |  27.94   0.658    nan
+  kNN-CAST    4.0 |  28.43   0.739   98.5
+static-CAA    8.0 |  26.96   0.486    nan
+  kNN-CAST    8.0 |  27.45   0.551   98.5
