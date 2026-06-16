@@ -1,0 +1,19 @@
+== Syllogism K-CAST Llama-2-7b-chat-hf | direction=content (steer=ablate, pos=believable) ==
+   candidate layers [8, 10, 12, 14, 16, 18, 20, 22]
+   layer  8: believable/not kNN separability 0.287
+   layer 10: believable/not kNN separability 0.575
+   layer 12: believable/not kNN separability 0.788
+   layer 14: believable/not kNN separability 0.875
+   layer 16: believable/not kNN separability 0.738
+   layer 18: believable/not kNN separability 0.562
+   layer 20: believable/not kNN separability 0.387
+   layer 22: believable/not kNN separability 0.275
+== layer L=14 (separability 0.875) ==
+      mode  alpha |   Acc  dProb gate% |    VB    VU    IB    IU | conflictAcc    gap
+  original   0.00 |  50.0   0.88     - |     0     0   100   100 |        50.0    0.0
+    static   0.50 |  50.0   0.69   nan |     0     0   100   100 |        50.0    0.0
+  kNN-CAST   0.50 |  50.0   0.51  74.4 |     0     0   100   100 |        50.0    0.0
+    static   1.00 |  50.0   0.51   nan |     0     0   100   100 |        50.0    0.0
+  kNN-CAST   1.00 |  50.0   0.10  74.4 |     0     0   100   100 |        50.0    0.0
+    static   2.00 |  50.0   0.34   nan |     0     0   100   100 |        50.0    0.0
+  kNN-CAST   2.00 |  50.0  -0.09  74.4 |     0     0   100   100 |        50.0    0.0

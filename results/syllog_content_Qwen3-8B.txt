@@ -1,0 +1,20 @@
+== Syllogism K-CAST Qwen3-8B | direction=content (steer=ablate, pos=believable) ==
+   candidate layers [9, 11, 13, 15, 17, 19, 21, 23, 25]
+   layer  9: believable/not kNN separability 0.062
+   layer 11: believable/not kNN separability 0.138
+   layer 13: believable/not kNN separability 0.250
+   layer 15: believable/not kNN separability 0.475
+   layer 17: believable/not kNN separability 0.788
+   layer 19: believable/not kNN separability 0.913
+   layer 21: believable/not kNN separability 0.938
+   layer 23: believable/not kNN separability 0.837
+   layer 25: believable/not kNN separability 0.613
+== layer L=21 (separability 0.938) ==
+      mode  alpha |   Acc  dProb gate% |    VB    VU    IB    IU | conflictAcc    gap
+  original   0.00 |  97.5  85.58     - |   100   100    90   100 |        95.0    5.0
+    static   0.50 | 100.0  90.17   nan |   100   100   100   100 |       100.0    0.0
+  kNN-CAST   0.50 | 100.0  90.13  98.6 |   100   100   100   100 |       100.0    0.0
+    static   1.00 | 100.0  90.37   nan |   100   100   100   100 |       100.0    0.0
+  kNN-CAST   1.00 | 100.0  90.39  98.6 |   100   100   100   100 |       100.0    0.0
+    static   2.00 | 100.0  83.20   nan |   100   100   100   100 |       100.0    0.0
+  kNN-CAST   2.00 | 100.0  83.01  98.6 |   100   100   100   100 |       100.0    0.0
