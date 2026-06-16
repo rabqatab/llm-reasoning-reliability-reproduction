@@ -197,9 +197,10 @@ cd lcf/eval && uv run python postprocess_judge.py --judge-model gpt-4o   # GPT-4
 ```
 
 ## 진행 현황
-- ✅ **RPC 재현 완료**(33셀 = 논문 Table 2) + **4개 신규 도메인 확장**(BIRD·JurisNet·KCC·LFUD-MCQ; KCC/MCQ는 Node 2에서 생성 중)
+- ✅ **RPC 재현 완료**(33셀 = 논문 Table 2) + **4개 신규 도메인 확장**(BIRD·JurisNet·KCC·LFUD-MCQ) + **BIRD K-scaling**(K=8/16/32 → RPC 우위가 K와 함께 증가, Remark 6 확증)
 - ✅ **LCF 직접 구현 + 비판적 검증 완료** — `docs/LCF_critical_analysis.md`: 전제는 실재(0.82)하나 약함, 논문 recipe가 신호 희석, **분리≠제어**(v2도 개선 없음), headline 지표 감사불가. 날조 아님.
-- ✅ **MoodRisk 대조 probe**(위험방향 0.95) — representation-editing 전제가 의미적 속성엔 강함을 입증
-- 🟡 LCF 베이스라인(SFT/ITI/RAHF)·법률 LCF 데이터(JurisNet·KCC): 빌드 완료, 일부 실행 대기
+- ✅ **model-agnostic 개량 v2→v5 완료** — `docs/LCF_model_agnostic.md`: v3(CAA)·v4(K-CAST)는 fallacy 과제 실패(gate ~98% 발화), v5 형식 삼단논법에선 content-ablation이 Qwen3를 100%로 debias(첫 positive). 단 여전히 non-agnostic + kNN gate는 static 못 넘음.
+- ✅ **MoodRisk 대조 probe**(위험방향 0.95) + **multi-model LCF**(Mistral도 Llama2처럼 악화)
+- ✅ LCF 베이스라인(SFT/ITI/RAHF) 빌드/평가 완료. 법률-LCF 데이터(JurisNet·KCC)는 빌드만 완료(미실행 — model-agnostic 스트림으로 대체).
 
-> 핵심 문서: **`docs/LCF_critical_analysis.md`**(검증), `docs/RPC_reproduction_results.md`, `docs/LCF_reproduction_results.md`. 외부 레포(RPC/LFUD/ITI/RAHF)·논문 PDF는 라이선스상 vendoring하지 않거나 별도이며 URL만 명시.
+> 핵심 문서: **`docs/LCF_critical_analysis.md`**(검증) · **`docs/LCF_model_agnostic.md`**(v2→v5 개량) · `docs/RPC_reproduction_results.md` · `docs/LCF_reproduction_results.md`. 외부 레포(RPC/LFUD/ITI/RAHF)·논문 PDF는 라이선스상 vendoring하지 않거나 별도이며 URL만 명시.
