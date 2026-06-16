@@ -14,10 +14,10 @@ Reproduce two papers from scratch, compare against their baselines on the papers
 | Official code | github.com/WNJXYK/RPC (complete) | github.com/wulidongdong/LCF (**empty** → built from scratch) |
 
 ## Status
-- **RPC: reproduced exactly** (33-cell grid = paper Table 2) and **extended to 4 new domains** — BIRD SQL, JurisNet legal extraction, KCC precedent relevance, LFUD MCQ — to map *where* RPC helps. → `docs/RPC_reproduction_results.md`
+- **RPC: reproduced exactly** (33-cell grid = paper Table 2) and **extended to 4 new domains** — BIRD SQL, JurisNet legal extraction, KCC precedent relevance, LFUD MCQ — to map *where* RPC helps. **BIRD K-scaling (K=8/16/32) confirms Remark 6**: RPC's edge over SC *grows with the sample budget* — RPC ties SC at K=8 but wins by **+2.5 acc & ½ the ECE at K=32**. → `docs/RPC_reproduction_results.md`
 - **LCF: implemented from scratch + critically analysed.** Reproduction is mixed/negative, and we trace *why*: the logic-validity direction is **real but weak (0.82 best single layer vs 0.95 for a semantic attribute), diluted to chance when layers are pooled**, and **not causally controllable** by representation shifting; the paper's flagship 96.56% relies on an **unauditable, confoundable discriminator**. Verdict: not reproducible / not model-agnostic as published — *not* fabrication. → **`docs/LCF_critical_analysis.md`** (+ `docs/LCF_reproduction_results.md`)
-- **LCF baselines** (SFT/ITI/RAHF) + **model-agnostic redesign v2** (best-layer supervised direction + norm-relative intervention): built and evaluated — v2 also gives no consistent gain (separability ≠ controllability).
-- **Generalization datasets built**: legal-LCF (JurisNet & KCC precedents → valid/invalid conclusion pairs), MoodRisk risk-direction probe (control showing the premise holds for semantic attributes).
+- **Model-agnostic investigation (v2→v5), prior-work-grounded** → **`docs/LCF_model_agnostic.md`**: v2 (best-layer supervised dir) and v3 (CAA ± midpoint gate) and v4 (faithful **K-CAST** kNN gate + LayerNavigator + signed sweep) all **fail to steer logic-validity on the fallacy task** — the kNN gate fires ~98% of tokens (reference/task distribution mismatch). v5 builds a **formal-syllogism 2×2 (validity×believability)** task where reference==task: there, **content-direction ablation debiases Qwen3 to 100% (content-effect gap 5→0) — the first positive steering result** — but it is **still not model-agnostic** (no effect on Llama2, which lacks the capability) and the **conditional kNN gate never beats static**. Net: contrastive steering debiases content *only* when distribution-matched + content-direction + a capable model.
+- **LCF baselines** (SFT/ITI/RAHF); multi-model LCF (Mistral also degrades, like Llama2); **generalization datasets built** (legal-LCF from JurisNet & KCC; MoodRisk risk-direction control probe 0.95).
 
 ## Layout
 ```
@@ -30,12 +30,15 @@ rpc/kcc_ext/               RPC on KCC precedent-relevance (balanced binary)
 rpc/lfud_mcq/              RPC on LFUD fallacy-identification MCQ (connects both papers)
 lcf/lcf_impl/              from-scratch LCF: model/losses/data/train/infer
    probe_layers.py, lcf_v2.py, lcf_v2_eval.py   model-agnostic v2 + per-layer probe
+   lcf_caa.py (v3), lcf_kcast.py (v4 K-CAST)    model-agnostic v3/v4 steering
+   gen_syllogisms.py, lcf_syllogism_steer.py    v5 formal-syllogism content-effect test
+   fallacy_eval.py         fast multi-model fallacy-id ΔProb eval
    moodrisk_probe.py       control: risk-direction probe on MoodRisk Mistral reps
 lcf/eval/                  metrics (GPT-4 judge, discriminator), run_eval, postprocess_judge
 lcf/baselines/             SFT / ITI / RAHF
 lcf/legal/, lcf/kcc_legal/ legal-domain LCF data (valid/invalid conclusion pairs)
 lcf/run_lcf_full.sh        one-shot: extract->train->eval (run ALONE on a node)
-docs/   LCF_critical_analysis.md  ← main finding · RPC/LCF_reproduction_results.md · LCF_implementation_spec.md · MASTER_PLAN.md
+docs/   LCF_critical_analysis.md ← main finding · LCF_model_agnostic.md ← v2-v5 journey · RPC/LCF_reproduction_results.md · LCF_implementation_spec.md · MASTER_PLAN.md
 results/                   raw result/probe/sweep logs
 ```
 
@@ -79,6 +82,14 @@ Paper Table 2 averages: PPL 21.90/73.14 · SC 24.82/13.37 · RPC 26.11/12.37 →
 
 Takeaway: **RPC beats SC only when the model is uncertain with diverse answers** (math, legal extraction — low accuracy); when the model is already confident/accurate (MCQ 88%) or the answer is binary (KCC), RPC ≈ SC. **PPL over-confidence is difficulty-dependent** — terrible on hard tasks (ECE 49–93) but well-calibrated on easy ones (MCQ 8.3). A nuanced, faithful characterization of *when* RPC helps. See `docs/RPC_reproduction_results.md`.
 
+**BIRD K-scaling (the budget effect, confirms Remark 6).** RPC *loses* to SC at K=8 only because K is below the paper's K=64–128 regime — re-aggregating the same paths at growing K shows RPC's advantage *grow monotonically*:
+
+| K | SC Acc/ECE | RPC Acc/ECE | RPC vs SC |
+|---|---|---|---|
+| 8 | 27.5/37.7 | 27.0/**34.3** | ~tie acc, RPC best ECE |
+| 16 | 28.4/36.4 | **28.8/31.3** | **RPC wins acc + ECE** |
+| 32 | 27.5/38.2 | **30.0/26.7** | **RPC wins big (+2.5 acc, ½ ECE)** |
+
 ### Paper B — LCF · paper Table 1 layout
 Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&nbsp; Fallacy Identification: Acc↑ · ΔProb↑
 
@@ -99,6 +110,8 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 - **The flagship metric is unauditable.** The paper's Valid%(Trained)=96.56 uses an unreleased self-trained discriminator; our analogue is degenerate; the auditable GPT-4 judge shows no gain.
 
 **Verdict: not reproducible / not model-agnostic as published; the headline leans on an unauditable discriminator — but the premise is real and there is no evidence of fabrication.**
+
+**Making it model-agnostic (v2→v5, prior-work-grounded; `docs/LCF_model_agnostic.md`).** We then tried to *fix* the model-dependence with the activation-steering literature (CAA, RepE, CAST/**K-CAST**, Valentino AAAI'26). v2 (supervised dir), v3 (CAA ± midpoint gate), v4 (faithful K-CAST kNN gate + LayerNavigator + signed sweep) all **fail to steer logic-validity on the fallacy task** — the kNN gate fires ~98% of tokens (reference/task distribution mismatch). On a purpose-built **formal-syllogism 2×2 (validity×believability)** task where reference==task (v5), **content-direction ablation debiases Qwen3 to 100% (content-effect gap 5→0) — the first positive steering result** — yet it is **still not model-agnostic** (Llama2, which can't do syllogisms at all, gets nothing) and the **conditional kNN gate never beats static**. So contrastive steering debiases content effects *only* when distribution-matched + targeting the content (not validity) direction + on a model that already has the capability.
 
 ## Models & data
 Paper RPC data = authors' published reasoning paths (auto-downloaded). LFUD = `github.com/YandaGo/LFUD`. Models: Qwen3-8B (local), Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded); Llama-3.1 still HF-gated. BIRD at `/mnt/nfs/ssd2/bird_data`.
@@ -147,6 +160,8 @@ LLM 신뢰성(reliability) 분야의 **두 논문을 처음부터 구현·재현
 
 핵심: **RPC는 모델이 불확실하고 답이 다양할 때만 SC를 이깁니다**(수학·법률추출, 저정확도). 모델이 이미 확신/정확하거나(MCQ 88%) 답이 이진(KCC)이면 RPC≈SC. **PPL 과신은 난이도 의존적** — 어려운 태스크는 ECE 49–93, 쉬운 태스크(MCQ)는 8.3로 잘 보정. "RPC가 *언제* 작동하는지"의 정밀한 특성화.
 
+**BIRD K-scaling (예산 효과, Remark 6 확증).** RPC가 K=8에서 SC에 진 건 K가 논문의 K=64–128보다 작아서일 뿐 — 같은 경로를 K를 키워 재집계하면 RPC 우위가 **단조 증가**: K=8 (27.0/34.3, ~무) → K=16 (**28.8/31.3, RPC 승**) → K=32 (**30.0/26.7, RPC 대승 +2.5 acc, ECE 절반**). → `docs/RPC_reproduction_results.md`
+
 ### Paper B — LCF · 논문 Table 1 형식
 Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&nbsp; Fallacy Identification: Acc↑ · ΔProb↑
 
@@ -167,6 +182,8 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 - **headline 지표 감사불가**: Valid%(Trained) 96.56은 미공개 self-trained discriminator 의존, 내 analogue은 degenerate, 감사가능한 GPT-4 judge는 개선 없음.
 
 **판정: 논문대로 재현 불가 / model-agnostic 아님 / headline은 감사불가 discriminator 의존 — 단, 전제는 실재하고 날조 증거는 없음.**
+
+**model-agnostic 개량 시도 (v2→v5, 선행연구 기반; `docs/LCF_model_agnostic.md`).** activation-steering 문헌(CAA, RepE, CAST/**K-CAST**, Valentino AAAI'26)에 근거해 모델 의존성을 *고치려* 시도. v2(지도방향)·v3(CAA±midpoint gate)·v4(충실한 K-CAST kNN gate + LayerNavigator + 부호 탐색) 모두 fallacy 과제에서 **logic-validity steering 실패** — kNN gate가 토큰의 ~98%에서 발화(reference/task 분포 불일치). reference==task인 **형식 삼단논법 2×2(validity×believability)** 과제(v5)에선 **content 방향 ablation이 Qwen3를 100%로 debias(content-effect gap 5→0) — 프로젝트 첫 positive 결과** — 그러나 **여전히 model-agnostic 아님**(삼단논법 능력 자체가 없는 Llama2엔 무효), **조건부 kNN gate는 static을 끝내 못 넘음**. 즉 contrastive steering은 *분포 일치 + content(아닌 validity) 방향 + 능력 보유 모델* 조건에서만 content effect를 debias함.
 
 ## 재현 방법
 ```bash
