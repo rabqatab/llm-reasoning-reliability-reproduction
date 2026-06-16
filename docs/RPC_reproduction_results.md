@@ -50,7 +50,21 @@ We applied RPC/SC/PPL to **four local datasets** with verifiable answers, all wi
 (Acc = balanced-acc for KCC; ECE in %. Code: `rpc/{bird_extension,jurisnet_ext,kcc_ext,lfud_mcq}/`; raw logs `results/rpc_*_results.txt`; both generated with the batched sampler + **answer-first** prompt, parse-rate 100%.)
 
 **Findings (complete, 5 domains):**
-1. **RPC beats SC only when the model is UNCERTAIN with DIVERSE answers** — math and JurisNet legal extraction (both low-accuracy, open answer space): RPC wins on accuracy *and* calibration. When the model is **confident/accurate** (MCQ 88%) or the **answer space is binary** (KCC), there is little diversity for RPC's Weibull-pruning + perplexity-weighting to exploit, so **RPC ≈ SC**. On BIRD, K=8 is below the paper's K=64–128 (Remark 6 degradation), so RPC loses.
+1. **RPC beats SC only when the model is UNCERTAIN with DIVERSE answers** — math and JurisNet legal extraction (both low-accuracy, open answer space): RPC wins on accuracy *and* calibration. When the model is **confident/accurate** (MCQ 88%) or the **answer space is binary** (KCC), there is little diversity for RPC's Weibull-pruning + perplexity-weighting to exploit, so **RPC ≈ SC**. On BIRD, K=8 is below the paper's K=64–128 (Remark 6 degradation), so RPC loses — **and the K-scaling experiment below confirms this is a budget effect: RPC recovers and overtakes SC as K grows.**
 2. **PPL over-confidence is task-difficulty-dependent**, not universal: ECE is terrible on the hard low-accuracy tasks (math 49–93, BIRD 73.6, JurisNet 78.8) but **well-calibrated on the easy tasks** (MCQ 8.3, KCC 21.6) — over-confidence surfaces precisely where the model is wrong a lot.
 3. **The headline reproduction (RPC > SC + fixes PPL's calibration) holds where the paper operates** (open-ended math-like reasoning at large K) and degrades gracefully/expectedly off-distribution (small K, binary, or already-easy tasks). A faithful, nuanced characterization rather than a blanket claim.
 4. **LFUD-MCQ connects both papers** — applying Paper A's RPC to Paper B's fallacy-identification task; the model is already strong (88%) so test-time scaling adds little here.
+
+### BIRD K-scaling — RPC's advantage GROWS with the sample budget K
+
+Finding #1 attributed BIRD's RPC loss to K=8 being below the paper's K=64–128 regime (Remark 6). We tested this directly: generate K=32 SQL candidates per question (Qwen3-8B, n=80 BIRD-dev), then aggregate SC/PPL/RPC at K=8/16/32 from the *same* paths (exec-match accuracy; `--timeout 5`, repeats=5, K=32 deterministic so repeats=1). Code: `rpc/bird_extension/run_ksweep.sh`; raw `results/rpc_bird_K{8,16,32}.txt`.
+
+| K | SC Acc / ECE | PPL Acc / ECE | RPC Acc / ECE | RPC vs SC |
+|---|---|---|---|---|
+| 8  | 27.50 / 37.66 | 26.50 / 72.11 | 27.00 / **34.28** | ~tie acc, RPC best ECE |
+| 16 | 28.38 / 36.39 | 26.25 / 72.38 | **28.75 / 31.32** | **RPC wins acc + ECE** |
+| 32 | 27.50 / 38.20 | 26.25 / 72.38 | **30.00 / 26.66** | **RPC wins big (+2.5 acc, ½ ECE)** |
+
+**RPC accuracy rises monotonically with K (27.0 → 28.8 → 30.0) while SC stays flat (~27.5–28.4); RPC ECE falls monotonically (34.3 → 31.3 → 26.7) while SC (~37–38) and PPL (~72) do not.** So on the same task where RPC *loses* at K=8, it *wins decisively* by K=32 — exactly the budget dependence the paper's Remark 6 predicts. This is the cleanest in-repo confirmation of RPC's core claim: the Perplexity-Consistency + Weibull-pruning machinery needs enough candidate diversity to pay off, and once it has it, RPC dominates both SC (accuracy) and PPL (calibration). It also sharpens finding #1: "uncertain + diverse answers" is achieved here not by the task alone but by *scaling K*.
+
+_(Note: a thread-leak in the SQLite timeout made the O(K²) pairwise exec-match at K≥16 explode and signal-kill the process; fixed in `sql_exec.py` via `conn.interrupt()` — see commit. The numbers above are from the fixed path.)_
