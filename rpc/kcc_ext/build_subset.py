@@ -1,12 +1,15 @@
-"""Build a BALANCED evaluation subset for the KCC civil-precedent-relevance task.
+"""Build a class-balanced 4-class subset for the KCC precedent-relevance task.
 
-The full KCC dataset (`/home/alphabridge/Research/KCC/dataset/*.json`, 20 files,
-~2939 (query, candidate) precedent pairs) is heavily imbalanced — only ~12 %
-positive (label=1, "the candidate is a legally related precedent"). A plain
-accuracy on the raw distribution would be dominated by the negative class, so we
-build a class-balanced subset: ALL (or most) label=1 pairs + an EQUAL number of
-randomly sampled label=0 pairs (seed 0). Default target ~300 pairs total
-(capped by available positives).
+KCC (`/home/alphabridge/Research/KCC/dataset/*.json`, 20 files, ~2939 (query,
+candidate) precedent pairs) is a **GRADED relevance** task with labels **0-3**
+(3 = highly relevant; per the authors' `metrics.py`). Raw per-class counts are
+imbalanced (0:2217, 1:349, 2:172, 3:201), so we build a class-balanced subset
+with an EQUAL number of pairs per grade (seed 0), capped by the smallest class.
+
+NOTE: an earlier version of this script wrongly treated KCC as BINARY
+({label==1}=pos vs {label==0}=neg), which dropped grades 2 & 3 and mislabeled
+grade 1 (the authors' binary collapse is {2,3}->similar, {0,1}->dissimilar).
+This 4-class version measures the real task (chance = 25%).
 
 Output: `kcc_subset.jsonl`, one record per line:
   {query_text, candidate_text, label}
@@ -64,26 +67,22 @@ def main():
     args = ap.parse_args()
 
     pairs = load_all_pairs()
-    pos = [r for (r, lab) in pairs if lab == 1]
-    neg = [r for (r, lab) in pairs if lab == 0]
     total_n = len(pairs)
-    print(f"[subset] loaded {total_n} pairs from {args.data_glob}: "
-          f"{len(pos)} positive ({100*len(pos)/total_n:.1f}%), {len(neg)} negative")
+    # KCC is a GRADED 4-class relevance task (labels 0-3; 3 = highly relevant,
+    # per the authors' metrics.py). Earlier this script wrongly binarized to
+    # {label==1}=pos vs {label==0}=neg, DROPPING grades 2 & 3 — and grade 1 is
+    # actually on the authors' "dissimilar" side. We now build a class-balanced
+    # 4-way subset so accuracy/RPC are measured on the real task (chance = 25%).
+    by_class = {c: [r for (r, lab) in pairs if lab == c] for c in (0, 1, 2, 3)}
+    counts = {c: len(v) for c, v in by_class.items()}
+    print(f"[subset] loaded {total_n} pairs from {args.data_glob}: per-class {counts}")
 
-    per_class = args.total // 2
-    n_pos = min(per_class, len(pos))
-    n_neg = min(n_pos, len(neg))            # keep exactly balanced
-    n_pos = n_neg                           # in case neg were the limiting side
-
+    per_class = min(args.total // 4, min(counts.values()))   # exactly balanced 4-way
     rng = random.Random(args.seed)
-    sel_pos = list(pos)
-    rng.shuffle(sel_pos)
-    sel_pos = sel_pos[:n_pos]
-    sel_neg = list(neg)
-    rng.shuffle(sel_neg)
-    sel_neg = sel_neg[:n_neg]
-
-    chosen = [(r, 1) for r in sel_pos] + [(r, 0) for r in sel_neg]
+    chosen = []
+    for c in (0, 1, 2, 3):
+        sel = list(by_class[c]); rng.shuffle(sel)
+        chosen += [(r, c) for r in sel[:per_class]]
     rng.shuffle(chosen)
 
     with open(args.out, "w", encoding="utf-8") as f:
@@ -106,12 +105,11 @@ def main():
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
     n_out = len(chosen)
-    n_p = sum(1 for _, l in chosen if l == 1)
+    from collections import Counter
+    dist = Counter(l for _, l in chosen)
     print(f"[subset] wrote {n_out} pairs to {args.out}")
-    print(f"[subset] BALANCE: {n_p} positive / {n_out - n_p} negative "
-          f"({100*n_p/n_out:.1f}% positive); majority-class baseline ~"
-          f"{100*max(n_p, n_out - n_p)/n_out:.1f}% accuracy "
-          f"(= 50.0% balanced accuracy)")
+    print(f"[subset] 4-class BALANCE {dict(sorted(dist.items()))} "
+          f"({per_class}/class); chance baseline = 25.0% accuracy")
 
 
 if __name__ == "__main__":

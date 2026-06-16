@@ -1,16 +1,15 @@
 """Aggregate sampled KCC relevance answers with SC / PPL / RPC (reuses Paper A evaluators).
 
-Equality is trivial integer match on the 0/1 relevance label, so the RPC repo's
-sc_evaluator / prep_evaluator (PPL) / wpc_evaluator (RPC) are reused UNCHANGED;
-only the equal/check funcs are swapped — exactly the run_mcq.py pattern. CPU-only.
+Equality is trivial integer match on the 0-3 graded-relevance label, so the RPC
+repo's sc_evaluator / prep_evaluator (PPL) / wpc_evaluator (RPC) are reused
+UNCHANGED; only the equal/check funcs are swapped — the run_mcq.py pattern. CPU-only.
 
-Because the KCC subset is class-balanced but the underlying task is imbalanced and
-asymmetric (a model could win plain accuracy by always saying 1), we report BOTH:
+KCC is a 4-class graded-relevance task (labels 0-3). On the class-balanced subset
+we report:
   * Accuracy           — plain top-1 (the evaluator's own `correct`)
-  * BalancedAccuracy   — mean of per-class accuracy (class 0 acc + class 1 acc)/2
+  * BalancedAccuracy   — mean of per-class accuracy over all 4 grades
   * ECE                — calibration of the selected vote (RPC repo metric)
-The majority-class baseline on the balanced subset is ~50% for BOTH plain and
-balanced accuracy.
+Chance / majority-class baseline on the balanced subset is ~25%.
 
 Usage (eval, CPU, RPC repo venv):
   cd /home/alphabridge/Study/reliableAI_final/rpc/RPC
@@ -73,9 +72,10 @@ def solve(data, evaluator, K, repeats=10):
             chosen.append(chosen_label(out[1]))
         # plain accuracy (evaluator's own fractional correct)
         accs.append(100.0 * np.mean([o[0] for o in outs]))
-        # balanced accuracy: mean of per-class top-1 accuracy
+        # balanced accuracy: mean of per-class top-1 accuracy over ALL gold classes
+        # present (KCC is 4-class graded relevance 0-3; chance = 25%).
         per_class = []
-        for cls in (0, 1):
+        for cls in sorted(set(golds)):
             idxs = [i for i in range(n) if golds[i] == cls]
             if idxs:
                 per_class.append(np.mean([1.0 if chosen[i] == cls else 0.0 for i in idxs]))
@@ -142,13 +142,15 @@ def main():
     tag = os.path.basename(args.json).replace("kcc_", "").replace(".json", "")
     n = len(data["predict"])
     golds = data["answer"]
-    npos = sum(1 for g in golds if g == 1)
+    from collections import Counter
+    dist = Counter(golds)
+    n_cls = len(dist)
     flat = [p for q in data["predict"] for p in q]
     parse_rate = 100 * np.mean([p != -1 for p in flat])
-    maj = 100.0 * max(npos, n - npos) / n
-    print(f"[kcc] {n} pairs ({npos} pos / {n - npos} neg), "
+    maj = 100.0 * max(dist.values()) / n
+    print(f"[kcc] {n} pairs, class dist {dict(sorted(dist.items()))} ({n_cls}-class graded relevance), "
           f"K={len(data['predict'][0])}, parse-rate={parse_rate:.1f}%")
-    print(f"[kcc] majority-class baseline ~{maj:.1f}% plain acc (= 50.0% balanced acc)")
+    print(f"[kcc] majority-class baseline ~{maj:.1f}% plain acc (= {100.0/n_cls:.1f}% balanced acc / chance)")
     with open(args.out, "a") as f:
         for mname in args.methods.split(","):
             accs, baccs, eces = solve(data, EVALS[mname], args.K, args.repeats)

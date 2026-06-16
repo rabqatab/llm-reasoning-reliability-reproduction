@@ -2,19 +2,20 @@
 
 A FOURTH domain for the RPC test-time-scaling method (Paper A), after the paper's
 math benchmarks, BIRD text-to-SQL, and JurisNet ko_ver legal extraction. The task
-is BINARY legal-relevance classification: given a Korean query precedent's
-판시사항/판결요지 and a candidate precedent's, decide whether the candidate is a
-legally related 선례 (precedent) to the query — 0(무관) / 1(관련).
+is the KCC **GRADED relevance** classification (labels 0-3, 3 = highly relevant):
+given a Korean query precedent's 판시사항/판결요지 and a candidate's, judge the
+relevance grade 0(무관)/1(약한)/2(상당)/3(매우 밀접). (An earlier version wrongly
+binarized this to 0/1; see build_subset.py.)
 
 Each of K sampled completions reasons briefly in Korean, then ends with
-'Answer: <0/1>'. We parse the last 0/1. Aggregation (SC/PPL/RPC) is done by
-run_kcc.py with trivial integer-equality on the 0/1 label (the run_mcq.py pattern).
+'Answer: <0-3>'. We parse the leading 0-3. Aggregation (SC/PPL/RPC) is done by
+run_kcc.py with trivial integer-equality on the 0-3 label (the run_mcq.py pattern).
 
 Output: kcc_<model>.json with keys
-  predict       0/1 int  (-1 if unparseable)
+  predict       0-3 int  (-1 if unparseable)
   completion    raw model text
   mean_logprob  mean per-token log-prob (from output_scores)
-  answer        gold 0/1 label
+  answer        gold 0-3 label
 shaped [n_pairs][K]. Resumable via a .partial.json checkpoint.
 
 GPU ONLY — do NOT run a 7-8B model on this box (no GPU). See README.md for the
@@ -27,8 +28,9 @@ PROMPT = (
     "다음은 한국 민사 대법원 판례 두 건의 판시사항과 판결요지입니다.\n\n"
     "[질의 판례]\n{query}\n\n"
     "[후보 판례]\n{candidate}\n\n"
-    "질문: 이 두 판례는 법적으로 관련된 선례 관계입니까?\n"
-    "반드시 첫 줄에 'Answer: 0'(무관) 또는 'Answer: 1'(관련) 중 하나만 쓰고, "
+    "질문: 후보 판례가 질의 판례에 대한 선례로서 갖는 관련성 등급을 0~3으로 판정하세요.\n"
+    "(0=무관, 1=약한 관련, 2=상당히 관련, 3=매우 밀접한 선례)\n"
+    "반드시 첫 줄에 'Answer: 0' / 'Answer: 1' / 'Answer: 2' / 'Answer: 3' 중 하나만 쓰고, "
     "그 다음 줄에 한 문장으로 근거를 쓰세요.\n"
 )
 
@@ -38,11 +40,11 @@ def build_prompt(item):
 
 
 def extract_label(text):
-    """Last explicit 'Answer: 0/1', else last standalone 0/1 in the text, else -1."""
-    m = re.findall(r"[Aa]nswer\s*[:\-]?\s*\(?([01])\b", text)
+    """First explicit 'Answer: 0-3', else last standalone 0-3 in the text, else -1."""
+    m = re.findall(r"[Aa]nswer\s*[:\-]?\s*\(?([0-3])\b", text)
     if m:
         return int(m[0])   # answer-first: take the leading 'Answer: N'
-    m2 = re.findall(r"\b([01])\b", text)  # fallback: last standalone 0/1
+    m2 = re.findall(r"\b([0-3])\b", text)  # fallback: last standalone 0-3
     if m2:
         return int(m2[-1])
     return -1  # unparseable
