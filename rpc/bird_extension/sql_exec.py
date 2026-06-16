@@ -26,23 +26,37 @@ def _execute(db_path: str, sql: str, out: dict) -> None:
     ``out['result']``. Intended to be run inside a worker thread so that the
     caller can enforce a wall-clock timeout. On any error, leaves
     ``out['result']`` as None.
+
+    The connection is published to ``out['conn']`` as soon as it is opened so
+    that the caller can call ``conn.interrupt()`` from the main thread to abort
+    a runaway query on timeout (sqlite3.interrupt is documented safe to call
+    from another thread). Without this, a timed-out query keeps running in this
+    daemon thread; under the O(K^2) pairwise exec-match the leaked threads
+    accumulate until the process is signal-killed.
     """
+    conn = None
     try:
         # ``uri`` is False; open read-only would be nicer but BIRD DB paths are
         # plain files. We never write, so a normal connection is fine.
-        conn = sqlite3.connect(db_path)
+        # check_same_thread=False so the main thread may call conn.interrupt().
+        conn = sqlite3.connect(db_path, check_same_thread=False)
+        out["conn"] = conn
         # BIRD databases contain non-UTF8 bytes in a few text columns; decode
         # leniently so a stray byte does not abort an otherwise valid query.
         conn.text_factory = lambda b: b.decode("utf-8", "replace")
-        try:
-            cursor = conn.execute(sql)
-            rows = cursor.fetchall()
-            # Normalize: each row -> tuple, whole result -> order-insensitive set.
-            out["result"] = frozenset(tuple(row) for row in rows)
-        finally:
-            conn.close()
+        cursor = conn.execute(sql)
+        rows = cursor.fetchall()
+        # Normalize: each row -> tuple, whole result -> order-insensitive set.
+        out["result"] = frozenset(tuple(row) for row in rows)
     except Exception:
+        # Includes OperationalError("interrupted") when aborted on timeout.
         out["result"] = None
+    finally:
+        if conn is not None:
+            try:
+                conn.close()
+            except Exception:
+                pass
 
 
 def run_sql(db_path: str, sql: str, timeout: int = 30) -> ResultSet:
@@ -51,17 +65,23 @@ def run_sql(db_path: str, sql: str, timeout: int = 30) -> ResultSet:
     Returns a ``frozenset`` of row-tuples (order-insensitive) on success, or
     ``None`` on any error or if execution exceeds ``timeout`` seconds.
 
-    A daemon worker thread is used so that a runaway / long-running query does
-    not block the caller indefinitely. Note that sqlite3 will keep executing in
-    the background thread after a timeout, but the thread is a daemon and the
-    process is free to continue; for the short BIRD dev queries this is fine.
+    A daemon worker thread enforces the wall-clock timeout. On timeout we call
+    ``conn.interrupt()`` so the runaway query is actually aborted and the worker
+    thread terminates, rather than leaking a live thread per timed-out query.
     """
-    out: dict = {"result": None}
+    out: dict = {"result": None, "conn": None}
     worker = threading.Thread(target=_execute, args=(db_path, sql, out), daemon=True)
     worker.start()
     worker.join(timeout)
     if worker.is_alive():
-        # Timed out: leave result as None.
+        # Timed out: abort the in-flight query so the worker thread can exit.
+        conn = out.get("conn")
+        if conn is not None:
+            try:
+                conn.interrupt()
+            except Exception:
+                pass
+        worker.join(2)  # let the worker unwind (catch interrupt, close conn)
         return None
     return out["result"]
 
