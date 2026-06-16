@@ -1,0 +1,7 @@
+== CAA steering Qwen3-8B L12 ==
+        mode  alpha |    Acc   ΔProb
+    original    0.0 |  31.86   3.961
+  static-CAA    4.0 |  27.94   0.449
+    cond-CAA    4.0 |  27.94   0.495
+  static-CAA    8.0 |  26.96   0.361
+    cond-CAA    8.0 |  26.96   0.348

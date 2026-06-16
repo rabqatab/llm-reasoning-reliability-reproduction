@@ -1,0 +1,7 @@
+== CAA steering Llama-2-7b-chat-hf L11 ==
+        mode  alpha |    Acc   ΔProb
+    original    0.0 |  39.71   4.869
+  static-CAA    4.0 |  25.98   0.226
+    cond-CAA    4.0 |  25.98   0.181
+  static-CAA    8.0 |  23.53  -0.057
+    cond-CAA    8.0 |  22.55  -0.035

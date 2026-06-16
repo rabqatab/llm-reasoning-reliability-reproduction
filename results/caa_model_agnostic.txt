@@ -1,0 +1,19 @@
+# Model-agnostic CAA logic steering (v3) — results
+# original vs static-CAA vs conditional-CAA on fallacy-identification (Acc, ΔProb x100)
+# Node1=Qwen3 (sparkq adab), Node2=Llama2 (docker). n_dir=100, alphas 0,4,8.
+
+## Qwen3-8B  (layer 12)
+        mode  alpha |    Acc   ΔProb
+    original    0.0 |  31.86   3.961
+  static-CAA    4.0 |  27.94   0.449
+    cond-CAA    4.0 |  27.94   0.495
+  static-CAA    8.0 |  26.96   0.361
+    cond-CAA    8.0 |  26.96   0.348
+
+## Llama-2-7b-chat-hf  (layer 11)
+        mode  alpha |    Acc   ΔProb
+    original    0.0 |  39.71   4.869
+  static-CAA    4.0 |  25.98   0.226
+    cond-CAA    4.0 |  25.98   0.181
+  static-CAA    8.0 |  23.53  -0.057
+    cond-CAA    8.0 |  22.55  -0.035

@@ -33,4 +33,38 @@ Grounded in CAA + LayerNavigator + CAST/K-CAST:
 ## 4. Success criterion (honest, pre-registered)
 v3 is a *model-agnostic improvement* iff conditional CAA steering yields a **consistent (non-negative, ideally positive) ΔProb shift on BOTH** Qwen3 and Llama2 — in particular, it should not degrade Llama2 the way static LCF did, and ideally helps it (à la K-CAST's +15% on unresponsive models). If even conditional CAA fails to steer logic-validity, that is itself a strong, literature-grounded negative (logic-validity is a harder steering target than the content/sentiment/refusal attributes where CAA-family methods succeed).
 
-_Results: filled after the GPU run (Qwen3 + Llama2 coefficient×conditional sweep)._
+## 5. Results (Qwen3 + Llama2, coefficient × conditional sweep)
+
+Run on the responsive + unresponsive pair. Qwen3 on Node 1 (sparkq), Llama2 on Node 2 (docker), `n_dir=100`, fallacy-identification ΔProb (×100) and Acc. Raw: `results/caa_model_agnostic.txt`.
+
+**Qwen3-8B** (steering layer 12; trained-LCF *helped* this model: ΔProb 3.96→7.83)
+
+| mode | α | Acc | ΔProb |
+|---|---|---|---|
+| original | 0 | 31.86 | **3.961** |
+| static-CAA | 4 | 27.94 | 0.449 |
+| cond-CAA | 4 | 27.94 | 0.495 |
+| static-CAA | 8 | 26.96 | 0.361 |
+| cond-CAA | 8 | 26.96 | 0.348 |
+
+**Llama-2-7b-chat** (steering layer 11; trained-LCF *degraded* this model: ΔProb 4.85→2.44)
+
+| mode | α | Acc | ΔProb |
+|---|---|---|---|
+| original | 0 | 39.71 | **4.869** |
+| static-CAA | 4 | 25.98 | 0.226 |
+| cond-CAA | 4 | 25.98 | 0.181 |
+| static-CAA | 8 | 23.53 | −0.057 |
+| cond-CAA | 8 | 22.55 | −0.035 |
+
+## 6. Verdict — the pre-registered criterion is NOT met (honest negative)
+The §4 success criterion was: *conditional CAA yields a consistent non-negative ΔProb shift on BOTH models.* It fails decisively:
+
+1. **CAA steering degrades both models, monotonically in α.** ΔProb collapses from ~4–5 to <0.5 (and negative at α=8 on Llama2); Acc drops 4–14 points. The mean-difference residual direction does not push fallacy-identification in the intended direction on *either* model — including Qwen3, which the *trained* LCF projector did improve.
+2. **The conditional gate is inert here: cond ≈ static at every (model, α).** Our midpoint-projection gate (steer only invalid-side tokens) neither rescues the unresponsive model (Llama2) nor protects the responsive one (Qwen3) — contrary to the K-CAST result (Valentino AAAI'26, +15% on unresponsive models) that motivated it.
+
+**Why the divergence from the literature's conditional-steering success?** Two load-bearing differences: (a) our gate is a crude linear midpoint projection, not K-CAST's kNN classifier on the input representation — a weaker condition that fires on nearly every token, making it behave like static; (b) the target differs — K-CAST steered *formal syllogistic validity*, whereas this fallacy-identification ΔProb couples the logic direction to a task-framing the raw mean-diff direction does not transfer to. The trained LCF projector found a model-specific subspace that helped Qwen3; the untrained CAA direction finds none that helps *any* model.
+
+**What this establishes.** Combined with `LCF_critical_analysis.md`, the picture is consistent and honest: logic-validity is a **harder, more entangled steering target** than the content/sentiment/refusal attributes where CAA-family methods succeed. *Trained* LCF steering is model-dependent (helps Qwen3, hurts Llama2/Mistral); the field-standard *untrained* model-agnostic recipe (CAA, ± conditional gate) is model-agnostic only in the trivial sense that it **fails uniformly**. Neither is the model-agnostic improvement we sought.
+
+**Caveats / what would change the verdict (future work).** Only 2 models, one task, α∈{4,8}, `n_dir=100`, and a midpoint gate rather than a faithful kNN K-CAST classifier. A genuine test of the AAAI'26 claim needs: (i) the kNN-conditional gate trained on a held-out validity probe; (ii) per-model layer re-selection via LayerNavigator rather than the fixed L11/L12; (iii) a wider α grid with sign search; (iv) evaluation on a formal-validity task closer to Valentino's, not only fallacy-naming. Until then the result stands as a literature-grounded *negative*: the simplest model-agnostic recipe does not transfer to logic-validity.
