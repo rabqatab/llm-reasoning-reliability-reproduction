@@ -1,0 +1,1852 @@
+{
+  "summary": {
+    "baseline": {
+      "perplexity": 1.4713605462159238,
+      "valid_pct": null,
+      "n": 204
+    },
+    "lcf": {
+      "perplexity": 1.4750178195538113,
+      "valid_pct": null,
+      "n": 204
+    }
+  },
+  "rows": [
+    {
+      "index": 0,
+      "premise": "All electronic products need electricity and electronics are part of my family.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Therefore, I need to ensure that my family has access to a reliable source of electricity in order to power our electronic devices.",
+      "baseline_ppl": 1.6143083066986255,
+      "lcf": "Therefore, I need to ensure that my family has access to a reliable source of electricity.",
+      "lcf_ppl": 1.6864933525470898
+    },
+    {
+      "index": 1,
+      "premise": "All electronic products need electricity and there is an increase in electricity.",
+      "fallacy_type": "false causality",
+      "baseline": "Electricity demand is increasing.",
+      "baseline_ppl": 1.961729799686538,
+      "lcf": "Electricity demand is increasing.",
+      "lcf_ppl": 1.961729799686538
+    },
+    {
+      "index": 2,
+      "premise": "All electronic products function by utilizing electricity.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Electricity is necessary for the functioning of electronic products.",
+      "baseline_ppl": 1.3299453247322255,
+      "lcf": "Electricity is necessary for the functioning of electronic products.",
+      "lcf_ppl": 1.3299453247322255
+    },
+    {
+      "index": 3,
+      "premise": "Most people think that all electronic products need electricity.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, most people believe that electronic products are powered by electricity.",
+      "baseline_ppl": 1.4645594556330326,
+      "lcf": "Therefore, most people believe that electronic products are powered by electricity.",
+      "lcf_ppl": 1.4645594556330326
+    },
+    {
+      "index": 4,
+      "premise": "Every electronic item is currently operating.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Therefore, the power is currently on.",
+      "baseline_ppl": 2.135762174962439,
+      "lcf": "Therefore, the power is currently on.",
+      "lcf_ppl": 2.135762174962439
+    },
+    {
+      "index": 5,
+      "premise": "All electronic products need electricity.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Electricity is necessary for electronic products.",
+      "baseline_ppl": 1.4658015287101127,
+      "lcf": "Electricity is necessary for electronic products.",
+      "lcf_ppl": 1.4658015287101127
+    },
+    {
+      "index": 6,
+      "premise": "John claims that all electronic products need electricity.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Therefore, John believes that electricity is necessary for electronic products.",
+      "baseline_ppl": 1.4789884076705422,
+      "lcf": "Therefore, John believes that electricity is necessary for electronic products.",
+      "lcf_ppl": 1.4789884076705422
+    },
+    {
+      "index": 7,
+      "premise": "It will really impress your friends and make them think you're on the leading edge of technology.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "You should consider purchasing a new smartphone with advanced features.",
+      "baseline_ppl": 2.6359177846414075,
+      "lcf": "You should consider purchasing a new smartphone with advanced features.",
+      "lcf_ppl": 2.6359177846414075
+    },
+    {
+      "index": 8,
+      "premise": "John: All electronic products need electricity.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "John will need to buy electricity to power his electronic products.",
+      "baseline_ppl": 1.8822146530560389,
+      "lcf": "John will need to buy electricity to power his electronic products.",
+      "lcf_ppl": 1.8822146530560389
+    },
+    {
+      "index": 9,
+      "premise": "Experts at the Institute of Electrical Engineers say all electronics need electricity.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Therefore, all electronics require electricity to function.",
+      "baseline_ppl": 1.606744310518127,
+      "lcf": "All electronics require electricity to function.",
+      "lcf_ppl": 1.4274109229490544
+    },
+    {
+      "index": 10,
+      "premise": "No one can prove that electronic products can work without electricity.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, it is reasonable to assume that electronic products require electricity to function.",
+      "baseline_ppl": 1.2900014993270512,
+      "lcf": "Therefore, it is reasonable to assume that electronic products require electricity to function.",
+      "lcf_ppl": 1.2900014993270512
+    },
+    {
+      "index": 11,
+      "premise": "If a gadget qualifies as an electronic product, it will require electricity. And this gadget does require electricity.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "This gadget is an electronic product.",
+      "baseline_ppl": 1.1467271673565602,
+      "lcf": "This gadget is an electronic product.",
+      "lcf_ppl": 1.1467271673565602
+    },
+    {
+      "index": 12,
+      "premise": "All flowers don't stay open forever and roses are a type of plants.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Therefore, it is reasonable to assume that all roses will eventually wilt and die.",
+      "baseline_ppl": 1.3831944688691695,
+      "lcf": "Therefore, it is reasonable to assume that roses will eventually wilt and die.",
+      "lcf_ppl": 1.50479752681777
+    },
+    {
+      "index": 13,
+      "premise": "When I stop looking at them, the flowers close.",
+      "fallacy_type": "false causality",
+      "baseline": "The flowers are sensitive to my gaze.",
+      "baseline_ppl": 1.6879725913072283,
+      "lcf": "The flowers are sensitive to my gaze.",
+      "lcf_ppl": 1.6879725913072283
+    },
+    {
+      "index": 14,
+      "premise": "All flowers don't stay open forever.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Therefore, it is not possible for all flowers to stay open at the same time.",
+      "baseline_ppl": 1.5033831515431415,
+      "lcf": "Therefore, it is not possible for all flowers to stay open at the same time.",
+      "lcf_ppl": 1.5033831515431415
+    },
+    {
+      "index": 15,
+      "premise": "Most people think that all flowers don't stay open forever.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, it is reasonable to assume that the flowers in the garden will eventually wilt and die.",
+      "baseline_ppl": 1.575253458902177,
+      "lcf": "Therefore, it is reasonable to assume that some flowers do stay open forever.",
+      "lcf_ppl": 1.5237540495213366
+    },
+    {
+      "index": 16,
+      "premise": "A flower doesn't perish eventually.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Therefore, a flower will always be a flower.",
+      "baseline_ppl": 1.8419744291237223,
+      "lcf": "Therefore, a flower will always be a flower.",
+      "lcf_ppl": 1.8419744291237223
+    },
+    {
+      "index": 17,
+      "premise": "All flowers don't stay open forever.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Therefore, it is not possible for all flowers to stay open at the same time.",
+      "baseline_ppl": 1.5033831515431415,
+      "lcf": "Therefore, it is not possible for all flowers to stay open at the same time.",
+      "lcf_ppl": 1.5033831515431415
+    },
+    {
+      "index": 18,
+      "premise": "John says that all flowers don't stay open forever.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Therefore, it is not possible for all flowers to stay open at the same time.",
+      "baseline_ppl": 1.496845271392794,
+      "lcf": "Therefore, it is not possible for all flowers to stay open forever.",
+      "lcf_ppl": 1.61974305521435
+    },
+    {
+      "index": 19,
+      "premise": "Think of the sadness and disappointment you feel when you see a wilted flower.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "It is reasonable to assume that the flower felt the same way when it wilted.",
+      "baseline_ppl": 1.7644755552214584,
+      "lcf": "It is reasonable to assume that the flower felt the same way when it wilted.",
+      "lcf_ppl": 1.7644755552214584
+    },
+    {
+      "index": 20,
+      "premise": "Alex: All flowers don't stay open forever.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Therefore, it is not possible for a flower to stay open forever.",
+      "baseline_ppl": 1.8546661178887403,
+      "lcf": "Therefore, it is not possible for a flower to stay open forever.",
+      "lcf_ppl": 1.8546661178887403
+    },
+    {
+      "index": 21,
+      "premise": "Gardeners claims that all flowers don't stay open forever. And gardeners are experts in the field concerning flowers.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Gardeners know that all flowers don't stay open forever.",
+      "baseline_ppl": 1.4178119112981538,
+      "lcf": "Gardeners know that all flowers don't stay open forever.",
+      "lcf_ppl": 1.4178119112981538
+    },
+    {
+      "index": 22,
+      "premise": "Nobody can show me a flower that stays open forever.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, it is impossible for a flower to stay open forever.",
+      "baseline_ppl": 1.7481376363595573,
+      "lcf": "Therefore, it is impossible for a flower to stay open forever.",
+      "lcf_ppl": 1.7481376363595573
+    },
+    {
+      "index": 23,
+      "premise": "If all flowers are roses, they don't stay open forever. Note that All flowers don't stay open forever.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Therefore, not all flowers are roses.",
+      "baseline_ppl": 1.2377634163092552,
+      "lcf": "Therefore, not all flowers are roses.",
+      "lcf_ppl": 1.2377634163092552
+    },
+    {
+      "index": 36,
+      "premise": "All people should obey the rules of the road.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Therefore, it is reasonable to expect that all people will obey the rules of the road.",
+      "baseline_ppl": 1.5188054472586816,
+      "lcf": "Therefore, it is reasonable to expect that all people will obey the rules of the road.",
+      "lcf_ppl": 1.5188054472586816
+    },
+    {
+      "index": 37,
+      "premise": "After people started to obey the rules of the road, there were fewer accidents.",
+      "fallacy_type": "false causality",
+      "baseline": "Obeying the rules of the road leads to fewer accidents.",
+      "baseline_ppl": 1.1519094370656218,
+      "lcf": "Obeying the rules of the road leads to fewer accidents.",
+      "lcf_ppl": 1.1519094370656218
+    },
+    {
+      "index": 38,
+      "premise": "The rules of the road should be obeyed.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Drivers should be held accountable for breaking the rules of the road.",
+      "baseline_ppl": 1.432605999405637,
+      "lcf": "Drivers should be held accountable for breaking the rules of the road.",
+      "lcf_ppl": 1.432605999405637
+    },
+    {
+      "index": 39,
+      "premise": "Most people think that obeying the rules of the road is crucial.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, it is reasonable to assume that most people will follow the rules of the road.",
+      "baseline_ppl": 1.48845428444839,
+      "lcf": "Therefore, it is reasonable to assume that most people will obey the rules of the road.",
+      "lcf_ppl": 1.501330858500887
+    },
+    {
+      "index": 40,
+      "premise": "All individuals must adhere to traffic laws.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Therefore, it is reasonable to assume that all individuals will adhere to traffic laws.",
+      "baseline_ppl": 1.6174261563937455,
+      "lcf": "Failure to adhere to traffic laws will result in consequences.",
+      "lcf_ppl": 1.4213135568739415
+    },
+    {
+      "index": 41,
+      "premise": "All people should obey the rules of the road.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Therefore, it is reasonable to expect that all people will obey the rules of the road.",
+      "baseline_ppl": 1.5188054472586816,
+      "lcf": "Therefore, it is reasonable to expect that all people will obey the rules of the road.",
+      "lcf_ppl": 1.5188054472586816
+    },
+    {
+      "index": 42,
+      "premise": "John claims that all people should obey the rules of the road, but John has received several speeding tickets in the past.",
+      "fallacy_type": "ad hominem",
+      "baseline": "John is not a good role model for obeying the rules of the road.",
+      "baseline_ppl": 1.2214336663336107,
+      "lcf": "John is not a good role model for obeying the rules of the road.",
+      "lcf_ppl": 1.2214336663336107
+    },
+    {
+      "index": 43,
+      "premise": "Think about the grieving mother who lost her child in a tragic accident. It's absolutely heart-wrenching. You don't want to cause such sorrow.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "It's important to be mindful of the potential impact of our words and actions on others, especially when it comes to those who are grieving or in a state of emotional vulnerability.",
+      "baseline_ppl": 1.4100409977340964,
+      "lcf": "It's important to be mindful of the potential impact of our words and actions on others, especially when it comes to those who are grieving or in a state of emotional vulnerability.",
+      "lcf_ppl": 1.4100409977340964
+    },
+    {
+      "index": 44,
+      "premise": "Person A: All people should obey the rules of the road.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Person A believes that all people should follow the rules of the road.",
+      "baseline_ppl": 1.402599274148151,
+      "lcf": "Person A believes that all people should obey the rules of the road.",
+      "lcf_ppl": 1.4022157214321642
+    },
+    {
+      "index": 45,
+      "premise": "The National Highway Traffic Safety Administration claims that all people should obey the rules of the road. And they are experts on road safety.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "It is reasonable to assume that obeying the rules of the road is important for road safety.",
+      "baseline_ppl": 1.3943718706951709,
+      "lcf": "It is reasonable to assume that obeying the rules of the road is important for road safety.",
+      "lcf_ppl": 1.3943718706951709
+    },
+    {
+      "index": 46,
+      "premise": "There are no reports stating that someone had issues not obeying the road rules.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "It is safe to assume that everyone is obeying the road rules.",
+      "baseline_ppl": 1.4295534905545344,
+      "lcf": "It is safe to assume that everyone is obeying the road rules.",
+      "lcf_ppl": 1.4295534905545344
+    },
+    {
+      "index": 47,
+      "premise": "If all people obey the rules of the road, then there will be no accidents. And there are no accidents.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Therefore, all people obey the rules of the road.",
+      "baseline_ppl": 1.1037002315287672,
+      "lcf": "Therefore, all people obey the rules of the road.",
+      "lcf_ppl": 1.1037002315287672
+    },
+    {
+      "index": 60,
+      "premise": "Most museums will be closed on Mondays and museums are a type of cultural institution.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Most cultural institutions will be closed on Mondays.",
+      "baseline_ppl": 1.147514422424026,
+      "lcf": "Most cultural institutions will be closed on Mondays.",
+      "lcf_ppl": 1.147514422424026
+    },
+    {
+      "index": 61,
+      "premise": "Most museums are closed on Mondays.",
+      "fallacy_type": "false causality",
+      "baseline": "It is likely that the Louvre is closed on Mondays.",
+      "baseline_ppl": 1.5322488668338012,
+      "lcf": "It is likely that the Louvre is closed on Mondays.",
+      "lcf_ppl": 1.5322488668338012
+    },
+    {
+      "index": 62,
+      "premise": "Most museums are closed on Mondays.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "It is likely that the Louvre is closed on Mondays.",
+      "baseline_ppl": 1.5322488668338012,
+      "lcf": "It is likely that the Louvre is closed on Mondays.",
+      "lcf_ppl": 1.5322488668338012
+    },
+    {
+      "index": 63,
+      "premise": "Many people believe most museums will be closed on Mondays.",
+      "fallacy_type": "ad populum",
+      "baseline": "It is likely that most museums will be closed on Mondays.",
+      "baseline_ppl": 1.304923547124019,
+      "lcf": "It is likely that most museums will be closed on Mondays.",
+      "lcf_ppl": 1.304923547124019
+    },
+    {
+      "index": 64,
+      "premise": "Most museums will be closed on Mondays.",
+      "fallacy_type": "false dilemma",
+      "baseline": "It is likely that the museum will be closed on Monday.",
+      "baseline_ppl": 1.670590300356506,
+      "lcf": "It is likely that the museum will be closed on Monday.",
+      "lcf_ppl": 1.670590300356506
+    },
+    {
+      "index": 65,
+      "premise": "Most museums will be closed on Mondays.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "It is likely that the museum will be closed on Monday.",
+      "baseline_ppl": 1.670590300356506,
+      "lcf": "It is likely that the museum will be closed on Monday.",
+      "lcf_ppl": 1.670590300356506
+    },
+    {
+      "index": 66,
+      "premise": "John states that most museums will be closed on Mondays.",
+      "fallacy_type": "ad hominem",
+      "baseline": "John's statement implies that museums are open on other days of the week.",
+      "baseline_ppl": 1.337634949379548,
+      "lcf": "John's statement implies that museums are open on other days of the week.",
+      "lcf_ppl": 1.337634949379548
+    },
+    {
+      "index": 67,
+      "premise": "Can't you see the sadness in the eyes of those children when they're told that they can't visit the museum on Monday because it's closed?",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "The children are sad because they can't visit the museum on Monday.",
+      "baseline_ppl": 1.2124826474940886,
+      "lcf": "The children are sad because they can't visit the museum on Monday.",
+      "lcf_ppl": 1.2124826474940886
+    },
+    {
+      "index": 68,
+      "premise": "Person A: Most museums will be closed on Mondays.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Person A will not visit any museums on Mondays.",
+      "baseline_ppl": 1.3229414590284148,
+      "lcf": "Person A will not visit any museums on Mondays.",
+      "lcf_ppl": 1.3229414590284148
+    },
+    {
+      "index": 69,
+      "premise": "Renowned Museum curators disagree the claim that most museums will be closed on Mondays. And they are experts in the field of museum operations.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "It is likely that museums will not be closed on Mondays.",
+      "baseline_ppl": 1.337887515639134,
+      "lcf": "It is likely that museums will not be closed on Mondays.",
+      "lcf_ppl": 1.337887515639134
+    },
+    {
+      "index": 70,
+      "premise": "There hasn't been any evidence of a museum open on a Monday.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "It is likely that the museum is closed on Mondays.",
+      "baseline_ppl": 1.13458098873661,
+      "lcf": "It is likely that the museum is closed on Mondays.",
+      "lcf_ppl": 1.13458098873661
+    },
+    {
+      "index": 71,
+      "premise": "Most museums will be closed if it is Monday, and currently majority of the museums are indeed closed.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "It is likely that the majority of museums will be closed on Mondays.",
+      "baseline_ppl": 1.5026218503248787,
+      "lcf": "It is likely that the majority of museums will be closed on Mondays.",
+      "lcf_ppl": 1.5026218503248787
+    },
+    {
+      "index": 108,
+      "premise": "Sarah has two cats in her apartment. Sarah lives in an apartment building.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Sarah's apartment building has two cats.",
+      "baseline_ppl": 1.4019692281079033,
+      "lcf": "Sarah's apartment building has two cats.",
+      "lcf_ppl": 1.4019692281079033
+    },
+    {
+      "index": 109,
+      "premise": "Sarah has two cats in her apartment and she has allergies.",
+      "fallacy_type": "false causality",
+      "baseline": "Sarah should not have cats in her apartment.",
+      "baseline_ppl": 1.379974671171743,
+      "lcf": "Sarah should not have cats in her apartment.",
+      "lcf_ppl": 1.379974671171743
+    },
+    {
+      "index": 110,
+      "premise": "There are two cats in Sarah's apartment.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "One of the cats is black.",
+      "baseline_ppl": 1.4995142680967284,
+      "lcf": "One of the cats is black.",
+      "lcf_ppl": 1.4995142680967284
+    },
+    {
+      "index": 111,
+      "premise": "Many people believe that Sarah has two cats in her apartment.",
+      "fallacy_type": "ad populum",
+      "baseline": "It is likely that Sarah has two cats in her apartment.",
+      "baseline_ppl": 1.1481389047320585,
+      "lcf": "It is likely that Sarah has two cats in her apartment.",
+      "lcf_ppl": 1.1481389047320585
+    },
+    {
+      "index": 112,
+      "premise": "Sarah has two cats in her apartment.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Sarah's apartment is likely to have a higher concentration of cat hair and dander than an apartment with only one cat.",
+      "baseline_ppl": 1.4860564190979468,
+      "lcf": "Sarah's apartment is likely to have a higher concentration of cat hair and dander than an apartment with only one cat.",
+      "lcf_ppl": 1.4860564190979468
+    },
+    {
+      "index": 113,
+      "premise": "Sarah has two cats in her apartment.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Sarah's apartment is likely to have a higher concentration of cat hair and dander than an apartment with only one cat.",
+      "baseline_ppl": 1.4860564190979468,
+      "lcf": "Sarah's apartment is likely to have a higher concentration of cat hair and dander than an apartment with only one cat.",
+      "lcf_ppl": 1.4860564190979468
+    },
+    {
+      "index": 114,
+      "premise": "Sarah is a cat hoarder.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Sarah is a mentally unstable person.",
+      "baseline_ppl": 1.7933042969540332,
+      "lcf": "Sarah is a crazy cat lady.",
+      "lcf_ppl": 1.7580907436675826
+    },
+    {
+      "index": 115,
+      "premise": "Sarah's two cats must be suffering in her apartment. Think about how lonely and sad those poor animals must feel, cooped up all day.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "It's time for Sarah to get a third cat to keep them company.",
+      "baseline_ppl": 1.6113904691223422,
+      "lcf": "It's time for Sarah to get a third cat to keep the other two company.",
+      "lcf_ppl": 1.5766530304297561
+    },
+    {
+      "index": 116,
+      "premise": "Speaker 1: Sarah has two cats in her apartment.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Sarah has a total of 4 legs.",
+      "baseline_ppl": 2.4716840411985097,
+      "lcf": "Sarah has a total of 4 legs.",
+      "lcf_ppl": 2.4716840411985097
+    },
+    {
+      "index": 117,
+      "premise": "Sarah, a well-known animal lover, has two cats in her apartment and she said cats are not worth keeping.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "It is reasonable to assume that Sarah's opinion of cats is not positive.",
+      "baseline_ppl": 1.5710095679204517,
+      "lcf": "It is not worth keeping cats in Sarah's apartment.",
+      "lcf_ppl": 1.4079405983988356
+    },
+    {
+      "index": 118,
+      "premise": "No one has seen more than two cats in Sarah's apartment.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "It is likely that Sarah's apartment is not suitable for more than two cats.",
+      "baseline_ppl": 1.488901449940884,
+      "lcf": "It is impossible for Sarah to have more than two cats in her apartment.",
+      "lcf_ppl": 1.2292631844705866
+    },
+    {
+      "index": 119,
+      "premise": "If Sarah had an animal, it would be a cat or a dog. And she has two cats in her apartment.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Sarah has a cat or a dog.",
+      "baseline_ppl": 1.4334273874508918,
+      "lcf": "Sarah has a cat or a dog.",
+      "lcf_ppl": 1.4334273874508918
+    },
+    {
+      "index": 144,
+      "premise": "Mary studied French in high school and Mary is an American.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.1347466007167148,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.1347466007167148
+    },
+    {
+      "index": 145,
+      "premise": "Mary studied French in high school and now she has a job in France.",
+      "fallacy_type": "false causality",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.1436024767648683,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.1436024767648683
+    },
+    {
+      "index": 146,
+      "premise": "Mary is proficient in French and she studied French in high school.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Mary is likely to be fluent in French.",
+      "baseline_ppl": 1.3859278620464035,
+      "lcf": "Mary is likely to be fluent in French.",
+      "lcf_ppl": 1.3859278620464035
+    },
+    {
+      "index": 147,
+      "premise": "Many are aware that Mary studied French in high school.",
+      "fallacy_type": "ad populum",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.2749860346918576,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.2749860346918576
+    },
+    {
+      "index": 148,
+      "premise": "Mary was studying French in high school.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.1762462378125491,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.1762462378125491
+    },
+    {
+      "index": 149,
+      "premise": "Mary studied French in high school.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.155852743746021,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.155852743746021
+    },
+    {
+      "index": 150,
+      "premise": "Mary is an infamous liar.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Mary is not to be trusted.",
+      "baseline_ppl": 1.2706203885080551,
+      "lcf": "Mary is not to be trusted.",
+      "lcf_ppl": 1.2706203885080551
+    },
+    {
+      "index": 151,
+      "premise": "Mary studied French in high school. She would always talk about how beautiful Paris is and her dreams of living there.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Mary is likely to be fluent in French.",
+      "baseline_ppl": 1.3125108207858727,
+      "lcf": "Mary is likely to be fluent in French.",
+      "lcf_ppl": 1.3125108207858727
+    },
+    {
+      "index": 152,
+      "premise": "John: Mary studied French in high school.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.2430261093246247,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.2430261093246247
+    },
+    {
+      "index": 153,
+      "premise": "Mary, who studied French in high school, claims that the French language is the most romantic one.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Mary's opinion that the French language is the most romantic one is not necessarily accurate.",
+      "baseline_ppl": 1.3956930891221506,
+      "lcf": "Mary's opinion that the French language is the most romantic one is not necessarily accurate.",
+      "lcf_ppl": 1.3956930891221506
+    },
+    {
+      "index": 154,
+      "premise": "Mary studied French in high school and nobody has proven otherwise.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Mary is fluent in French.",
+      "baseline_ppl": 1.1668441255330562,
+      "lcf": "Mary is fluent in French.",
+      "lcf_ppl": 1.1668441255330562
+    },
+    {
+      "index": 155,
+      "premise": "If Mary took French classes in high school, then she must be fluent in French. And Mary is fluent in French.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Mary took French classes in high school.",
+      "baseline_ppl": 1.098782771018444,
+      "lcf": "Mary took French classes in high school.",
+      "lcf_ppl": 1.098782771018444
+    },
+    {
+      "index": 276,
+      "premise": "Anna is a productive employee and she took a nap in the afternoon.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Anna is a productive employee who took a nap in the afternoon.",
+      "baseline_ppl": 1.216241838739124,
+      "lcf": "Anna is a productive employee who took a nap in the afternoon.",
+      "lcf_ppl": 1.216241838739124
+    },
+    {
+      "index": 277,
+      "premise": "Anna took a nap in the afternoon and now she's refreshed.",
+      "fallacy_type": "false causality",
+      "baseline": "Anna is ready to tackle the rest of her day with renewed energy.",
+      "baseline_ppl": 1.544674442975478,
+      "lcf": "Anna is ready to tackle the rest of her day with renewed energy.",
+      "lcf_ppl": 1.544674442975478
+    },
+    {
+      "index": 278,
+      "premise": "Anna took a nap in the afternoon.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Anna is tired.",
+      "baseline_ppl": 1.8897160279694472,
+      "lcf": "Anna is tired.",
+      "lcf_ppl": 1.8897160279694472
+    },
+    {
+      "index": 279,
+      "premise": "Many people believe that Anna took a nap in the afternoon.",
+      "fallacy_type": "ad populum",
+      "baseline": "Anna took a nap in the afternoon.",
+      "baseline_ppl": 1.1638627445425096,
+      "lcf": "Anna took a nap in the afternoon.",
+      "lcf_ppl": 1.1638627445425096
+    },
+    {
+      "index": 280,
+      "premise": "Anna napped in the afternoon.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Anna slept for at least 30 minutes.",
+      "baseline_ppl": 1.7022689490512362,
+      "lcf": "Anna slept.",
+      "lcf_ppl": 2.0803156283857467
+    },
+    {
+      "index": 281,
+      "premise": "Anna took a nap in the afternoon.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Anna is tired.",
+      "baseline_ppl": 1.8897160279694472,
+      "lcf": "Anna is tired.",
+      "lcf_ppl": 1.8897160279694472
+    },
+    {
+      "index": 282,
+      "premise": "Anna claims she finished the report on time and she took a nap in the afternoon.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Anna is a liar.",
+      "baseline_ppl": 1.9146726782638133,
+      "lcf": "Anna is a liar.",
+      "lcf_ppl": 1.9146726782638133
+    },
+    {
+      "index": 283,
+      "premise": "Anna took a nap in the afternoon to escape the pressing worries of her day, feeling an emotional heaviness",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Anna's emotional heaviness was alleviated by her afternoon nap.",
+      "baseline_ppl": 1.6029684954397887,
+      "lcf": "Anna's emotional heaviness was alleviated by her nap.",
+      "lcf_ppl": 1.6874259596263397
+    },
+    {
+      "index": 284,
+      "premise": "Person A: Anna took a nap in the afternoon.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Anna is tired.",
+      "baseline_ppl": 2.16268383480685,
+      "lcf": "Anna is tired.",
+      "lcf_ppl": 2.16268383480685
+    },
+    {
+      "index": 285,
+      "premise": "Anna, who is a sleep expert, took a nap in the afternoon.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Anna is likely to be well-rested and alert when she wakes up.",
+      "baseline_ppl": 1.5931770866854946,
+      "lcf": "Anna is likely to be well-rested and alert for the evening.",
+      "lcf_ppl": 1.815079662276004
+    },
+    {
+      "index": 286,
+      "premise": "No one can be sure that Anna didn't sleep in the afternoon.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, it is not possible to determine whether Anna slept in the afternoon or not.",
+      "baseline_ppl": 1.455308296154187,
+      "lcf": "Therefore, it is not possible to determine whether Anna slept in the afternoon or not.",
+      "lcf_ppl": 1.455308296154187
+    },
+    {
+      "index": 287,
+      "premise": "If Anna takes a nap, she cannot go for a run. However, Anna didn't take a nap.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Anna can go for a run.",
+      "baseline_ppl": 1.0536081445086196,
+      "lcf": "Anna can go for a run.",
+      "lcf_ppl": 1.0536081445086196
+    },
+    {
+      "index": 288,
+      "premise": "Oliver ate pizza for dinner. Oliver is a student.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Oliver is a student who ate pizza for dinner.",
+      "baseline_ppl": 1.1676157869689126,
+      "lcf": "Oliver is a student who ate pizza for dinner.",
+      "lcf_ppl": 1.1676157869689126
+    },
+    {
+      "index": 289,
+      "premise": "Oliver ate pizza for dinner and had a nightmare that night.",
+      "fallacy_type": "false causality",
+      "baseline": "Oliver's nightmare was caused by the pizza he ate for dinner.",
+      "baseline_ppl": 1.1068181309371052,
+      "lcf": "Oliver's nightmare was caused by the pizza he ate for dinner.",
+      "lcf_ppl": 1.1068181309371052
+    },
+    {
+      "index": 290,
+      "premise": "Oliver had dinner and he ate pizza.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Oliver ate pizza for dinner.",
+      "baseline_ppl": 1.152911764420087,
+      "lcf": "Oliver ate pizza for dinner.",
+      "lcf_ppl": 1.152911764420087
+    },
+    {
+      "index": 291,
+      "premise": "Many individuals hold the conviction that Oliver ate pizza for dinner.",
+      "fallacy_type": "ad populum",
+      "baseline": "Oliver ate pizza for dinner.",
+      "baseline_ppl": 1.1900771591074601,
+      "lcf": "Oliver ate pizza for dinner.",
+      "lcf_ppl": 1.1900771591074601
+    },
+    {
+      "index": 292,
+      "premise": "Oliver had pizza for dinner.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Oliver is a pizza enthusiast.",
+      "baseline_ppl": 1.710911426578206,
+      "lcf": "Oliver is a pizza enthusiast.",
+      "lcf_ppl": 1.710911426578206
+    },
+    {
+      "index": 293,
+      "premise": "Oliver ate pizza for dinner.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Oliver is a pizza enthusiast.",
+      "baseline_ppl": 1.6160287753548936,
+      "lcf": "Oliver is a pizza enthusiast.",
+      "lcf_ppl": 1.6160287753548936
+    },
+    {
+      "index": 294,
+      "premise": "Oliver claimed he ate pizza for dinner.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Oliver ate pizza for dinner.",
+      "baseline_ppl": 1.1967859550703435,
+      "lcf": "Oliver ate pizza for dinner.",
+      "lcf_ppl": 1.1967859550703435
+    },
+    {
+      "index": 295,
+      "premise": "Oliver, of course you got ill, you ate pizza for dinner! It had loads of cheese.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Oliver ate pizza for dinner and got ill.",
+      "baseline_ppl": 1.5078647381099977,
+      "lcf": "Oliver ate pizza for dinner and got ill.",
+      "lcf_ppl": 1.5078647381099977
+    },
+    {
+      "index": 296,
+      "premise": "John: Oliver ate pizza for dinner.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Oliver is a pizza eater.",
+      "baseline_ppl": 1.5993718514087667,
+      "lcf": "Oliver ate pizza for dinner.",
+      "lcf_ppl": 1.3125917931356519
+    },
+    {
+      "index": 297,
+      "premise": "Celebrity chef Oliver ate pizza for dinner. He's an expert in food.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Oliver's opinion on pizza is valuable.",
+      "baseline_ppl": 1.559015564663967,
+      "lcf": "Oliver's opinion on pizza is valuable.",
+      "lcf_ppl": 1.559015564663967
+    },
+    {
+      "index": 298,
+      "premise": "No one saw Oliver eat anything else for dinner.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Oliver ate the cookies.",
+      "baseline_ppl": 2.2983887533051455,
+      "lcf": "Oliver ate spaghetti for dinner.",
+      "lcf_ppl": 1.504845289056729
+    },
+    {
+      "index": 299,
+      "premise": "Given that Oliver had pizza for dinner and he didn't need anything else. Oliver didn't eat the pizza.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Oliver didn't eat the pizza.",
+      "baseline_ppl": 1.1918316057317955,
+      "lcf": "Oliver didn't eat the pizza.",
+      "lcf_ppl": 1.1918316057317955
+    },
+    {
+      "index": 372,
+      "premise": "Brenda practices the violin every day. Brenda is a student in my class.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Brenda is a diligent student who practices the violin every day.",
+      "baseline_ppl": 1.3264306258075593,
+      "lcf": "Brenda is a diligent student who practices the violin every day.",
+      "lcf_ppl": 1.3264306258075593
+    },
+    {
+      "index": 373,
+      "premise": "Brenda practices the violin every day and our next door’s dog howls sometimes.",
+      "fallacy_type": "false causality",
+      "baseline": "Brenda's dog is a violin.",
+      "baseline_ppl": 1.6811987995732622,
+      "lcf": "Brenda's dog is a violin.",
+      "lcf_ppl": 1.6811987995732622
+    },
+    {
+      "index": 374,
+      "premise": "Brenda practices the violin every day.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Brenda is a skilled violinist.",
+      "baseline_ppl": 1.345188819246435,
+      "lcf": "Brenda is a skilled violinist.",
+      "lcf_ppl": 1.345188819246435
+    },
+    {
+      "index": 375,
+      "premise": "Most people acknowledge that Brenda practices the violin every day.",
+      "fallacy_type": "ad populum",
+      "baseline": "Brenda is likely to be a skilled violinist.",
+      "baseline_ppl": 1.3396977787942985,
+      "lcf": "Brenda is likely to be a skilled violinist.",
+      "lcf_ppl": 1.3396977787942985
+    },
+    {
+      "index": 376,
+      "premise": "Brenda practices the violin each day.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Brenda is likely to become a skilled violinist.",
+      "baseline_ppl": 1.2692434609000318,
+      "lcf": "Brenda is a skilled violinist.",
+      "lcf_ppl": 1.3951648923283682
+    },
+    {
+      "index": 377,
+      "premise": "Brenda practices violin every day.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Brenda is a skilled violinist.",
+      "baseline_ppl": 1.361219016026033,
+      "lcf": "Brenda is a skilled violinist.",
+      "lcf_ppl": 1.361219016026033
+    },
+    {
+      "index": 378,
+      "premise": "All Brenda does is play the violin every day.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Brenda is a violinist.",
+      "baseline_ppl": 1.5228096487550653,
+      "lcf": "Brenda is a violinist.",
+      "lcf_ppl": 1.5228096487550653
+    },
+    {
+      "index": 379,
+      "premise": "Brenda, think about how proud your parents will be of you when they see you practice the violin every day.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Brenda will feel motivated to practice the violin every day so that her parents can be proud of her.",
+      "baseline_ppl": 1.2247090579076794,
+      "lcf": "Brenda will feel motivated to practice the violin every day because she knows how proud her parents will be of her.",
+      "lcf_ppl": 1.2119002583171121
+    },
+    {
+      "index": 380,
+      "premise": "Bob: Brenda practices the violin every day.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Brenda is a skilled violinist.",
+      "baseline_ppl": 1.3820907260715243,
+      "lcf": "Brenda is a skilled violinist.",
+      "lcf_ppl": 1.3820907260715243
+    },
+    {
+      "index": 381,
+      "premise": "Renowned musician Black claims that practicing the violin daily leads to perfect. Brenda practices the violin every day.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Brenda is on her way to perfect.",
+      "baseline_ppl": 1.4320741613206944,
+      "lcf": "Brenda is on the path to perfect.",
+      "lcf_ppl": 1.3637301039171121
+    },
+    {
+      "index": 382,
+      "premise": "No one has ever seen Brenda not practicing the violin.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Brenda is likely practicing the violin.",
+      "baseline_ppl": 1.372049009573829,
+      "lcf": "Brenda is likely practicing the violin.",
+      "lcf_ppl": 1.372049009573829
+    },
+    {
+      "index": 383,
+      "premise": "Brenda will become a virtuoso if she practices the violin daily. Since Brenda is a virtuoso.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Brenda practices the violin daily.",
+      "baseline_ppl": 1.0830431033280439,
+      "lcf": "Brenda practices the violin daily.",
+      "lcf_ppl": 1.0830431033280439
+    },
+    {
+      "index": 420,
+      "premise": "Rebecca is a nurse and she doesn't like spicy food.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Rebecca will not enjoy eating at a Thai restaurant.",
+      "baseline_ppl": 1.521843428042407,
+      "lcf": "Rebecca will not enjoy eating at a Thai restaurant.",
+      "lcf_ppl": 1.521843428042407
+    },
+    {
+      "index": 421,
+      "premise": "Rebecca doesn't like spicy food and she is unhealthy.",
+      "fallacy_type": "false causality",
+      "baseline": "Rebecca is unhealthy because she doesn't like spicy food.",
+      "baseline_ppl": 1.13743958010681,
+      "lcf": "Rebecca is unhealthy because she doesn't like spicy food.",
+      "lcf_ppl": 1.13743958010681
+    },
+    {
+      "index": 422,
+      "premise": "Rebecca dislikes spicy food.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Rebecca will not enjoy the spicy sushi roll.",
+      "baseline_ppl": 1.5926752506720039,
+      "lcf": "Rebecca will not enjoy the spicy sushi roll.",
+      "lcf_ppl": 1.5926752506720039
+    },
+    {
+      "index": 423,
+      "premise": "Most people believe that Rebecca doesn't like spicy food.",
+      "fallacy_type": "ad populum",
+      "baseline": "Rebecca may not like spicy food.",
+      "baseline_ppl": 1.3470654454041229,
+      "lcf": "Rebecca may not like spicy food.",
+      "lcf_ppl": 1.3470654454041229
+    },
+    {
+      "index": 424,
+      "premise": "Rebecca refrains from spicy food.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Rebecca is not a spicy food enthusiast.",
+      "baseline_ppl": 1.4578082962973153,
+      "lcf": "Rebecca is not a spicy food enthusiast.",
+      "lcf_ppl": 1.4578082962973153
+    },
+    {
+      "index": 425,
+      "premise": "Rebecca doesn't like spicy food.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Rebecca will not enjoy the spicy sushi roll.",
+      "baseline_ppl": 1.5460424225774372,
+      "lcf": "Rebecca will not enjoy the spicy sushi roll.",
+      "lcf_ppl": 1.5460424225774372
+    },
+    {
+      "index": 426,
+      "premise": "Rebecca doesn’t even like spicy food!",
+      "fallacy_type": "ad hominem",
+      "baseline": "Rebecca is not a fan of spicy food.",
+      "baseline_ppl": 1.316091434189115,
+      "lcf": "Rebecca is not a fan of spicy food.",
+      "lcf_ppl": 1.316091434189115
+    },
+    {
+      "index": 427,
+      "premise": "Rebecca can't eat spicy food - just thinking about the tears of pain she would shed as the heat burns her mouth.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Rebecca should avoid spicy food to prevent the tears of pain she would shed as the heat burns her mouth.",
+      "baseline_ppl": 1.1937714380586395,
+      "lcf": "Rebecca should avoid spicy food to prevent the tears of pain she would shed as the heat burns her mouth.",
+      "lcf_ppl": 1.1937714380586395
+    },
+    {
+      "index": 428,
+      "premise": "Joseph: Rebecca doesn't like spicy food.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Rebecca doesn't like spicy food.",
+      "baseline_ppl": 1.2965846143046311,
+      "lcf": "Rebecca doesn't like spicy food.",
+      "lcf_ppl": 1.2965846143046311
+    },
+    {
+      "index": 429,
+      "premise": "Rebecca, a renowned food critic, does not like spicy food.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Rebecca, a renowned food critic, is not fond of spicy food.",
+      "baseline_ppl": 1.3338146864722182,
+      "lcf": "Rebecca, a renowned food critic, does not eat spicy food.",
+      "lcf_ppl": 1.3650051616237835
+    },
+    {
+      "index": 430,
+      "premise": "Rebecca hasn't been seen eating spicy food.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Rebecca is not a fan of spicy food.",
+      "baseline_ppl": 1.3116845626239242,
+      "lcf": "Rebecca is not a fan of spicy food.",
+      "lcf_ppl": 1.3116845626239242
+    },
+    {
+      "index": 431,
+      "premise": "If the food is spicy, Rebecca won't like it. And Rebecca doesn't like that food.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Rebecca won't like the food if it is spicy.",
+      "baseline_ppl": 1.2727228221369833,
+      "lcf": "Rebecca won't like the food if it is spicy.",
+      "lcf_ppl": 1.2727228221369833
+    },
+    {
+      "index": 456,
+      "premise": "I didn't feel well yesterday after I ate sushi.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "I will not eat sushi again.",
+      "baseline_ppl": 1.271761733130326,
+      "lcf": "I will not eat sushi again.",
+      "lcf_ppl": 1.271761733130326
+    },
+    {
+      "index": 457,
+      "premise": "I didn't feel well yesterday after eating sushi.",
+      "fallacy_type": "false causality",
+      "baseline": "I will not eat sushi again.",
+      "baseline_ppl": 1.2567474125971183,
+      "lcf": "I will not eat sushi again.",
+      "lcf_ppl": 1.2567474125971183
+    },
+    {
+      "index": 458,
+      "premise": "I didn't feel well yesterday.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "I am not feeling well today.",
+      "baseline_ppl": 1.5646268063278905,
+      "lcf": "I am not feeling well today.",
+      "lcf_ppl": 1.5646268063278905
+    },
+    {
+      "index": 459,
+      "premise": "Many people acknowledge that I wasn't feeling well yesterday.",
+      "fallacy_type": "ad populum",
+      "baseline": "I must have been sick.",
+      "baseline_ppl": 1.6387827889998818,
+      "lcf": "I must have been sick.",
+      "lcf_ppl": 1.6387827889998818
+    },
+    {
+      "index": 460,
+      "premise": "I felt unwell yesterday.",
+      "fallacy_type": "false dilemma",
+      "baseline": "I am not feeling well today.",
+      "baseline_ppl": 1.751900382897127,
+      "lcf": "I am not feeling well today.",
+      "lcf_ppl": 1.751900382897127
+    },
+    {
+      "index": 461,
+      "premise": "I didn't feel well yesterday.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "I am not feeling well today.",
+      "baseline_ppl": 1.5646268063278905,
+      "lcf": "I am not feeling well today.",
+      "lcf_ppl": 1.5646268063278905
+    },
+    {
+      "index": 462,
+      "premise": "You're always complaining about something.",
+      "fallacy_type": "ad hominem",
+      "baseline": "You're not a very happy person.",
+      "baseline_ppl": 1.4516399627194791,
+      "lcf": "You're not a very happy person.",
+      "lcf_ppl": 1.4516399627194791
+    },
+    {
+      "index": 463,
+      "premise": "You know, I felt horrible yesterday. I was so weak, I could barely rise from bed.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "I must have been sick.",
+      "baseline_ppl": 1.6466493409880194,
+      "lcf": "I must have been sick.",
+      "lcf_ppl": 1.6466493409880194
+    },
+    {
+      "index": 464,
+      "premise": "John: I didn't feel well yesterday.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "John is not feeling well today.",
+      "baseline_ppl": 1.4713633223304003,
+      "lcf": "John is not feeling well today.",
+      "lcf_ppl": 1.4713633223304003
+    },
+    {
+      "index": 465,
+      "premise": "I didn't feel well yesterday. And my doctor, a seasoned professional, believes I just needed rest.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "I am likely to feel better soon.",
+      "baseline_ppl": 1.9674827847801264,
+      "lcf": "I am likely to feel better soon.",
+      "lcf_ppl": 1.9674827847801264
+    },
+    {
+      "index": 466,
+      "premise": "Nobody can prove that I was fine yesterday.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, I was not fine yesterday.",
+      "baseline_ppl": 1.2809750760081529,
+      "lcf": "Therefore, I was not fine yesterday.",
+      "lcf_ppl": 1.2809750760081529
+    },
+    {
+      "index": 467,
+      "premise": "If I feel well, I go to work. But I didn't feel well yesterday.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "I did not go to work yesterday.",
+      "baseline_ppl": 1.1133609359635892,
+      "lcf": "I did not go to work yesterday.",
+      "lcf_ppl": 1.1133609359635892
+    },
+    {
+      "index": 528,
+      "premise": "Allison is knitting a sweater and she is a teenager.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Allison is likely to be a beginner at knitting.",
+      "baseline_ppl": 1.6187007615229756,
+      "lcf": "Allison is likely to be a beginner at knitting.",
+      "lcf_ppl": 1.6187007615229756
+    },
+    {
+      "index": 529,
+      "premise": "Allison is knitting a sweater and it's currently winter.",
+      "fallacy_type": "false causality",
+      "baseline": "Allison is likely wearing warm clothing.",
+      "baseline_ppl": 1.4929628678098976,
+      "lcf": "Allison is likely wearing warm clothing.",
+      "lcf_ppl": 1.4929628678098976
+    },
+    {
+      "index": 530,
+      "premise": "Allison is knitting a sweater and she is a great knitter.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Allison's sweater will be beautiful.",
+      "baseline_ppl": 1.279405228618055,
+      "lcf": "Allison's sweater will be beautiful.",
+      "lcf_ppl": 1.279405228618055
+    },
+    {
+      "index": 531,
+      "premise": "Most people observed Allison knitting a sweater.",
+      "fallacy_type": "ad populum",
+      "baseline": "Allison is likely knitting a sweater.",
+      "baseline_ppl": 1.3466310589225228,
+      "lcf": "Allison is knitting a sweater.",
+      "lcf_ppl": 1.2728869941794387
+    },
+    {
+      "index": 532,
+      "premise": "Allison is knitting a sweater.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Allison is wearing a sweater.",
+      "baseline_ppl": 1.2993911460914003,
+      "lcf": "Allison is wearing a sweater.",
+      "lcf_ppl": 1.2993911460914003
+    },
+    {
+      "index": 533,
+      "premise": "Allison is knitting a sweater.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Allison is wearing a sweater.",
+      "baseline_ppl": 1.2993911460914003,
+      "lcf": "Allison is wearing a sweater.",
+      "lcf_ppl": 1.2993911460914003
+    },
+    {
+      "index": 534,
+      "premise": "Allison is knitting a sweater and she failed her home economics class.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Allison is not good at knitting sweaters.",
+      "baseline_ppl": 1.3509262373320816,
+      "lcf": "Allison is not good at knitting sweaters.",
+      "lcf_ppl": 1.3509262373320816
+    },
+    {
+      "index": 535,
+      "premise": "Allison has been pouring her heart and soul into the sweater she is knitting.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "Allison is likely to be very proud of the sweater when it is finished.",
+      "baseline_ppl": 1.494553476598917,
+      "lcf": "Allison is likely to be very proud of the sweater when it is finished.",
+      "lcf_ppl": 1.494553476598917
+    },
+    {
+      "index": 536,
+      "premise": "Person A: Allison is knitting a sweater.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Person A is knitting a sweater.",
+      "baseline_ppl": 1.21541357269855,
+      "lcf": "Person A is knitting a sweater.",
+      "lcf_ppl": 1.21541357269855
+    },
+    {
+      "index": 537,
+      "premise": "Famous knitter, Allison claims that knitting a sweater is the best activity.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "Allison's claim that knitting a sweater is the best activity is valid.",
+      "baseline_ppl": 1.319944012777788,
+      "lcf": "Knitting a sweater is a great activity.",
+      "lcf_ppl": 1.4555701104804595
+    },
+    {
+      "index": 538,
+      "premise": "No one can prove Alison isn't knitting a sweater.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Alison is knitting a sweater.",
+      "baseline_ppl": 1.17842249178252,
+      "lcf": "Alison is knitting a sweater.",
+      "lcf_ppl": 1.17842249178252
+    },
+    {
+      "index": 539,
+      "premise": "Allison is a creative person if she is knitting a sweater. Indeed, Allison has creativity.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Allison is a creative person.",
+      "baseline_ppl": 1.352798812861219,
+      "lcf": "Allison is a creative person.",
+      "lcf_ppl": 1.352798812861219
+    },
+    {
+      "index": 660,
+      "premise": "X does not enjoy movies and X is a teenager.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "X is likely to be bored during a movie.",
+      "baseline_ppl": 1.7723459597322724,
+      "lcf": "X is likely to be bored at the movies.",
+      "lcf_ppl": 1.8220462959708839
+    },
+    {
+      "index": 661,
+      "premise": "X does not enjoy movies and then he started reading more books.",
+      "fallacy_type": "false causality",
+      "baseline": "X became more knowledgeable about movies.",
+      "baseline_ppl": 1.743106126691705,
+      "lcf": "X enjoys reading books.",
+      "lcf_ppl": 1.7295487957744964
+    },
+    {
+      "index": 662,
+      "premise": "X doesn't like films.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "X is not a film buff.",
+      "baseline_ppl": 1.8441495589692538,
+      "lcf": "X doesn't like films.",
+      "lcf_ppl": 1.6854428141399422
+    },
+    {
+      "index": 663,
+      "premise": "Most people think that X does not enjoy movies.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, X is not a movie enthusiast.",
+      "baseline_ppl": 1.8461468947415176,
+      "lcf": "Therefore, X does not enjoy movies.",
+      "lcf_ppl": 1.481631171943709
+    },
+    {
+      "index": 664,
+      "premise": "X refrains from visiting a cinema.",
+      "fallacy_type": "false dilemma",
+      "baseline": "X is not interested in movies.",
+      "baseline_ppl": 1.7841750065112492,
+      "lcf": "X is not interested in movies.",
+      "lcf_ppl": 1.7841750065112492
+    },
+    {
+      "index": 665,
+      "premise": "X does not enjoy movies.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "X is not a fan of cinema.",
+      "baseline_ppl": 1.8545691709534569,
+      "lcf": "X is not a fan of cinema.",
+      "lcf_ppl": 1.8545691709534569
+    },
+    {
+      "index": 666,
+      "premise": "X does not like movies because he’s an uninteresting person.",
+      "fallacy_type": "ad hominem",
+      "baseline": "X is an uninteresting person.",
+      "baseline_ppl": 1.1406256645609067,
+      "lcf": "X is an uninteresting person.",
+      "lcf_ppl": 1.1406256645609067
+    },
+    {
+      "index": 667,
+      "premise": "X doesn't enjoy watching movies, which provide a great escape from our stressful reality.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "X prefers to watch TV shows instead of movies.",
+      "baseline_ppl": 1.7725300999068518,
+      "lcf": "X prefers to watch TV shows instead of movies.",
+      "lcf_ppl": 1.7725300999068518
+    },
+    {
+      "index": 668,
+      "premise": "A: X does not enjoy movies.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "X does not enjoy movies.",
+      "baseline_ppl": 1.6661221849142154,
+      "lcf": "X does not enjoy movies.",
+      "lcf_ppl": 1.6661221849142154
+    },
+    {
+      "index": 669,
+      "premise": "World-renowned actor X claims that he does not enjoy movies. X has been in the film industry for years.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "X's claim that he does not enjoy movies is likely true.",
+      "baseline_ppl": 1.4415198519457606,
+      "lcf": "X is not a fan of movies.",
+      "lcf_ppl": 1.6907094147718635
+    },
+    {
+      "index": 670,
+      "premise": "No one has proven that X loves movies.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, it is not possible to determine whether X loves movies or not.",
+      "baseline_ppl": 1.3692510887948823,
+      "lcf": "Therefore, it is not accurate to say that X loves movies.",
+      "lcf_ppl": 1.2941968168160005
+    },
+    {
+      "index": 671,
+      "premise": "If X enjoys movies, then he enjoys going to the cinema. X does not enjoy movies.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "X does not enjoy going to the cinema.",
+      "baseline_ppl": 1.0328072219639395,
+      "lcf": "X does not enjoy going to the cinema.",
+      "lcf_ppl": 1.0328072219639395
+    },
+    {
+      "index": 672,
+      "premise": "X rushes Y to the hospital and Y is a patient.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "X is a doctor or a nurse.",
+      "baseline_ppl": 1.3190673554368506,
+      "lcf": "X is a doctor or a nurse.",
+      "lcf_ppl": 1.3190673554368506
+    },
+    {
+      "index": 673,
+      "premise": "X rushed Y to the hospital and she miraculously recovered.",
+      "fallacy_type": "false causality",
+      "baseline": "X is a hero.",
+      "baseline_ppl": 1.5280892745729104,
+      "lcf": "X is a hero.",
+      "lcf_ppl": 1.5280892745729104
+    },
+    {
+      "index": 674,
+      "premise": "X rushed Y to the hospital and X is helpful.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "X is a good Samaritan.",
+      "baseline_ppl": 1.3634330002531951,
+      "lcf": "X is a good Samaritan.",
+      "lcf_ppl": 1.3634330002531951
+    },
+    {
+      "index": 675,
+      "premise": "Most people think X rushing Y to the hospital is for a serious reason.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, it is reasonable to assume that X rushing Y to the hospital is for a serious reason.",
+      "baseline_ppl": 1.2975260244844193,
+      "lcf": "Therefore, it is reasonable to assume that X rushing Y to the hospital is for a serious reason.",
+      "lcf_ppl": 1.2975260244844193
+    },
+    {
+      "index": 676,
+      "premise": "X hastily transports Y to the hospital.",
+      "fallacy_type": "false dilemma",
+      "baseline": "X is a responsible person who cares about Y's well-being.",
+      "baseline_ppl": 1.406945912868921,
+      "lcf": "X is a responsible person who cares about Y's well-being.",
+      "lcf_ppl": 1.406945912868921
+    },
+    {
+      "index": 677,
+      "premise": "X rushes Y to the hospital.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "X is in a hurry.",
+      "baseline_ppl": 1.50849561800898,
+      "lcf": "X is in a hurry.",
+      "lcf_ppl": 1.50849561800898
+    },
+    {
+      "index": 678,
+      "premise": "X is known to be irresponsible and reckless.",
+      "fallacy_type": "ad hominem",
+      "baseline": "X is likely to cause harm to others.",
+      "baseline_ppl": 1.448089280774338,
+      "lcf": "X is likely to cause harm to others.",
+      "lcf_ppl": 1.448089280774338
+    },
+    {
+      "index": 679,
+      "premise": "X rushed Y to the hospital! Can't you just imagine Y's terror as they struggled to find help?",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "X's actions likely saved Y's life.",
+      "baseline_ppl": 1.4363510949205383,
+      "lcf": "X's actions likely saved Y's life.",
+      "lcf_ppl": 1.4363510949205383
+    },
+    {
+      "index": 680,
+      "premise": "A: X rushes Y to the hospital.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "X is a doctor.",
+      "baseline_ppl": 2.098794574467001,
+      "lcf": "X is in a hurry.",
+      "lcf_ppl": 1.6968315164950132
+    },
+    {
+      "index": 681,
+      "premise": "X, a professional car racer, rushes Y to the hospital. X has great driving skills.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "X is a skilled driver.",
+      "baseline_ppl": 1.4534372794886916,
+      "lcf": "X is a skilled driver.",
+      "lcf_ppl": 1.4534372794886916
+    },
+    {
+      "index": 682,
+      "premise": "No one knows who rushed Y to the hospital.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "It is possible that Y was rushed to the hospital by someone other than the person who was with Y at the time of the incident.",
+      "baseline_ppl": 1.7135864680170942,
+      "lcf": "It is possible that Y was rushed to the hospital by someone who is not known to the public.",
+      "lcf_ppl": 1.7723581083798141
+    },
+    {
+      "index": 683,
+      "premise": "If X is a doctor, then X can rush Y to the hospital. And X does rush Y to the hospital.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Therefore, X is a doctor.",
+      "baseline_ppl": 1.2400156076301623,
+      "lcf": "X is a doctor.",
+      "lcf_ppl": 1.2774570315649836
+    },
+    {
+      "index": 732,
+      "premise": "My laptop was stolen when I left it in the cafetaria.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "I should be more careful about where I leave my belongings.",
+      "baseline_ppl": 1.3302907133305095,
+      "lcf": "I should be more careful about where I leave my belongings.",
+      "lcf_ppl": 1.3302907133305095
+    },
+    {
+      "index": 733,
+      "premise": "My laptop was stolen right after I left it unattended at the café.",
+      "fallacy_type": "false causality",
+      "baseline": "I should be more careful about securing my belongings in public places.",
+      "baseline_ppl": 1.3377144816767033,
+      "lcf": "I should be more careful about securing my belongings in public places.",
+      "lcf_ppl": 1.3377144816767033
+    },
+    {
+      "index": 734,
+      "premise": "Someone stole my laptop.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "I am now unable to access my personal information.",
+      "baseline_ppl": 2.63282416225768,
+      "lcf": "I am now unable to access my personal information.",
+      "lcf_ppl": 2.63282416225768
+    },
+    {
+      "index": 735,
+      "premise": "It's universally accepted that my laptop was stolen.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, I am not responsible for any of the files or information stored on it.",
+      "baseline_ppl": 1.7492739625506741,
+      "lcf": "I am now without a laptop.",
+      "lcf_ppl": 2.3003357234107016
+    },
+    {
+      "index": 736,
+      "premise": "I cannot find my laptop.",
+      "fallacy_type": "false dilemma",
+      "baseline": "I must have left it at home.",
+      "baseline_ppl": 1.275802198089576,
+      "lcf": "I must have left it at home.",
+      "lcf_ppl": 1.275802198089576
+    },
+    {
+      "index": 737,
+      "premise": "My laptop was stolen.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "I will not be able to complete my work for the day.",
+      "baseline_ppl": 1.7380832972837374,
+      "lcf": "I will not be able to complete my work for the day.",
+      "lcf_ppl": 1.7380832972837374
+    },
+    {
+      "index": 738,
+      "premise": "You claim that your laptop was stolen and you failed the IT class.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Your laptop being stolen and failing the IT class are not directly related.",
+      "baseline_ppl": 1.5300588534644068,
+      "lcf": "Your laptop being stolen and failing the IT class are not directly related.",
+      "lcf_ppl": 1.5300588534644068
+    },
+    {
+      "index": 739,
+      "premise": "I am really distraught that my laptop was stolen. Please trust me, it's true.",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "I am now in need of a new laptop.",
+      "baseline_ppl": 1.7608838420714126,
+      "lcf": "I am now in need of a new laptop.",
+      "lcf_ppl": 1.7608838420714126
+    },
+    {
+      "index": 740,
+      "premise": "Person A: My laptop was stolen.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Person A is not responsible for the theft of their own laptop.",
+      "baseline_ppl": 1.64856566520935,
+      "lcf": "Person A is not responsible for the theft of their own laptop.",
+      "lcf_ppl": 1.64856566520935
+    },
+    {
+      "index": 741,
+      "premise": "The police say my laptop was stolen. And they're the authorities who solve crimes.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "My laptop was stolen.",
+      "baseline_ppl": 1.3539680138760568,
+      "lcf": "My laptop was stolen.",
+      "lcf_ppl": 1.3539680138760568
+    },
+    {
+      "index": 742,
+      "premise": "No one was sure my laptop wasn't lost.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "I was not able to find my laptop.",
+      "baseline_ppl": 2.800947551831305,
+      "lcf": "I was not able to find my laptop.",
+      "lcf_ppl": 2.800947551831305
+    },
+    {
+      "index": 743,
+      "premise": "If my laptop was not at the office, then it would be stolen. It turns out, my laptop was stolen.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "My laptop was stolen.",
+      "baseline_ppl": 1.2726061355464782,
+      "lcf": "My laptop was stolen.",
+      "lcf_ppl": 1.2726061355464782
+    },
+    {
+      "index": 744,
+      "premise": "The garden in my home needs watering, and gardens are a part of homes.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Therefore, it is necessary to water gardens in homes.",
+      "baseline_ppl": 1.3565512289149246,
+      "lcf": "Therefore, it is important to water gardens in homes.",
+      "lcf_ppl": 1.350425043862077
+    },
+    {
+      "index": 745,
+      "premise": "I watered the garden and then flowers bloomed.",
+      "fallacy_type": "false causality",
+      "baseline": "Watering the garden causes flowers to bloom.",
+      "baseline_ppl": 1.230316357470325,
+      "lcf": "Watering the garden causes flowers to bloom.",
+      "lcf_ppl": 1.230316357470325
+    },
+    {
+      "index": 746,
+      "premise": "The garden needs watering.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "Water the garden.",
+      "baseline_ppl": 1.3958149258883157,
+      "lcf": "The garden will receive water.",
+      "lcf_ppl": 2.1991481540216054
+    },
+    {
+      "index": 747,
+      "premise": "A lot of people think that the garden needs watering.",
+      "fallacy_type": "ad populum",
+      "baseline": "Therefore, it is likely that the garden needs watering.",
+      "baseline_ppl": 1.2871040030673493,
+      "lcf": "Therefore, it is likely that the garden needs watering.",
+      "lcf_ppl": 1.2871040030673493
+    },
+    {
+      "index": 748,
+      "premise": "The garden is not thriving.",
+      "fallacy_type": "false dilemma",
+      "baseline": "The garden needs more water.",
+      "baseline_ppl": 1.7989309917494996,
+      "lcf": "The garden needs more water.",
+      "lcf_ppl": 1.7989309917494996
+    },
+    {
+      "index": 749,
+      "premise": "The garden needs watering.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "Water the garden.",
+      "baseline_ppl": 1.3958149258883157,
+      "lcf": "The garden will receive water.",
+      "lcf_ppl": 2.1991481540216054
+    },
+    {
+      "index": 750,
+      "premise": "Jane claims the garden needs watering, but she is an incompetent gardener.",
+      "fallacy_type": "ad hominem",
+      "baseline": "Jane's claim about the garden needing watering is likely false.",
+      "baseline_ppl": 1.4081700957920926,
+      "lcf": "Jane's garden will likely not receive adequate watering.",
+      "lcf_ppl": 1.4897158676577242
+    },
+    {
+      "index": 751,
+      "premise": "The garden is practically begging for water. Can't you hear its thirsty leaves crying out for a refreshing splash of water?",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "It would be a kind gesture to water the garden.",
+      "baseline_ppl": 1.4852368312717745,
+      "lcf": "The garden needs water.",
+      "lcf_ppl": 1.7278671990010674
+    },
+    {
+      "index": 752,
+      "premise": "Person A: The garden needs watering.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Person A should water the garden.",
+      "baseline_ppl": 1.169610246162121,
+      "lcf": "Person A should water the garden.",
+      "lcf_ppl": 1.169610246162121
+    },
+    {
+      "index": 753,
+      "premise": "He knows everything and he said the garden needs watering.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "The garden needs watering.",
+      "baseline_ppl": 1.3670748761471812,
+      "lcf": "The garden needs watering.",
+      "lcf_ppl": 1.3670748761471812
+    },
+    {
+      "index": 754,
+      "premise": "No one said the garden didn't need watering.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "Therefore, it is reasonable to assume that the garden needs watering.",
+      "baseline_ppl": 1.3725653051663247,
+      "lcf": "Therefore, it is reasonable to assume that the garden needs watering.",
+      "lcf_ppl": 1.3725653051663247
+    },
+    {
+      "index": 755,
+      "premise": "If the garden needs watering, it will inevitably be sweltering outside. And gardens are not in need of watering.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Therefore, it will not be sweltering outside.",
+      "baseline_ppl": 1.2888956406665786,
+      "lcf": "Therefore, it will not be sweltering outside.",
+      "lcf_ppl": 1.2888956406665786
+    },
+    {
+      "index": 768,
+      "premise": "Lighters cannot be carried on airplanes and are a personal item.",
+      "fallacy_type": "faulty generalization",
+      "baseline": "Therefore, lighters are not allowed on airplanes.",
+      "baseline_ppl": 1.5026760818462983,
+      "lcf": "Therefore, lighters are not allowed on airplanes.",
+      "lcf_ppl": 1.5026760818462983
+    },
+    {
+      "index": 769,
+      "premise": "Lighters cannot be carried on airplanes.",
+      "fallacy_type": "false causality",
+      "baseline": "It is not safe to carry lighters on airplanes.",
+      "baseline_ppl": 1.430825146576255,
+      "lcf": "It is not safe to carry lighters on airplanes.",
+      "lcf_ppl": 1.430825146576255
+    },
+    {
+      "index": 770,
+      "premise": "Lighters cannot be carried on airplanes.",
+      "fallacy_type": "circular reasoning",
+      "baseline": "It is not safe to carry lighters on airplanes.",
+      "baseline_ppl": 1.430825146576255,
+      "lcf": "It is not safe to carry lighters on airplanes.",
+      "lcf_ppl": 1.430825146576255
+    },
+    {
+      "index": 771,
+      "premise": "A lot of people believe that lighters cannot be carried on airplanes.",
+      "fallacy_type": "ad populum",
+      "baseline": "It is likely that airlines will continue to allow lighters on airplanes.",
+      "baseline_ppl": 1.7216491301277117,
+      "lcf": "It is likely that airlines will continue to prohibit lighters on airplanes.",
+      "lcf_ppl": 1.6339786134003773
+    },
+    {
+      "index": 772,
+      "premise": "Fire danger is a possible risk to airplanes.",
+      "fallacy_type": "false dilemma",
+      "baseline": "Airplane manufacturers should consider fire-resistant materials in the design and construction of their aircraft.",
+      "baseline_ppl": 1.4767624623024693,
+      "lcf": "Airplane manufacturers should consider fire-resistant materials in the design and construction of their aircraft.",
+      "lcf_ppl": 1.4767624623024693
+    },
+    {
+      "index": 773,
+      "premise": "Lighters cannot be carried on airplanes.",
+      "fallacy_type": "fallacy of relevance",
+      "baseline": "It is not safe to carry lighters on airplanes.",
+      "baseline_ppl": 1.430825146576255,
+      "lcf": "It is not safe to carry lighters on airplanes.",
+      "lcf_ppl": 1.430825146576255
+    },
+    {
+      "index": 774,
+      "premise": "The TSA agent is saying lighters cannot be carried on airplanes and he failed his high school physics class.",
+      "fallacy_type": "ad hominem",
+      "baseline": "The TSA agent is not qualified to make decisions about what can and cannot be carried on airplanes.",
+      "baseline_ppl": 1.2908225621281306,
+      "lcf": "The TSA agent is not qualified to make decisions about what can and cannot be carried on airplanes.",
+      "lcf_ppl": 1.2908225621281306
+    },
+    {
+      "index": 775,
+      "premise": "If you attempt to bring a lighter onto an airplane, you're practically inviting a disaster. Can you imagine the fear and panic you'd cause among the innocent families, children, and elders on that flight?",
+      "fallacy_type": "appeal to emotion",
+      "baseline": "It is not advisable to bring a lighter onto an airplane.",
+      "baseline_ppl": 1.3557733674724939,
+      "lcf": "It is not advisable to bring a lighter onto an airplane.",
+      "lcf_ppl": 1.3557733674724939
+    },
+    {
+      "index": 776,
+      "premise": "Security Agent: Lighters cannot be carried on airplanes.",
+      "fallacy_type": "fallacy of extension",
+      "baseline": "Therefore, it is not safe to carry lighters on airplanes.",
+      "baseline_ppl": 1.553722434090025,
+      "lcf": "Lighters are not allowed on airplanes.",
+      "lcf_ppl": 1.378893140560928
+    },
+    {
+      "index": 777,
+      "premise": "The Federal Aviation Administration states that lighters cannot be carried on airplanes. They are experts in aviation safety.",
+      "fallacy_type": "fallacy of credibility",
+      "baseline": "It is unsafe to carry lighters on airplanes.",
+      "baseline_ppl": 1.1245287554539085,
+      "lcf": "It is unsafe to carry lighters on airplanes.",
+      "lcf_ppl": 1.1245287554539085
+    },
+    {
+      "index": 778,
+      "premise": "No one said lighters can be taken on airplanes.",
+      "fallacy_type": "intentional fallacy",
+      "baseline": "It is not safe to bring lighters on airplanes.",
+      "baseline_ppl": 1.3317884208343176,
+      "lcf": "It is not safe to bring lighters on airplanes.",
+      "lcf_ppl": 1.3317884208343176
+    },
+    {
+      "index": 779,
+      "premise": "If lighters are flammable, they cannot be carried on airplanes. Also, lighters cannot be carried on airplanes.",
+      "fallacy_type": "deductive fallacy",
+      "baseline": "Therefore, lighters are not flammable.",
+      "baseline_ppl": 1.1029917418827735,
+      "lcf": "Therefore, lighters are not flammable.",
+      "lcf_ppl": 1.1029917418827735
+    }
+  ]
+}

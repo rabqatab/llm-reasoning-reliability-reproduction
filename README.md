@@ -113,6 +113,8 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 
 **Making it model-agnostic (v2→v5, prior-work-grounded; `docs/LCF_model_agnostic.md`).** We then tried to *fix* the model-dependence with the activation-steering literature (CAA, RepE, CAST/**K-CAST**, Valentino AAAI'26). v2 (supervised dir), v3 (CAA ± midpoint gate), v4 (faithful K-CAST kNN gate + LayerNavigator + signed sweep) all **fail to steer logic-validity on the fallacy task** — the kNN gate fires ~98% of tokens (reference/task distribution mismatch). On a purpose-built **formal-syllogism 2×2 (validity×believability)** task where reference==task (v5), **content-direction ablation debiases Qwen3 to 100% (content-effect gap 5→0) — the first positive steering result** — yet it is **still not model-agnostic** (Llama2, which can't do syllogisms at all, gets nothing) and the **conditional kNN gate never beats static**. So contrastive steering debiases content effects *only* when distribution-matched + targeting the content (not validity) direction + on a model that already has the capability.
 
+‡ **Independent cross-check** (separate codebase `lcf/independent_vicuna/`, Claude-Sonnet-4.6 judge, ΔProb ×100; PPL is greedy-text PPL, not comparable to other rows). On **Vicuna-7b, LCF helps on no metric** (η swept 0.25–8.0, neutral-to-harmful): the logic/content **disentanglement never forms** (t-SNE intermixed, separability 0.66 ≈ chance; quantization and label-quality controls rule those out). This **generalizes** the Qwen3 finding — LCF's one reproducible effect (ΔProb) is model-dependent, and the paper's headline gains reproduce on no model we tested. Details: `docs/LCF_vicuna_independent.md`.
+
 ## Models & data
 Paper RPC data = authors' published reasoning paths (auto-downloaded). LFUD = `github.com/YandaGo/LFUD`. Models: Qwen3-8B (local), Llama-2-7b-chat-hf + Vicuna/Mistral/ChatGLM3/Baichuan2 (downloaded); Llama-3.1 still HF-gated. BIRD at `/mnt/nfs/ssd2/bird_data`.
 
@@ -184,6 +186,8 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 **판정: 논문대로 재현 불가 / model-agnostic 아님 / headline은 감사불가 discriminator 의존 — 단, 전제는 실재하고 날조 증거는 없음.**
 
 **model-agnostic 개량 시도 (v2→v5, 선행연구 기반; `docs/LCF_model_agnostic.md`).** activation-steering 문헌(CAA, RepE, CAST/**K-CAST**, Valentino AAAI'26)에 근거해 모델 의존성을 *고치려* 시도. v2(지도방향)·v3(CAA±midpoint gate)·v4(충실한 K-CAST kNN gate + LayerNavigator + 부호 탐색) 모두 fallacy 과제에서 **logic-validity steering 실패** — kNN gate가 토큰의 ~98%에서 발화(reference/task 분포 불일치). reference==task인 **형식 삼단논법 2×2(validity×believability)** 과제(v5)에선 **content 방향 ablation이 Qwen3를 100%로 debias(content-effect gap 5→0) — 프로젝트 첫 positive 결과** — 그러나 **여전히 model-agnostic 아님**(삼단논법 능력 자체가 없는 Llama2엔 무효), **조건부 kNN gate는 static을 끝내 못 넘음**. 즉 contrastive steering은 *분포 일치 + content(아닌 validity) 방향 + 능력 보유 모델* 조건에서만 content effect를 debias함.
+
+‡ **독립 교차검증**(별도 코드베이스 `lcf/independent_vicuna/`, Claude-Sonnet-4.6 판별기, ΔProb는 ×100; PPL은 greedy-text PPL이라 다른 행과 비교 불가). **Vicuna-7b에서는 LCF가 어떤 지표도 개선하지 못함**(η 0.25–8.0 스윕에서 중립~악화): 논리/내용 **disentanglement가 형성되지 않음**(t-SNE 혼재, separability 0.66 ≈ 우연; 양자화·라벨품질 통제실험으로 두 원인 기각). 이는 Qwen3 결과를 **일반화**합니다 — LCF의 유일한 재현 효과(ΔProb)는 모델 의존적이고, 논문 헤드라인은 우리가 시험한 어떤 모델에서도 재현되지 않습니다. 상세: `docs/LCF_vicuna_independent.md`.
 
 ## 재현 방법
 ```bash
