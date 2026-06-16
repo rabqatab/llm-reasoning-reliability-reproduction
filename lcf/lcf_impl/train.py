@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import torch
@@ -23,7 +24,8 @@ from model import build_lcf
 from losses import total_loss
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+# LCF_DATA_DIR: run the pipeline on an alternative domain (e.g. lcf/legal/).
+DATA_DIR = Path(os.environ.get("LCF_DATA_DIR", ROOT / "data"))
 CKPT_DIR = ROOT / "checkpoints"
 
 ETA_DEFAULTS = {"generation": 0.5, "identification": 4.5}
@@ -142,7 +144,7 @@ def train(args):
     sel = select_layers_by_distinctiveness(lcf.cpu(), val_reps, top_k=10)
     lcf.to(device)
 
-    short = args.model.split("/")[-1]
+    short = args.ckpt_name or args.model.split("/")[-1]
     out_dir = CKPT_DIR / short
     out_dir.mkdir(parents=True, exist_ok=True)
     torch.save(lcf.state_dict(), out_dir / "lcf.pt")
@@ -177,6 +179,9 @@ def main():
     ap.add_argument("--batch-size", type=int, default=256)
     ap.add_argument("--grad-clip", type=float, default=1.0)
     ap.add_argument("--tau", type=float, default=0.1)
+    ap.add_argument("--ckpt-name", default=None,
+                    help="checkpoint subdir name (default: model short name); "
+                         "set e.g. Qwen3-8B-legal to avoid clobbering the base ckpt")
     ap.add_argument("--no-wandb", action="store_true")
     args = ap.parse_args()
     train(args)

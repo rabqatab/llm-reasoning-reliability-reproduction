@@ -1,0 +1,10 @@
+== legal ==
+== fallacy-id Qwen3-8B  (n=40, eta=4.5) ==
+Qwen3-8B,original,Acc=72.50,DeltaProb=57.436
+Qwen3-8B,+LCF,Acc=62.50,DeltaProb=49.200
+RESULT Qwen3-8B: Acc 72.5->62.5  DeltaProb 57.44->49.20
+== kcc_legal ==
+== fallacy-id Qwen3-8B  (n=40, eta=4.5) ==
+Qwen3-8B,original,Acc=60.00,DeltaProb=50.256
+Qwen3-8B,+LCF,Acc=67.50,DeltaProb=57.575
+RESULT Qwen3-8B: Acc 60.0->67.5  DeltaProb 50.26->57.58

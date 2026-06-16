@@ -25,13 +25,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 from pathlib import Path
 
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+# LCF_DATA_DIR lets the same pipeline run on alternative domains (e.g. legal
+# valid/invalid conclusion pairs in lcf/legal/) without clobbering lcf/data/.
+DATA_DIR = Path(os.environ.get("LCF_DATA_DIR", ROOT / "data"))
 
 LAYER_LO, LAYER_HI = 10, 30  # inclusive range to sample from
 SEED = 42
