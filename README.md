@@ -1,6 +1,6 @@
 # reliableAI_final — Two-Paper Reproduction & Extension
 
-**Authors:** Jimin Kwon, Minhan Cho, [vanguard-gpt](https://github.com/vanguard-gpt) (independent Vicuna cross-check)
+**Authors:** Jimin Kwon ([vanguard-gpt](https://github.com/vanguard-gpt)), Minhan Cho
 
 Reproduce two papers from scratch, compare against their baselines on the papers' datasets **and** a locally-available dataset (BIRD). Decisions made with the user: use paper models **+ local Qwen3**; reproduce paper datasets **+ extend RPC to local BIRD**; run **both papers in parallel**.
 
@@ -17,7 +17,7 @@ Reproduce two papers from scratch, compare against their baselines on the papers
 - **RPC: reproduced exactly** (33-cell grid = paper Table 2) and **extended to 4 new domains** — BIRD SQL, JurisNet legal extraction, KCC precedent relevance, LFUD MCQ — to map *where* RPC helps. **BIRD K-scaling (K=8/16/32) confirms Remark 6**: RPC's edge over SC *grows with the sample budget* — RPC ties SC at K=8 but wins by **+2.5 acc & ½ the ECE at K=32**. → `docs/RPC_reproduction_results.md`
 - **LCF: implemented from scratch + critically analysed.** Reproduction is mixed/negative, and we trace *why*: the logic-validity direction is **real but weak (0.82 best single layer vs 0.95 for a semantic attribute), diluted to chance when layers are pooled**, and **not causally controllable** by representation shifting; the paper's flagship 96.56% relies on an **unauditable, confoundable discriminator**. Verdict: not reproducible / not model-agnostic as published — *not* fabrication. → **`docs/LCF_critical_analysis.md`** (+ `docs/LCF_reproduction_results.md`)
 - **Model-agnostic investigation (v2→v5), prior-work-grounded** → **`docs/LCF_model_agnostic.md`**: v2 (best-layer supervised dir) and v3 (CAA ± midpoint gate) and v4 (faithful **K-CAST** kNN gate + LayerNavigator + signed sweep) all **fail to steer logic-validity on the fallacy task** — the kNN gate fires ~98% of tokens (reference/task distribution mismatch). v5 builds a **formal-syllogism 2×2 (validity×believability)** task where reference==task: there, **content-direction ablation debiases Qwen3 to 100% (content-effect gap 5→0) — the first positive steering result** — but it is **still not model-agnostic** (no effect on Llama2, which lacks the capability) and the **conditional kNN gate never beats static**. Net: contrastive steering debiases content *only* when distribution-matched + content-direction + a capable model.
-- **LCF baselines** (SFT/ITI/RAHF); multi-model LCF — Mistral degrades like Llama2, and **Vicuna-7b** (independent cross-check by coauthor [vanguard-gpt](https://github.com/vanguard-gpt), separate codebase) **helps on no metric** → `docs/LCF_vicuna_independent.md`; **legal-domain LCF** run (JurisNet degrades / KCC-legal improves on the same Qwen3 — inconsistent, reinforces the weak signal); MoodRisk risk-direction control probe 0.95.
+- **LCF baselines** (SFT/ITI/RAHF); multi-model LCF — Mistral degrades like Llama2, and **Vicuna-7b** (a second, independent re-implementation in a separate codebase `lcf/independent_vicuna/`) **helps on no metric** → `docs/LCF_vicuna_independent.md`; **legal-domain LCF** run (JurisNet degrades / KCC-legal improves on the same Qwen3 — inconsistent, reinforces the weak signal); MoodRisk risk-direction control probe 0.95.
 
 ## Layout
 ```
@@ -106,7 +106,7 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 
 \*Llama2 ValidTrained is degenerate (the distilbert judge marks all of Llama2's generations valid) — read ValidGPT4 instead.
 
-‡ **Independent cross-check by [vanguard-gpt](https://github.com/vanguard-gpt)** (separate codebase `lcf/independent_vicuna/`, Claude-Sonnet-4.6 judge, ΔProb ×100; PPL is greedy-text PPL, not comparable to other rows). On **Vicuna-7b, LCF helps on no metric** (η swept 0.25–8.0, neutral-to-harmful): the logic/content **disentanglement never forms** (t-SNE intermixed, separability 0.66 ≈ chance; quantization and label-quality controls rule those out). This **independently corroborates** our finding — LCF's one reproducible effect (ΔProb) is model-dependent, and the paper's headline gains reproduce on **no model we tested** (Qwen3, Llama2, Mistral, Vicuna). Details: `docs/LCF_vicuna_independent.md`.
+‡ **A second, independent re-implementation** (separate codebase `lcf/independent_vicuna/`, Claude-Sonnet-4.6 judge, ΔProb ×100; PPL is greedy-text PPL, not comparable to other rows; sharing no code with the main pipeline, it controls for implementation bugs). On **Vicuna-7b, LCF helps on no metric** (η swept 0.25–8.0, neutral-to-harmful): the logic/content **disentanglement never forms** (t-SNE intermixed, separability 0.66 ≈ chance; quantization and label-quality controls rule those out). This **independently corroborates** our finding — LCF's one reproducible effect (ΔProb) is model-dependent, and the paper's headline gains reproduce on **no model we tested** (Qwen3, Llama2, Mistral, Vicuna). Details: `docs/LCF_vicuna_independent.md`.
 
 **Mixed/negative — and we explain why (`docs/LCF_critical_analysis.md`).** On Qwen3-8B +LCF ~doubles ΔProb (3.96→7.83); on Llama-2-7b-chat the same recipe **degrades** it (4.85→2.44) — opposite to the paper. Root-cause analysis (the project's main contribution):
 - **The logic-validity direction is real but weak.** A held-out probe separates valid/invalid at **0.82 at the single best sub-layer** (identical for both models) but **0.52 = chance when pooled** over the layers the paper mixes. Control: the *same* probe on **suicide-risk** (MoodRisk Mistral reps) hits **0.95 across all layers** — so representation editing works for semantic attributes; logic-validity is just weakly/locally encoded.
@@ -129,7 +129,7 @@ Unified 128G memory shared CPU+GPU. Key rules: pre-download models from the logi
 
 # 한국어 요약
 
-**저자:** 권지민, 조민한, [vanguard-gpt](https://github.com/vanguard-gpt) (독립 Vicuna 교차검증)
+**저자:** 권지민 ([vanguard-gpt](https://github.com/vanguard-gpt)), 조민한
 
 LLM 신뢰성(reliability) 분야의 **두 논문을 처음부터 구현·재현**하고, 논문이 쓴 데이터셋과 **로컬 가용 데이터셋(BIRD)** 으로 baseline과 비교하는 프로젝트입니다.
 
@@ -184,7 +184,7 @@ Conclusion Generation: Valid%(GPT4)↑ · Valid%(Trained)↑ · PPL↓ &nbsp;|&n
 
 \*Llama2의 ValidTrained는 무의미합니다(distilbert 판정기가 Llama2 생성물을 전부 valid로 분류). **ValidGPT4**를 보세요.
 
-‡ **[vanguard-gpt](https://github.com/vanguard-gpt)의 독립 교차검증**(별도 코드베이스 `lcf/independent_vicuna/`, Claude-Sonnet-4.6 판별기, ΔProb는 ×100; PPL은 greedy-text PPL이라 다른 행과 비교 불가). **Vicuna-7b에서 LCF는 어떤 지표도 개선 못 함**(η 0.25–8.0 중립~악화): 논리/내용 **disentanglement 미형성**(t-SNE 혼재, separability 0.66 ≈ 우연; 양자화·라벨품질 통제실험으로 기각). 본 프로젝트 결론(ΔProb 효과는 모델 의존적)을 **독립적으로 뒷받침** — 논문 헤드라인 gains는 우리가 시험한 **어떤 모델**(Qwen3·Llama2·Mistral·Vicuna)**에서도 재현되지 않음**. 상세: `docs/LCF_vicuna_independent.md`.
+‡ **두 번째 독립 재구현**(별도 코드베이스 `lcf/independent_vicuna/`, Claude-Sonnet-4.6 판별기, ΔProb는 ×100; PPL은 greedy-text PPL이라 다른 행과 비교 불가; 메인 파이프라인과 코드를 공유하지 않아 구현 버그를 통제). **Vicuna-7b에서 LCF는 어떤 지표도 개선 못 함**(η 0.25–8.0 중립~악화): 논리/내용 **disentanglement 미형성**(t-SNE 혼재, separability 0.66 ≈ 우연; 양자화·라벨품질 통제실험으로 기각). 본 프로젝트 결론(ΔProb 효과는 모델 의존적)을 **독립적으로 뒷받침** — 논문 헤드라인 gains는 우리가 시험한 **어떤 모델**(Qwen3·Llama2·Mistral·Vicuna)**에서도 재현되지 않음**. 상세: `docs/LCF_vicuna_independent.md`.
 
 → **혼재/부정 — 그리고 이유를 규명했습니다 (`docs/LCF_critical_analysis.md`, 본 프로젝트의 핵심 기여).** Qwen3는 ΔProb 2배(3.96→7.83), Llama2는 동일 recipe로 **악화**(4.85→2.44, 논문과 반대). 근본 원인:
 - **logic 방향은 실재하나 약함**: held-out probe로 valid/invalid 분리도가 **best 단일 sub-layer 0.82**(두 모델 동일)이나 레이어를 섞으면 **0.52(chance)**. 대조군 — 같은 probe를 **자살위험**(MoodRisk Mistral reps)에 적용하면 **0.95(전 레이어)**. 즉 representation editing은 *의미적* 속성엔 작동하나, logic-validity는 약하게·국소적으로만 인코딩됨.
