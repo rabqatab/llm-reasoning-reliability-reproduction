@@ -1,0 +1,3 @@
+SC KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '43.44 ± 0.00', 'BalancedAccuracy': '43.44 ± 0.00', 'ECE': '50.55 ± 0.00'}
+PPL KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '42.81 ± 0.00', 'BalancedAccuracy': '42.81 ± 0.00', 'ECE': '46.08 ± 0.00'}
+RPC KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '43.75 ± 0.00', 'BalancedAccuracy': '43.75 ± 0.00', 'ECE': '50.53 ± 0.04'}

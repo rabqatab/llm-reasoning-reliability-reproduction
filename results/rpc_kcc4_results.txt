@@ -1,0 +1,10 @@
+# KCC 4-class graded relevance (0-3, chance=25%) — Qwen3-8B, 320 balanced pairs, parse 100%
+# Corrected from the invalid binary framing (dropped grades 2,3; grade 1 was inverted).
+## K=8
+SC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '43.14 ± 0.19', 'BalancedAccuracy': '43.31 ± 0.35', 'ECE': '51.05 ± 0.28'}
+PPL KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '42.75 ± 0.61', 'BalancedAccuracy': '42.75 ± 0.61', 'ECE': '45.13 ± 0.59'}
+RPC KCC-relevance Qwen_Qwen3-8B 8 {'Accuracy': '43.31 ± 0.32', 'BalancedAccuracy': '43.31 ± 0.32', 'ECE': '51.12 ± 0.41'}
+## K=16
+SC KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '43.44 ± 0.00', 'BalancedAccuracy': '43.44 ± 0.00', 'ECE': '50.55 ± 0.00'}
+PPL KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '42.81 ± 0.00', 'BalancedAccuracy': '42.81 ± 0.00', 'ECE': '46.08 ± 0.00'}
+RPC KCC-relevance Qwen_Qwen3-8B 16 {'Accuracy': '43.75 ± 0.00', 'BalancedAccuracy': '43.75 ± 0.00', 'ECE': '50.53 ± 0.04'}

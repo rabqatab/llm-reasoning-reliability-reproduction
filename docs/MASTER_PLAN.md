@@ -13,7 +13,7 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **4 local-dataset extensions** (Qwen3-8B, K=8, reuse RPC evaluators w/ domain equality):
   - [x] BIRD text-to-SQL (exec-match): SC 28.5 > RPC 25.0 (tie/lose at K=8).
   - [x] JurisNet legal extraction (set exact-match): **RPC 20.0/46.0 > SC 19.1/52.4 (wins Acc+ECE)**.
-  - [x] KCC precedent-relevance (balanced): SC≈RPC≈PPL ~65 bal-acc (binary → no RPC edge; PPL best ECE 21.6).
+  - [x] KCC precedent-relevance (**4-class graded 0-3**, 320 balanced, chance 25): SC≈RPC≈PPL ~43% acc; RPC no edge even with answer diversity; PPL best ECE (45 vs 51). [CORRECTED from an earlier invalid binary framing that dropped grades 2,3 and inverted grade 1.]
   - [x] LFUD fallacy-id MCQ: all ~88% (model already strong → RPC≈SC; PPL best ECE 8.3). Connects both papers.
   - PPL over-confidence (ECE 73–93) reproduces in ALL domains.
 - [x] **Batched generation** `rpc/_batched_gen.py` (num_return_sequences=K) — ~Kx faster than sequential.
@@ -28,7 +28,7 @@ Two-paper reproduction + extension. Decisions (2026-06-14): paper models **+ loc
 - [x] **Generalization data**: legal-LCF from JurisNet (`lcf/legal/`) + KCC (`lcf/kcc_legal/`) — valid/invalid legal conclusion pairs (GPT-built).
 
 ## Breadth experiments (DONE)
-1. [x] 5-domain RPC table: RPC wins under uncertainty+diversity (math, legal extraction), ties when confident/binary (MCQ, KCC).
+1. [x] 5-domain RPC table: RPC wins under uncertainty+diversity+informative-confidence (math, legal extraction), ties when the model is confident (MCQ 88%) or confidence is uninformative (KCC 4-class graded).
 2. [x] **Larger-K BIRD re-test → confirms Remark 6.** Regenerated BIRD K=32 (n=80), re-aggregated SC/PPL/RPC at K=8/16/32. **RPC's edge over SC GROWS with K**: ~tie at K=8 → RPC wins at K=16 → **+2.5 acc & ½ ECE at K=32**. → `docs/RPC_reproduction_results.md` (BIRD K-scaling). NB: fixed a thread-leak in `rpc/bird_extension/sql_exec.py` (O(K²) exec-match signal-killed the process at K≥16) via `conn.interrupt()`.
 3. [x] **Multi-model LCF** — the mixed pattern holds: **Mistral-7B DEGRADES** (Acc 35.3→27.5, ΔProb 14.20→3.23) like Llama2; **Vicuna-7b** (independent cross-check by coauthor vanguard-gpt, separate codebase `lcf/independent_vicuna/`) **helps on no metric** (Acc 69.6→63.7, ΔProb 34.4→30.0; separability 0.66≈chance) → `docs/LCF_vicuna_independent.md`. `lcf/run_multimodel.sh`, `fallacy_eval.py`. (ChatGLM3/Baichuan2 still pending — low value, pattern shown on 4 models.)
 4. [x] **LCF on legal domain** (`lcf/legal/` JurisNet, `lcf/kcc_legal/` KCC; Qwen3-8B, Node 2 docker). Inconsistent: legal Acc 72.5→62.5 (degrades), kcc_legal 60.0→67.5 (improves) — same model, opposite directions → reinforces weak/unreliable LCF signal. `lcf/run_legal.sh`, `results/lcf_legal_results.txt`. (n=40/domain.)

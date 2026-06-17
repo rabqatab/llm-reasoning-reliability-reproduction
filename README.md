@@ -26,7 +26,7 @@ rpc/RPC/                   cloned official RPC repo (uv venv, CPU-only); + run_f
 rpc/_batched_gen.py        batched K-sample generation helper (shared by extensions)
 rpc/bird_extension/        RPC on BIRD text-to-SQL (SQL exec-match)
 rpc/jurisnet_ext/          RPC on JurisNet legal statute extraction (exact-match)
-rpc/kcc_ext/               RPC on KCC precedent-relevance (balanced binary)
+rpc/kcc_ext/               RPC on KCC precedent-relevance (4-class graded relevance 0-3)
 rpc/lfud_mcq/              RPC on LFUD fallacy-identification MCQ (connects both papers)
 lcf/lcf_impl/              from-scratch LCF: model/losses/data/train/infer
    probe_layers.py, lcf_v2.py, lcf_v2_eval.py   model-agnostic v2 + per-layer probe
@@ -77,10 +77,10 @@ Paper Table 2 averages: PPL 21.90/73.14 · SC 24.82/13.37 · RPC 26.11/12.37 →
 | math (paper) | — | over-confident | best | **RPC wins** |
 | BIRD text-to-SQL (exec-match) | **28.5**/39.8 | 25.0/73.6 | 25.0/39.2 | lose |
 | JurisNet legal extraction (exact-match) | 19.1/52.4 | 18.7/**78.8** | **20.0/46.0** | **RPC wins (Acc+ECE)** |
-| KCC precedent relevance (balanced) | 64.7/31.6 | **66.2/21.6** | 65.1/33.4 | ~tie |
+| KCC precedent relevance (4-class graded 0-3, chance 25) | 43.1/51.1 | 42.8/**45.1** | 43.3/51.1 | ~tie |
 | LFUD fallacy MCQ | 88.0/12.1 | 87.0/**8.3** | 88.0/12.1 | ~tie |
 
-Takeaway: **RPC beats SC only when the model is uncertain with diverse answers** (math, legal extraction — low accuracy); when the model is already confident/accurate (MCQ 88%) or the answer is binary (KCC), RPC ≈ SC. **PPL over-confidence is difficulty-dependent** — terrible on hard tasks (ECE 49–93) but well-calibrated on easy ones (MCQ 8.3). A nuanced, faithful characterization of *when* RPC helps. See `docs/RPC_reproduction_results.md`.
+Takeaway: **RPC beats SC only when the model is uncertain, answers are diverse, AND its confidence tracks correctness** (math, legal extraction — low accuracy). When the model is already confident/accurate (MCQ 88%), RPC ≈ SC. **KCC graded relevance is the telling case**: it *is* uncertain (43% on a 4-way task, chance 25) and answer-diverse, yet RPC ≈ SC and PPL is the *best*-calibrated (ECE 45 vs 51) — so diversity alone is **not sufficient**; RPC's perplexity-weighting + Weibull pruning only help when token-perplexity is informative about correctness. **PPL over-confidence is difficulty-dependent** — terrible on hard open tasks (ECE 49–93) but decent here (45) and on easy MCQ (8.3). A nuanced, faithful characterization of *when* RPC helps. See `docs/RPC_reproduction_results.md`.
 
 **BIRD K-scaling (the budget effect, confirms Remark 6).** RPC *loses* to SC at K=8 only because K is below the paper's K=64–128 regime — re-aggregating the same paths at growing K shows RPC's advantage *grow monotonically*:
 
@@ -161,10 +161,10 @@ LLM 신뢰성(reliability) 분야의 **두 논문을 처음부터 구현·재현
 | 수학 (논문) | — | 과신 | best | **RPC 승** |
 | BIRD text-to-SQL | **28.5**/39.8 | 25.0/73.6 | 25.0/39.2 | 패 |
 | JurisNet 법률추출 | 19.1/52.4 | 18.7/**78.8** | **20.0/46.0** | **RPC 승(Acc+ECE)** |
-| KCC 판례관련성 (balanced) | 64.7/31.6 | **66.2/21.6** | 65.1/33.4 | ~무 |
+| KCC 판례관련성 (4-class 등급 0-3, chance 25) | 43.1/51.1 | 42.8/**45.1** | 43.3/51.1 | ~무 |
 | LFUD fallacy MCQ | 88.0/12.1 | 87.0/**8.3** | 88.0/12.1 | ~무 |
 
-핵심: **RPC는 모델이 불확실하고 답이 다양할 때만 SC를 이깁니다**(수학·법률추출, 저정확도). 모델이 이미 확신/정확하거나(MCQ 88%) 답이 이진(KCC)이면 RPC≈SC. **PPL 과신은 난이도 의존적** — 어려운 태스크는 ECE 49–93, 쉬운 태스크(MCQ)는 8.3로 잘 보정. "RPC가 *언제* 작동하는지"의 정밀한 특성화.
+핵심: **RPC는 모델이 불확실하고·답이 다양하고·confidence가 정답을 잘 추종할 때만 SC를 이깁니다**(수학·법률추출, 저정확도). 모델이 이미 확신/정확하면(MCQ 88%) RPC≈SC. **KCC 등급분류가 결정적 사례**: 불확실하고(4-way 43%, chance 25) 답도 다양한데도 RPC≈SC이고 PPL이 오히려 best-calibrated(ECE 45 vs 51) — 즉 **답 다양성만으론 불충분**하고, RPC의 perplexity 가중+Weibull pruning은 token-perplexity가 정답성을 담을 때만 도움. **PPL 과신은 난이도 의존적** — 어려운 open 태스크 ECE 49–93, KCC는 45, MCQ는 8.3. "RPC가 *언제* 작동하는지"의 정밀한 특성화.
 
 **BIRD K-scaling (예산 효과, Remark 6 확증).** RPC가 K=8에서 SC에 진 건 K가 논문의 K=64–128보다 작아서일 뿐 — 같은 경로를 K를 키워 재집계하면 RPC 우위가 **단조 증가**: K=8 (27.0/34.3, ~무) → K=16 (**28.8/31.3, RPC 승**) → K=32 (**30.0/26.7, RPC 대승 +2.5 acc, ECE 절반**). → `docs/RPC_reproduction_results.md`
 
